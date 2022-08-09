@@ -1,0 +1,84 @@
+@media (max-width: 1650px) {
+  .products-main {
+    padding-bottom: 85px;
+  }
+
+  .products-main .products-main__path .products-main__path-svg {
+    width: 1330px;
+    height: 115%;
+  }
+  .products-main .game-item {
+    padding-left: 250px;
+    height: 625px;
+  }
+
+  .products-main .game-item.game-item_right {
+    padding-right: 250px;
+  }
+
+  .products-main .game-item__content {
+    width: 50%;
+    position: relative;
+    margin-right: 230px;
+  }
+
+  .products-main .game-item__title {
+     max-width: 600px;
+  }
+  .products-main .game-item.game-item_right .game-item__content {
+    margin-left: 200px;
+  }
+
+
+  .products-main .game-item__img {
+    width: 50%;
+  }
+
+  .products-main .products-main__path .prompt1 {
+    top: -103px;
+  }
+  .products-main .products-main__path .prompt2 {
+    left: 31%;
+    top: 590px;
+  }
+  .products-main .products-main__path .prompt3 {
+    top: 578px;
+  }
+  .products-main .products-main__path .prompt4 {
+    top: 1196px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .products-main__menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .products-main {
+    margin-bottom: 267px;
+    margin-top: 80px;
+  }
+
+  .products-main__top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products-main__title {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-main__title {
+    font-size: 70px;
+  }
+  .products-main__desc p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+}

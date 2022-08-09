@@ -1,1 +1,0 @@
-import './vendor/lang-select';
