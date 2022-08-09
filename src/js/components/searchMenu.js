@@ -1,0 +1,26 @@
+import { body } from "../_vars";
+
+
+const searchBtn = document.querySelector('.search-btn')
+const closeBtn = document.querySelector('.close-btn')
+const searchMenu = document.querySelector('.search-menu')
+const searchOverlay = document.querySelector('.search-overlay')
+const pageWrapper = document.querySelector('.site-container')
+
+
+// Управление состоянием меню поиска
+searchBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  searchMenu.classList.add('_active')
+  searchOverlay.classList.add('_active')
+  pageWrapper.classList.add('_active')
+  body.classList.add('_lock')
+})
+
+closeBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  searchMenu.classList.remove('_active')
+  searchOverlay.classList.remove('_active')
+  pageWrapper.classList.remove('_active')
+  body.classList.remove('_lock')
+})

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Продукты'
+})
+
+<body class="page__body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+
+  <main class="main">
+    <section class="page-section products-main">
+      <div class="container">
+        <div class="products-main__top">
+          <h2 class="products-main__title">
+            Products
+          </h2>
+          <div class="products-main__desc">
+            <p>
+              Millions of players from all around the globe enjoy our games
+              daily.
+              We're very picky when it comes to our portfolio, which also means
+              that
+              only the best projects make the cut. See for yourself!
+            </p>
+            <ul class="products-main__menu">
+              <li class="products-main__menu-item">
+                <button
+                  class="products-main__menu-btn products-main__menu-btn_active">
+                  All
+                </button>
+              </li>
+              <li class="products-main__menu-item">
+                <button class="products-main__menu-btn">Mobile games</button>
+              </li>
+              <li class="products-main__menu-item">
+                <button class="products-main__menu-btn">VR</button>
+              </li>
+              <li class="products-main__menu-item">
+                <button class="products-main__menu-btn">NFT</button>
+              </li>
+              <li class="products-main__menu-item">
+                <button class="products-main__menu-btn">Services</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="products-main__items">
+        <div class="products-main__path">
+          <svg class="products-main__path-svg" width="1581" height="5932"
+               viewBox="0 0 1581 5932" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path id="dotPath" opacity="0.3"
+                  d="M1521.8 5931.4C1521.8 5931.4 1626.4 5528.3 1541.4 5384.3C1451.3 5231.6 1049.4 5285.6 779.4 5295.5C463.4 5307.1 280.4 5318.1 163.4 5305.1C94.6 5297.5 51.4 5280.2 18.4 5215.1C-20.6 5138.1 19.3 4845.1 16.4 4715.4C14.4 4626.1 42.7 4578.6 111.4 4546.1C166.4 4520.1 273 4522.8 456.4 4533.1C688.4 4546.1 1101.2 4580.8 1302.4 4566.1C1384.4 4560.1 1457.5 4522.9 1496.4 4486.1C1566.8 4419.4 1573.1 4327.6 1577.8 4233.9C1596.4 3857.4 1480.8 3822.9 1325.8 3813.9C1201.3 3806.7 1089.8 3812.9 903.8 3820.9C790.9 3825.8 571.8 3839.9 458.8 3838.8C371.3 3838 100.8 3863.9 34.8 3722.9C26.6 3705.4 20.3 3682.6 15.6 3656.3L13.2 3638.4C7.70003 3555.2 22.7 3458.6 27.8 3350.8C31 3284.4 15.4 3191.1 20.8 3133.8C28.8 3048.9 94.6 3016.7 148.4 3010C244 2998.2 535.4 3017.8 713.4 3028C1010.4 3045.1 1330.1 3077.2 1449.4 3007C1539.4 2954 1553.2 2864.6 1550.4 2786C1544.4 2618 1560.4 2485 1517.4 2406C1491.9 2359.2 1428.8 2325.1 1357.4 2314C1190.4 2288 966.2 2306.4 779.4 2323.2C480.4 2350 264.6 2352 149.4 2339C69.4 2330 21.4 2270 14.4 2208C0.500031 2085.1 19.3 1872.7 16.4 1743C14.4 1653.7 18.7 1612.1 90.4 1587C150.4 1566 276.4 1581.2 459.8 1591.5C691.8 1604.5 1141.1 1661.7 1331.4 1612C1538.4 1558 1570.6 1407 1577.8 1261.5C1596.4 885 1480.8 850.5 1325.8 841.5C1201.3 834.3 1089.8 840.5 903.8 848.5C790.9 853.4 571.8 867.5 458.8 866.4C371.3 865.6 109.4 896 34.8 750.5C31.5 744 13.1 704.4 11.4 652C8.70003 566.1 24.6 445.4 27.8 378.5C31 312.1 15.4 218.8 20.8 161.5C28.8 76.6 82.9 50.2 136.8 44.5C206 37.2 357.2 54.5 506.8 51.5C707.4 47.5 936.4 27.6001 1080.8 26.4001C1340.8 24.3001 1518.8 61.2001 1518.8 61.2001"
+                  stroke="#00B9EE" stroke-width="2" stroke-miterlimit="10"
+                  stroke-dasharray="12 12"/>
+          </svg>
+          <div class="prompt-wrapper prompt1">
+            <svg class="products-main__prompt" width="46" height="65"
+                 viewBox="0 0 46 65" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="prompt-bg"
+                    d="M23 55.7999C35.5921 55.7999 45.8 45.592 45.8 32.9999C45.8 20.4078 35.5921 10.2 23 10.2C10.4079 10.2 0.199951 20.4078 0.199951 32.9999C0.199951 45.592 10.4079 55.7999 23 55.7999Z"
+                    fill="black"/>
+              <path
+                d="M34.1167 31.0063L33.7173 36.0236L25.6386 35.3804L24.992 43.5015L19.6346 43.075L20.2812 34.9538L12.2026 34.3106L12.602 29.2934L20.6807 29.9366L21.3272 21.8154L26.6847 22.242L26.0381 30.3631L34.1167 31.0063Z"
+                fill="white"/>
+            </svg>
+            <div class="prompt-modal">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
+              <a href="#">Читать дальше...</a>
+            </div>
+          </div>
+          <div class="prompt-wrapper prompt2">
+            <svg class="products-main__prompt" width="67"
+                 height="89" viewBox="0 0 67 89" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="prompt-bg"
+                    d="M33.7 75.1C51.815 75.1 66.5 60.4149 66.5 42.3C66.5 24.185 51.815 9.5 33.7 9.5C15.5851 9.5 0.900024 24.185 0.900024 42.3C0.900024 60.4149 15.5851 75.1 33.7 75.1Z"
+                    fill="black"/>
+              <path
+                d="M48.6987 39.7052V46.8335H37.2209V58.3717H29.6093V46.8335H18.1316V39.7052H29.6093V28.1671H37.2209V39.7052H48.6987Z"
+                fill="white"/>
+            </svg>
+            <div class="prompt-modal">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
+              <a href="#">Читать дальше...</a>
+            </div>
+          </div>
+          <div class="prompt-wrapper prompt3">
+            <svg class="products-main__prompt" width="46" height="65"
+                 viewBox="0 0 46 65" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="prompt-bg"
+                    d="M23 55.7999C35.5921 55.7999 45.8 45.592 45.8 32.9999C45.8 20.4078 35.5921 10.2 23 10.2C10.4079 10.2 0.199951 20.4078 0.199951 32.9999C0.199951 45.592 10.4079 55.7999 23 55.7999Z"
+                    fill="black"/>
+              <path
+                d="M34.1167 31.0063L33.7173 36.0236L25.6386 35.3804L24.992 43.5015L19.6346 43.075L20.2812 34.9538L12.2026 34.3106L12.602 29.2934L20.6807 29.9366L21.3272 21.8154L26.6847 22.242L26.0381 30.3631L34.1167 31.0063Z"
+                fill="white"/>
+            </svg>
+            <div class="prompt-modal">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
+              <a href="#">Читать дальше...</a>
+            </div>
+          </div>
+          <div class="prompt-wrapper prompt4">
+            <svg class="products-main__prompt" width="67"
+                 height="89" viewBox="0 0 67 89" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="prompt-bg"
+                    d="M33.7 75.1C51.815 75.1 66.5 60.4149 66.5 42.3C66.5 24.185 51.815 9.5 33.7 9.5C15.5851 9.5 0.900024 24.185 0.900024 42.3C0.900024 60.4149 15.5851 75.1 33.7 75.1Z"
+                    fill="black"/>
+              <path
+                d="M48.6987 39.7052V46.8335H37.2209V58.3717H29.6093V46.8335H18.1316V39.7052H29.6093V28.1671H37.2209V39.7052H48.6987Z"
+                fill="white"/>
+            </svg>
+            <div class="prompt-modal">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
+              <a href="#">Читать дальше...</a>
+            </div>
+          </div>
+
+          <div class="path-dot"></div>
+        </div>
+
+        <div class="products-main__items-container">
+          <div class="game-item game-item_left game-nitronation">
+            <div class="game-item__content">
+              <h3 class="game-item__title">
+                NITRO NATION
+              </h3>
+              <p class="game-item__text">
+                Nitro Nation takes drag and drift racing to the next level with
+                a
+                3D world full of stunning new customizable cars, amazing racing
+                physics, and unlimited in-depth gameplay that guarantees racers
+                an
+                unforgettable experience, all on your mobile device!
+              </p>
+              <ul class="game-item__features-list">
+                <li class="game-item__features-item">Инсталлы: 15M+</li>
+                <li class="game-item__features-item">DAU: 30K</li>
+                <li class="game-item__features-item">Рейтинг: 4.5</li>
+              </ul>
+              <a href="#" class="game-item__link">MORE INFO +</a>
+            </div>
+            <div class="game-item__img">
+              <div class="game-item__img-wrapper">
+                <img src="img/game-1.jpg" alt="nitro nation">
+              </div>
+              <div class="game-item__hover-video">
+                <img src="img/video-phone.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="game-item game-item_right game-zoocraft">
+            <div class="game-item__content">
+              <h3 class="game-item__title">
+                ZOOCRAFT: ANIMAL FAMILY
+              </h3>
+              <p class="game-item__text">
+                Разводите животных и открывайте новые породы с помощью
+                генетических экспериментов. Кормите животных и играйте с ними,
+                наблюдайте, как подрастают малыши, и продавайте их посетителям,
+                желающим завести домашнего любимца.
+              </p>
+              <ul class="game-item__features-list">
+                <li class="game-item__features-item">Инсталлы: 15M+</li>
+                <li class="game-item__features-item">DAU: 30K</li>
+                <li class="game-item__features-item">Рейтинг: 4.5</li>
+              </ul>
+              <a href="#" class="game-item__link">MORE INFO +</a>
+            </div>
+            <div class="game-item__img">
+              <div class="game-item__img-wrapper">
+                <img src="img/game-2.jpg" alt="zoocraft: animal family">
+              </div>
+              <div class="game-item__hover-video">
+                <img src="img/video-phone.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="game-item game-item_left game-dreamcats">
+            <div class="game-item__content">
+              <h3 class="game-item__title">
+                DREAM CATS
+              </h3>
+              <p class="game-item__text">
+                Dream Cats invites you to a fairy tale world where cats rule!
+                Collect cute kitties, help them rebuild their kingdom, and send
+                your new cat friends on adventures to find treasure and save all
+                of Catland!
+              </p>
+              <ul class="game-item__features-list">
+                <li class="game-item__features-item">Инсталлы: 15M+</li>
+                <li class="game-item__features-item">DAU: 30K</li>
+                <li class="game-item__features-item">Рейтинг: 4.5</li>
+              </ul>
+              <a href="#" class="game-item__link">MORE INFO +</a>
+            </div>
+            <div class="game-item__img">
+              <div class="game-item__img-wrapper">
+                <img src="img/game-3.jpg" alt="dream cats">
+              </div>
+              <div class="game-item__hover-video">
+                <img src="img/video-phone.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="game-item game-item_right game-hotwheels">
+            <div class="game-item__content">
+              <h3 class="game-item__title">
+                HOT WHEELS INFINITE LOOP
+              </h3>
+              <p class="game-item__text">
+                Experience the insane challenges of real-time 8-player PVP
+                racing while you smash, crash,and stunt your way to victory!
+              </p>
+              <ul class="game-item__features-list">
+                <li class="game-item__features-item">Инсталлы: 15M+</li>
+                <li class="game-item__features-item">DAU: 30K</li>
+                <li class="game-item__features-item">Рейтинг: 4.5</li>
+              </ul>
+              <a href="#" class="game-item__link">MORE INFO +</a>
+            </div>
+            <div class="game-item__img">
+              <div class="game-item__img-wrapper">
+                <img src="img/game-4.jpg" alt="hot wheels infinite loop">
+              </div>
+              <div class="game-item__hover-video">
+                <img src="img/video-phone.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="game-item game-item_left game-dungeon">
+            <div class="game-item__content">
+              <h3 class="game-item__title">
+                NEVER ENDING DUNGEON
+              </h3>
+              <p class="game-item__text">
+                Explore an infinite number of dungeons, slay monsters and
+                collect loot automatically in this epic fantasy RPG! Don’t feel
+                like hardcore role-playing? Keep it casual. Sit back and watch
+                as your hero fights for you!
+              </p>
+              <ul class="game-item__features-list">
+                <li class="game-item__features-item">Инсталлы: 15M+</li>
+                <li class="game-item__features-item">DAU: 30K</li>
+                <li class="game-item__features-item">Рейтинг: 4.5</li>
+              </ul>
+              <a href="#" class="game-item__link">MORE INFO +</a>
+            </div>
+            <div class="game-item__img">
+              <div class="game-item__img-wrapper">
+                <img src="img/game-5.jpg" alt="never ending dungeon">
+              </div>
+              <div class="game-item__hover-video">
+                <img src="img/video-phone.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="game-item game-item_right game-radius">
+            <div class="game-item__content">
+              <h3 class="game-item__title">
+                INTO THE RADIUS VR
+              </h3>
+              <p class="game-item__text">
+                Into the Radius is a single-player survival shooter for VR
+                veterans. Stalk the Pechorsk Radius zone filled with surreal
+                landscapes and dangerous anomalies. Use stealth, climbing or
+                realistic firearms to explore, scavenge for loot and recover
+                strange artifacts inan unforgiving dystopian environment.
+              </p>
+              <ul class="game-item__features-list">
+                <li class="game-item__features-item">Инсталлы: 15M+</li>
+                <li class="game-item__features-item">DAU: 30K</li>
+                <li class="game-item__features-item">Рейтинг: 4.5</li>
+              </ul>
+              <a href="#" class="game-item__link">MORE INFO +</a>
+            </div>
+            <div class="game-item__img">
+              <div class="game-item__img-wrapper">
+                <img src="img/game-6.jpg" alt="into the radius vr">
+              </div>
+              <div class="game-item__hover-video">
+                <img src="img/video-phone.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="game-item game-item_left game-beholder">
+            <div class="game-item__content">
+              <h3 class="game-item__title">
+                BEHOLDER
+              </h3>
+              <p class="game-item__text">
+                Welcome to a grim dystopian future. A totalitarian State
+                controls every aspect of private and public life. Laws are
+                oppressive. Surveillance is total. Privacy is dead. You are the
+                State-installed manager of an apartment building. Your daily
+                routine involves making the building a sweet spot for tenants,
+                who will come and go.
+              </p>
+              <ul class="game-item__features-list">
+                <li class="game-item__features-item">Инсталлы: 15M+</li>
+                <li class="game-item__features-item">DAU: 30K</li>
+                <li class="game-item__features-item">Рейтинг: 4.5</li>
+              </ul>
+              <a href="#" class="game-item__link">MORE INFO +</a>
+            </div>
+            <div class="game-item__img">
+              <div class="game-item__img-wrapper">
+                <img src="img/game-7.jpg" alt="beholder">
+              </div>
+              <div class="game-item__hover-video">
+                <img src="img/video-phone.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section articles">
+      <div class="container">
+        <h2 class="section-title">Product articles </h2>
+        <div class="articles__swiper articles-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-1.jpg "
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">Tag 1</a>
+              <div class="articles-swiper__content">
+                <p class="articles-swiper__text">Product article 1</p>
+                <p class="articles-swiper__hover-text swiper-no-swiping">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore ...
+                </p>
+                <p class="articles-swiper__date">05.02</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-2.jpg "
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">Tag 2</a>
+              <div class="articles-swiper__content">
+                <p class="articles-swiper__text">Product article 2</p>
+                <p class="articles-swiper__hover-text swiper-no-swiping">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore ...
+                </p>
+                <p class="articles-swiper__date">05.02</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-3.jpg "
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">Tag 3</a>
+              <div class="articles-swiper__content">
+                <p class="articles-swiper__text">Product article 3</p>
+                <p class="articles-swiper__hover-text swiper-no-swiping">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore ...
+                </p>
+                <p class="articles-swiper__date">05.02</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-4.jpg "
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">Tag 4</a>
+              <div class="articles-swiper__content">
+                <p class="articles-swiper__text">Product article 4</p>
+                <p class="articles-swiper__hover-text swiper-no-swiping">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore ...
+                </p>
+                <p class="articles-swiper__date">05.02</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-1.jpg "
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">Tag 5</a>
+              <div class="articles-swiper__content">
+                <p class="articles-swiper__text">Product article 5</p>
+                <p class="articles-swiper__hover-text swiper-no-swiping">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore ...
+                </p>
+                <p class="articles-swiper__date">05.02</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-2.jpg "
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">Tag 6</a>
+              <div class="articles-swiper__content">
+                <p class="articles-swiper__text">Product article 6</p>
+                <p class="articles-swiper__hover-text swiper-no-swiping">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore ...
+                </p>
+                <p class="articles-swiper__date">05.02</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="articles__swiper-panel">
+            <button class="articles__btn">
+              View all
+            </button>
+            <div class="articles__swiper-controls">
+              <button class="articles__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+
+              </button>
+              <button class="articles__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section check-careers">
+      <div class="container">
+        <h3 class="check-careers__title">
+          Разделяешь наши ценности, хочешь <span>делать игры</span>
+          с удовольствием?
+        </h3>
+        <a class="check-careers__btn"
+           href="#"><span>Check out the Careers</span></a>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>
