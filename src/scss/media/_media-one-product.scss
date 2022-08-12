@@ -21,12 +21,21 @@
     width: 52%;
     margin-right: 40px;
   }
+
   .product-one .product-caption__video {
     width: 48%;
     padding-top: 23%;
   }
+
   .product-one .product-features__list-item {
     width: 26%;
+  }
+
+  .product-one .product-connect__support {
+    width: 37%;
+  }
+  .product-one .product-connect .product-connect__socials {
+    width: 56%;
   }
 }
 
@@ -83,6 +92,18 @@
   .product-one .product-gallery__swiper {
     width: 100%;
   }
+
+  .product-one .product-connect__support {
+    width: 44%;
+  }
+  .product-one .product-connect .product-connect__socials {
+    width: 55%;
+  }
+
+  .product-one .product-career__content {
+    margin-right: 70px;
+    width: 90%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -130,6 +151,23 @@
     position: relative;
     padding: 0 100px 80px;
   }
+
+  .product-one .product-connect {
+    margin-bottom: 60px;
+  }
+
+  .product-one .product-connect .container {
+    flex-direction: column;
+  }
+
+  .product-one .product-connect__support {
+    width: 80%;
+    margin-bottom: 60px;
+  }
+  .product-one .product-connect .product-connect__socials {
+    width: 80%;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -207,6 +245,46 @@
   .product-one .product-gallery__swiper {
     padding: 0 80px 60px;
   }
+
+  .product-one .product-connect__support {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .product-one .product-connect .product-connect__socials {
+    width: 100%;
+  }
+
+  .product-one .product-connect__support-title, .product-one .product-connect__socials-title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+  .product-one .product-connect__support-text {
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .product-one .product-connect__support-btn {
+    font-size: 18px;
+    line-height: 24px;
+    width: 280px;
+    height: 60px;
+  }
+
+  .product-one .product-career .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .product-one .product-career__content {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 35px;text-align: center;
+
+  }
+
 }
 
 @media (max-width: 520px) {
@@ -257,5 +335,10 @@
     right: 0;
   }
 
-
+  .product-one .product-connect__socials-list {
+    flex-direction: column;
+  }
+  .product-one .product-connect__socials-list li {
+    margin-right: 0;
+  }
 }

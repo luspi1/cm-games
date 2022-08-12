@@ -84,7 +84,7 @@
         &::before {
           content: '';
           position: absolute;
-          width: 47px;
+          width: 49px;
           height: 47px;
           right: 25px;
           top: 50%;
@@ -101,7 +101,7 @@
     border-radius: 0 70px 70px 0;
     background-size: auto 100%;
     width: 92%;
-    margin-bottom: 72px;
+    margin-bottom: 140px;
 
     &__list {
       display: flex;
@@ -236,6 +236,7 @@
 
     &__support {
       width: 50%;
+      margin-right: 50px;
     }
 
     &__support-title,
@@ -266,7 +267,7 @@
     }
 
     .product-connect__socials {
-      width: 49%;
+      width: 50%;
     }
 
     &__socials-list {
@@ -308,6 +309,7 @@
 
     &__content {
       margin-right: 175px;
+      width: 60%;
     }
 
     &__title {

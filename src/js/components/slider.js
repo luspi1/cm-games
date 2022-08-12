@@ -160,7 +160,33 @@ const swiperGallery = new Swiper('.product-gallery__swiper', {
 });
 
 
+const swiperHistory = new Swiper('.company-history__swiper', {
+  navigation: {
+    nextEl: '.company-history__swiper-button-next',
+    prevEl: '.company-history__swiper-button-prev'
+  },
 
+  noSwiping: true,
+  noSwipingClass: 'swiper-no-swiping',
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1280: {
+      spaceBetween: 42,
+      slidesPerView: 4,
+    },
+  }
+
+});
 
 
 

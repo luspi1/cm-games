@@ -1,534 +1,253 @@
-.caption {
-  margin-top: 53px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: 10%;
-  margin-bottom: 125px;
+.company {
+  padding-bottom: 400px;
 
-  &__title {
+  h2.company-subtitle {
     @include montserrat-bold;
-    font-size: 67px;
-    line-height: 82px;
-    padding-top: 75px;
-    max-width: 40%;
-
-    span {
-      color: $secondary;
-    }
-  }
-
-  &__slider {
-    width: 58%;
-
-    .swiper {
-      border-radius: 50px 0 0 0;
-    }
-
-    .swiper-slide {
-      cursor: pointer;
-    }
-
-    .caption-swiper__img {
-      padding-top: 41%;
-      position: relative;
-    }
-
-    .swiper-slide img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .caption__slider-panel {
-    display: flex;
-    justify-content: space-between;
-    background-color: $secondary;
-    padding: 20px 130px 15px 38px;
-    border-radius: 0 0 0 50px;
-    min-height: 110px;
-
-    .slider-panel__content {
-      max-width: 621px;
-    }
-
-    .slider-panel__controls {
-      align-self: flex-end;
-      max-width: 640px;
-      margin-bottom: 10px;
-      display: flex;
-    }
-
-
-    h3 {
-      @include mudkty-regular;
-      font-size: 30px;
-      line-height: 44px;
-      color: #fff;
-      text-align: center;
-    }
-
-    p {
-      font-size: 19px;
-      line-height: 28px;
-      color: #fff;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      position: relative;
-      display: inline-block;
-      border: none;
-      background: none;
-      margin-top: 0;
-      height: 18px;
-      width: 40px;
-
-      svg {
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
-
-    .swiper-button-prev {
-      margin-right: 40px;
-    }
-
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-      content: '';
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      opacity: 0.5;
-      transition: all .3s;
-    }
-
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover {
-      opacity: 1;
-    }
-  }
-}
-
-.news {
-  margin-bottom: 70px;
-
-  h2 {
-    margin-bottom: 20px;
-  }
-
-  .news-swiper {
-    overflow: hidden;
-
-    .swiper-wrapper {
-      margin-bottom: 20px;
-    }
-
-    &__img {
-      padding-top: 51%;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .swiper-slide img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      transition: all .3s;
-    }
-
-    &__category {
-      @include mudkty-light;
-      font-size: 17px;
-      line-height: 25px;
-      color: #00B7F1;
-      display: inline-block;
-      margin-top: 22px;
-      margin-bottom: 10px;
-    }
-
-    &__content {
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      min-height: 70px;
-      margin-bottom: 80px;
-    }
-
-    &__text {
-      position: absolute;
-      left: 0;
-      top: 0;
-      max-width: 377px;
-      margin-bottom: 17px;
-      min-height: 100px;
-      transition: all .4s;
-    }
-
-    .news__swiper-panel {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .news__swiper-button-prev,
-    .news__swiper-button-next {
-      background: none;
-      border: none;
-      width: 55px;
-      height: 25px;
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-
-      svg {
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
-
-    .news__swiper-button-next {
-      margin-left: 5px;
-    }
-
-    .news__swiper-button-prev svg path,
-    .news__swiper-button-next svg path {
-      transition: all .3s;
-    }
-
-    .news__swiper-button-prev:hover svg path,
-    .news__swiper-button-next:hover svg path {
-      fill: #00B9EE;
-    }
-  }
-}
-
-.products {
-  width: 96%;
-  padding: 47px 0 50px 0;
-  background: left / cover no-repeat url("../img/products-bg.jpg");
-  background-size: auto 111%;
-  border-radius: 0 70px 70px 0;
-
-  &__title {
-    @include mudkty-light;
     font-size: 45px;
-    line-height: 65px;
-    color: $secondary;
-    margin-bottom: 5px;
+    line-height: 55px;
+    color: #1C283A;
+    margin-bottom: 30px;
   }
 
-  &__slide-title {
-    @include mudkty-light;
-    margin-top: 27px;
-    max-width: 365px;
-    transition: all .3s;
-  }
-
-  .products-swiper {
-    overflow-x: hidden;
-    padding: 20px;
-
-    .swiper-wrapper {
-      margin-bottom: 30px;
-    }
-
-    &__img {
-      padding-top: 94%;
-      position: relative;
-      border-radius: 10px;
-    }
-
-    .swiper-slide {
-      cursor: pointer;
-    }
-
-    .swiper-slide img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      transition: all .3s;
-      z-index: 99;
-    }
-
-    .swiper-slide:hover img {
-      transform: scale(1.1);
-    }
-
-    .swiper-slide:hover .products__slide-title {
-      color: $secondary;
-    }
-
-    .products__swiper-panel {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-
-    .products__swiper-button-prev,
-    .products__swiper-button-next {
-      background: none;
-      position: relative;
-      border: none;
-      width: 55px;
-      height: 30px;
-      cursor: pointer;
-      display: inline-block;
-
-      svg {
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
-
-    .products__swiper-button-next {
-      margin-left: 5px;
-    }
-
-    .products__swiper-button-prev svg path,
-    .products__swiper-button-next svg path {
-      transition: all .3s;
-    }
-
-    .products__swiper-button-prev:hover svg path,
-    .products__swiper-button-next:hover svg path {
-      fill: #00B9EE;
-    }
-  }
-}
-
-.services {
-  padding: 55px 0 75px;
-
-  .section-title {
-    margin-bottom: 55px;
-  }
-
-  .services-swiper {
-    overflow-x: hidden;
-
-    .swiper-wrapper {
-      margin-bottom: 50px;
-    }
-
-    &__img {
-      width: 37%;
-      padding-top: 32%;
-      position: relative;
-      border-radius: 20px;
-      margin-right: 15px;
-    }
-
-    &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      max-width: 200px;
-    }
-
-    .services__slide-title {
-      @include mudkty-regular;
-    }
-
-    .services__slide-text {
-      @include montserrat-regular;
-      font-size: 18px;
-      line-height: 29px;
-    }
-
-    .swiper-slide {
-      cursor: pointer;
-      display: flex;
-    }
-
-
-    .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      border-radius: 20px;
-    }
-
-    .services__swiper-panel {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-
-    .services__swiper-button-prev,
-    .services__swiper-button-next {
-      position: relative;
-      width: 55px;
-      height: 30px;
-      cursor: pointer;
-      display: inline-block;
-      background: none;
-      border: none;
-
-      svg {
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
-
-    .services__swiper-button-next {
-      margin-left: 5px;
-    }
-
-    .services__swiper-button-prev svg path,
-    .services__swiper-button-next svg path {
-      transition: all .3s;
-    }
-
-    .services__swiper-button-prev:hover svg path,
-    .services__swiper-button-next:hover svg path {
-      fill: #00B9EE;
-    }
-  }
-}
-
-.careers {
-  background: #F3F3F3;
-  padding: 52px 0;
-
-  .section-title {
-    margin-bottom: 55px;
-  }
-
-  .careers-swiper {
-    overflow-x: hidden;
-
-    .swiper-wrapper {
-      margin-bottom: 20px;
-    }
-
-    .swiper-slide {
-      height: 205px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background: #ffffff;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all .3s;
-
-      &:hover {
-        background: $secondary;
-      }
-
-      &:hover .careers-swiper__title,
-      &:hover .careers-swiper__link {
-        color: #FFFFFF;
-      }
-    }
-
-    .link-slide {
-      background: $secondary;
-      position: relative;
-
-      &:hover {
-        background: #00C9FF;
-      }
-
-      &:hover::after {
-        left: 90px;
-        opacity: 1;
-      }
-
-      h3 {
-        color: #FFFFFF;
-        font-size: 32px;
-        line-height: 47px;
-        max-width: 160px;
-        margin-top: 30px;
-        margin-left: 50px;
-      }
-
-      &::after {
-        content: '';
-        opacity: 0.6;
-        position: absolute;
-        left: 53px;
-        transition: all .3s;
-        bottom: -10px;
-        transform: translateY(-50%);
-        width: 55px;
-        height: 36px;
-        background: url("../img/slide-arrow.png") no-repeat;
-      }
-    }
-
+  .company-caption {
+    margin-top: 51px;
+    margin-bottom: 84px;
 
     &__title {
-      @include mudkty-light;
-      font-size: 35px;
-      line-height: 42px;
-      max-width: 360px;
-      margin-top: 25px;
-      margin-left: 24px;
-      color: $primary;
+      @include mudkty-bold;
+      font-size: 58px;
+      line-height: 92px;
+      letter-spacing: 0.05em;
+      color: #1C283A;
+      margin-bottom: 40px;
     }
 
-    &__link {
+    &__desc {
       @include mudkty-light;
-      font-size: 20px;
-      line-height: 29px;
-      margin-left: 24px;
-      margin-bottom: 30px;
-      color: #A5B4C4;
-    }
+      font-size: 38px;
+      line-height: 45px;
+      color: #1C283A;
+      max-width: 1380px;
 
-    .careers__swiper-panel {
+      a {
+        font-weight: 700;
+        color: #00B7F1;
+      }
+    }
+  }
+
+  .company-indicators {
+    margin-bottom: 37px;
+
+    &__list {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    .careers__swiper-button-prev,
-    .careers__swiper-button-next {
-      width: 55px;
-      height: 30px;
-      cursor: pointer;
-      display: inline-block;
+    &__list-item {
+      @include mudkty-bold;
+      font-size: 81px;
+      line-height: 157px;
+      color: #1C283A;
+      margin-bottom: 65px;
+      width: 31%;
+      border-top: 1px solid #A5B4C4;
       position: relative;
-      background: none;
-      border: none;
 
-      svg {
+      span {
         position: absolute;
         left: 0;
-        top: 0;
+        bottom: 0;
+        @include montserrat-bold;
+        font-size: 24px;
+        line-height: 29px;
       }
     }
 
-    .careers__swiper-button-next {
-      margin-left: 5px;
+  }
+
+  .company-features {
+    padding: 100px 0 0 76px;
+    background: left / cover no-repeat url("../img/features-bg.png");
+    border-radius: 0 70px 70px 0;
+    background-size: auto 103%;
+    width: 96%;
+    margin-bottom: 113px;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
-    .careers__swiper-button-prev svg path,
-    .careers__swiper-button-next svg path {
-      transition: all .3s;
+    &__list-item {
+      width: 31%;
+      margin-bottom: 58px;
     }
 
-    .careers__swiper-button-prev:hover svg path,
-    .careers__swiper-button-next:hover svg path {
-      fill: #00B9EE;
+    &__list-title {
+      h2 {
+        @include montserrat-bold;
+        font-size: 81px;
+        line-height: 99px;
+      }
+
+      padding-top: 22px;
+    }
+
+    &__item-img {
+      margin-bottom: 17px;
+      height: 100px;
+    }
+
+    &__item-title {
+      @include montserrat-bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #1C283A;
+    }
+
+    &__item-text {
+      @include montserrat-light;
+      font-size: 18px;
+      line-height: 30px;
+      color: #1C283A;
+    }
+
+  }
+
+  .company-history {
+    margin-bottom: 93px;
+    .history-swiper {
+      overflow: hidden;
+
+      .swiper-wrapper {
+        margin-bottom: 5px;
+      }
+
+      &__img {
+        padding-top: 51%;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .swiper-slide {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 408px;
+          height: 12px;
+          left: 0;
+          top: 217px;
+          background: center / cover no-repeat url("../img/history-border.png");
+          z-index: 9999;
+        }
+      }
+
+      .swiper-slide img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        transition: all .3s;
+      }
+
+      &__category {
+        @include montserrat-bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #00B7F1;
+        display: inline-block;
+        margin-top: 62px;
+        margin-bottom: 20px;
+      }
+
+      &__content {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        min-height: 70px;
+      }
+
+      &__text {
+        @include montserrat-regular;
+        font-size: 17px;
+        line-height: 28px;
+        color: #1C283A;
+        margin-bottom: 17px;
+        min-height: 100px;
+      }
+
+      .company-history__swiper-panel {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .company-history__swiper-button-prev,
+      .company-history__swiper-button-next {
+        background: none;
+        border: none;
+        width: 55px;
+        height: 25px;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      .company-history__swiper-button-next {
+        margin-left: 5px;
+      }
+
+      .company-history__swiper-button-prev svg path,
+      .company-history__swiper-button-next svg path {
+        transition: all .3s;
+      }
+
+      .company-history__swiper-button-prev:hover svg path,
+      .company-history__swiper-button-next:hover svg path {
+        fill: #00B9EE;
+      }
     }
   }
+
+  .company-team {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h2.company-team__title {
+      margin-bottom: 44px;
+    }
+
+    &__desc {
+      width: 45%;
+
+      p {
+        @include montserrat-light;
+        font-size: 17px;
+        line-height: 28px;
+        color: #1C283A;
+        margin-bottom: 29px;
+      }
+    }
+
+    &__img {
+      transform: translateY(-74px);
+    }
+  }
+
 }
+

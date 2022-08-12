@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Company'
+})
+
+<body class="page__body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+  <main class="main company">
+    <section class="section company-caption">
+      <div class="container">
+        <h1 class="company-caption__title">
+          Company
+        </h1>
+        <p class="company-caption__desc">
+          <a href="#">CM Games</a> is an independent game and service developer.
+          We
+          focus
+          on mobile, VR, and NFT projects. Over 400 million players have
+          installed
+          our hit games such as
+          <a href="#">Into the Radius</a>, <a href="#">Nitro Nation</a>, <a
+          href="#">Drag Racing</a> and others.
+        </p>
+
+      </div>
+    </section>
+    <section class="section company-indicators">
+      <div class="container">
+        <ul class="company-indicators__list">
+          <li class="company-indicators__list-item">
+            400M+<span>installs</span>
+          </li>
+          <li class="company-indicators__list-item">
+            150+<span>сотрудников</span>
+          </li>
+          <li
+            class="company-indicators__list-item company-indicators__rating-item">
+            15+<span>игр</span>
+          </li>
+          <li
+            class="company-indicators__list-item company-indicators__rating-item">
+            300K+<span>daily active users</span>
+          </li>
+          <li
+            class="company-indicators__list-item company-indicators__rating-item">
+            11+<span>лет делаем игры</span>
+          </li>
+          <li
+            class="company-indicators__list-item">
+            5+<span>тайтлов в проде</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section company-features">
+      <div class="container">
+        <ul class="company-features__list">
+          <li class="company-features__list-item company-features__list-title">
+            <h2>We value</h2>
+          </li>
+          <li class="company-features__list-item">
+            <div class="company-features__item-img">
+              <img src="img/company-features1.png" alt="feature">
+            </div>
+            <h3 class="company-features__item-title">Ответственность</h3>
+            <p class="company-features__item-text">
+              У нас появляется крепкое основание для принятия решений, на кого и
+              как это отражается, а также образуется доверие внутри команды.
+            </p>
+          </li>
+          <li class="company-features__list-item">
+            <div class="company-features__item-img">
+              <img src="img/company-features2.png" alt="feature">
+            </div>
+            <h3 class="company-features__item-title">Прозрачность</h3>
+            <p class="company-features__item-text">
+              Видим работу над проектами комплексно при открытых процессах,
+              благодаря чему
+              лучше прорабатываем задачи и учимся новому
+              от ребят из других отделов.
+            </p>
+          </li>
+          <li class="company-features__list-item">
+            <div class="company-features__item-img">
+              <img src="img/company-features3.png" alt="feature">
+            </div>
+            <h3 class="company-features__item-title">Уважение</h3>
+            <p class="company-features__item-text">
+              Мы уважаем друг друга, ценим общую работу, чувствуем себя открыто
+              и комфортно.
+            </p>
+          </li>
+          <li class="company-features__list-item">
+            <div class="company-features__item-img">
+              <img src="img/company-features4.png" alt="feature">
+            </div>
+            <h3 class="company-features__item-title">Доверие</h3>
+            <p class="company-features__item-text">
+              Чтобы каждому из нас было хорошо работать друг с другом, мы
+              доверяем своей команде.
+            </p>
+          </li>
+          <li class="company-features__list-item">
+            <div class="company-features__item-img">
+              <img src="img/company-features5.png" alt="feature">
+            </div>
+            <h3 class="company-features__item-title">Честность</h3>
+            <p class="company-features__item-text">
+              Мы открыто и честно общаемся по всем вопросам, готовы высказывать
+              свое мнение и прислушиваться к мнению других.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section company-history">
+      <div class="container">
+        <h2 class="company-subtitle company-history__title">
+          История
+        </h2>
+        <div class="company-history__swiper history-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <div class="history-swiper__img">
+              </div>
+              <a href="#" class="history-swiper__category">2010</a>
+              <div class="history-swiper__content swiper-no-swiping">
+                <p class="history-swiper__text">The star was born on Friday
+                  13th.
+                  It was and still is one hell of a journey, but we couldn’t be
+                  luckier.2</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="history-swiper__img">
+                <img src="img/history-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="history-swiper__category">2011</a>
+              <div class="history-swiper__content swiper-no-swiping">
+                <p class="history-swiper__text">Drag Racing was released and won
+                  not only our hearts but the love of millions of players,
+                  making it a number one hit in the Racing category.</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="history-swiper__img">
+                <img src="img/history-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="history-swiper__category">2012</a>
+              <div class="history-swiper__content swiper-no-swiping">
+                <p class="history-swiper__text">Following the success of Drag
+                  Racing with its 50 million downloads, CM Games was honored
+                  with the title of the best startup of the year.</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="history-swiper__img">
+                <img src="img/history-slide-3.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="history-swiper__category">2013</a>
+              <div class="history-swiper__content swiper-no-swiping">
+                <p class="history-swiper__text">Growing in numbers and human
+                  resources, we managed to become the top IT company of the
+                  year. Instead of bathing in praise, CM Games went on to host
+                  its first Game Dev Days conference.</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="history-swiper__img">
+                <img src="img/history-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="history-swiper__category">2014</a>
+              <div class="history-swiper__content swiper-no-swiping">
+                <p class="history-swiper__text">Following the success of Drag
+                  Racing with its 50 million downloads, CM Games was honored
+                  with the title of the best startup of the year.</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="history-swiper__img">
+                <img src="img/history-slide-3.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="history-swiper__category">2015</a>
+              <div class="history-swiper__content swiper-no-swiping">
+                <p class="history-swiper__text">Growing in numbers and human
+                  resources, we managed to become the top IT company of the
+                  year. Instead of bathing in praise, CM Games went on to host
+                  its first Game Dev Days conference.</p>
+              </div>
+            </div>
+          </div>
+          <div class="company-history__swiper-panel">
+            <div class="company-history__swiper-controls">
+              <button class="company-history__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+              <button class="company-history__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section company-team">
+      <div class="container">
+        <h2 class="company-subtitle company-team__title">
+          The team
+        </h2>
+        <div class="company-team__inner">
+          <div class="company-team__desc">
+            <p class="company-team__paragraph">
+              CM Games сегодня — это команда из более 150 профессионалов по
+              всему
+              миру.
+            </p>
+            <p class="company-team__paragraph">
+              Мы приветствуем открытое общение, выстраиваем прозрачные процессы
+              и работаем в гибком графике — так каждый из нас может решать
+              комплексные задачи, делать это комфортно и осмысленно.
+            </p>
+            <p class="company-team__paragraph">
+              Особое внимание мы уделяем развитию команды и профессиональному
+              росту сотрудников, чтобы вместе создавать уникальные продукты. А
+              еще
+              мы постоянно обмениваемся новыми знаниями, экспериментируем и не
+              боимся ошибаться.
+              Мы искренне любим свое дело и всегда рады профессионалам, готовым
+              присоединиться к нашей команде и внести свой вклад в проекты CM
+              Games.
+            </p>
+          </div>
+          <div class="company-team__img">
+            <img src="img/team-photo.jpg" alt="Team">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>
