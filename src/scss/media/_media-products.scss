@@ -23,7 +23,7 @@
   }
 
   .products-main .game-item__title {
-     max-width: 600px;
+    max-width: 600px;
   }
   .products-main .game-item.game-item_right .game-item__content {
     margin-left: 200px;
@@ -53,12 +53,62 @@
   .products-main__menu {
     width: 100%;
   }
+
+  .products-main .products-main__path .products-main__path-svg {
+    width: 1200px;
+    height: 116%;
+  }
+
+  .products-main .game-item {
+    padding-left: 180px;
+    height: 560px;
+  }
+
+  .products-main .game-item.game-item_right {
+    padding-right: 180px;
+  }
+
+  .products-main .game-item__content {
+    width: 80%;
+  }
+
+  .products-main .game-item__title {
+    max-width: 600px;
+  }
+
+  .products-main .game-item.game-item_right .game-item__img-wrapper {
+    left: 12px;
+  }
+
+  .products-main .game-item.game-item_right .game-item__img::after {
+    left: -70px;
+  }
+
+  .products-main .game-item.game-item_right .game-item__img:hover .game-item__hover-video {
+    transform: translateX(-10px);
+  }
+  .products-main .game-item__img {
+    width: 66%;
+  }
+
+  .products-main .products-main__path .prompt2 {
+    top: 523px;
+  }
+
+  .products-main .products-main__path .prompt3 {
+    top: 510px;
+  }
+
+  .products-main .products-main__path .prompt4 {
+    top: 1070px;
+  }
+
 }
 
 @media (max-width: 1280px) {
   .products-main {
-    margin-bottom: 267px;
-    margin-top: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .products-main__top {
@@ -70,9 +120,231 @@
     margin-right: 0;
     margin-bottom: 50px;
   }
+
+  .products-main .game-item__title {
+    margin-bottom: 10px;
+  }
+  .products-main .game-item__text {
+    margin-bottom: 10px;
+  }
+
+  .products-main .game-item__features-list {
+    margin-bottom: 10px;
+  }
+
+
+  .products-main .products-main__path .products-main__path-svg {
+    width: 1010px;
+    height: 117%;
+  }
+
+  .products-main .game-item {
+    height: 470px;
+  }
+
+  .products-main .game-item__img {
+    width: 50%;
+  }
+
+  .products-main .game-item__content {
+    width: 90%;
+    margin-right: 85px;
+  }
+
+  .products-main .game-item.game-item_right .game-item__content {
+    margin-left: 110px;
+  }
+
+
+  .products-main .game-item.game-item_right .game-item__img-wrapper {
+    left: -15px;
+  }
+
+  .products-main .game-item__img::after {
+    width: 433px;
+    height: 252px;
+    border-radius: 50px 0 0 50px;
+  }
+
+  .products-main .products-main__path .prompt1 {
+    top: -101px;
+  }
+
+  .products-main .products-main__path .products-main__prompt {
+    width: 40px;
+  }
+
+  .products-main .products-main__path .prompt2 {
+    left: 27%;
+    top: 424px;
+  }
+  .products-main .products-main__path .prompt3 {
+    top: 417px;
+  }
+  .products-main .products-main__path .prompt4 {
+    top: 885px;
+  }
+
+
+  .check-careers {
+    padding: 80px 0;
+  }
+
+  .check-careers .container {
+    flex-direction: column;
+  }
+
+  .check-careers__title {
+    text-align: center;
+    max-width: 80%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
 }
 
+@media (max-width: 1200px) {
+  .products-main .game-item {
+    padding-left: 150px;
+  }
+  .products-main .game-item.game-item_right {
+    padding-right: 150px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .products-main .game-item {
+    padding-left: 110px;
+  }
+  .products-main .game-item.game-item_right {
+    padding-right: 110px;
+  }
+
+  .products-main .game-item__content {
+    width: 95%;
+    margin-right: 50px;
+  }
+  .products-main .game-item.game-item_right .game-item__content {
+    margin-left: 70px;
+  }
+
+  .products-main .game-item.game-item_right .game-item__img-wrapper {
+    left: 44px;
+  }
+  .products-main .game-item.game-item_right .game-item__img::after {
+    left: -40px;
+  }
+  .products-main .game-item__img::after {
+    left: -25px;
+  }
+
+
+}
+
+@media (max-width: 1024px) {
+  .products-main__path {
+    display: none;
+  }
+  .products-main .container {
+    margin-bottom: 75px;
+  }
+  .products-main .game-item {
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0;
+    height: auto;
+  }
+
+  .products-main .products-main__items-container {
+    max-width: 1084px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .products-main .game-item__content {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .products-main .game-item__title {
+    max-width: 100%;
+  }
+  .products-main .game-item.game-item_right .game-item__content {
+    margin-left: 0;
+  }
+
+  .products-main .game-item.game-item_right {
+    padding-right: 0;
+  }
+
+  .products-main .game-item.game-item_right .game-item__img {
+    order: 2;
+  }
+
+  .products-main .game-item.game-item_right .game-item__img:hover .game-item__hover-video {
+    transform: translateX(0);
+  }
+
+  .products-main .game-item__img {
+    width: 55%;
+  }
+  .products-main .game-item__img-wrapper {
+    display: none;
+  }
+
+  .products-main .game-item__hover-video {
+    padding-top: 49%;
+    z-index: 999;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .products-main .game-item.game-item_right .game-item__hover-video {
+    transform: translateX(0);
+  }
+
+  .products-main .game-item__img::after {
+    opacity: 1;
+    border-radius: 25px;
+    width: 111%;
+    height: 120%;
+  }
+
+  .products-main .game-item.game-item_right .game-item__img::after {
+    left: -25px;
+  }
+
+  .products-main .game-item.game-item_right .game-item__content {
+    margin-bottom: 50px;
+  }
+
+
+  .articles .articles-swiper .swiper-slide:hover img {
+    transform: scale(1.05);
+  }
+
+
+  .check-careers__title {
+    max-width: 90%;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+
+  .check-careers__btn {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 18px 35px;
+    border-radius: 50px;
+  }
+}
+
+
 @media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+
   .products-main__title {
     font-size: 70px;
   }
@@ -81,4 +353,38 @@
     line-height: 28px;
   }
 
+  .products-main .game-item__title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+
+  .products-main .game-item__text {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+
+  .products-main .game-item__img::after {
+    display: none;
+  }
+  .products-main .game-item__img {
+    width: 100%;
+  }
+
+
+  .products-main .game-item {
+    margin-bottom: 60px;
+  }
+
+  .check-careers {
+    padding: 50px 0;
+  }
+
+  .check-careers__title {
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 35px;
+  }
 }

@@ -29,9 +29,11 @@
 // Страницы
 @import "./pages/company";
 @import "./pages/products";
+@import "./pages/one-product";
 
-// Компоненты
+// Компоненты и медиа
 @import "./components/header";
 @import "./components/footer";
 @import "media/media-company";
 @import "media/media-products";
+@import "media/media-one-product";

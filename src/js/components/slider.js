@@ -1,13 +1,10 @@
 import { Swiper } from "swiper/bundle";
 
 
-// Инициализация слайдеров
-const swiper = new Swiper('.swiper', {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction'
-  },
 
+
+// Инициализация слайдеров
+const captionSwiper = new Swiper('.caption-swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -125,15 +122,15 @@ const swiperArticles = new Swiper('.articles__swiper', {
     prevEl: '.articles__swiper-button-prev'
   },
 
-  slidesPerView: 1,
-  spaceBetween: 10,
   noSwiping: true,
   noSwipingClass: 'swiper-no-swiping',
 
+  slidesPerView: 1,
+  spaceBetween: 25,
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 25
     },
     1024: {
       slidesPerView: 3,
@@ -145,3 +142,29 @@ const swiperArticles = new Swiper('.articles__swiper', {
     },
   }
 });
+
+
+const swiperGallery = new Swiper('.product-gallery__swiper', {
+  navigation: {
+    nextEl: '.product-gallery__swiper-button-next',
+    prevEl: '.product-gallery__swiper-button-prev'
+  },
+
+  spaceBetween: 210,
+
+  pagination: {
+    el: '.product-gallery__pagination',
+    clickable: 'true',
+  },
+
+});
+
+
+
+
+
+
+
+
+
+

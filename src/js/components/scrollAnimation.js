@@ -17,23 +17,89 @@ const prompt4 = document.querySelector('.prompt4')
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 gsap.defaults({ease: "none"});
 
-gsap.to('.path-dot', {
-  scrollTrigger: {
-    trigger: pathDot,
-    start: "top 58%",
-    end: '+=5480px',
-    scrub: 1,
-  },
-  duration: 8,
-  immediateRender: true,
-  motionPath: {
-    path: pathLine,
-    align: pathLine,
-    alignOrigin: [0.5, 0.5],
-    start: 1,
-    end: 0
-  },
-})
+
+if (window.matchMedia("(min-width: 1651px)").matches) {
+  gsap.to('.path-dot', {
+    scrollTrigger: {
+      trigger: pathDot,
+      start: "top 59%",
+      end: '+=5480px',
+      scrub: 1,
+    },
+    duration: 8,
+    immediateRender: true,
+    motionPath: {
+      path: pathLine,
+      align: pathLine,
+      alignOrigin: [0.5, 0.5],
+      start: 1,
+      end: 0,
+    },
+  })
+}
+
+if (window.matchMedia("(max-width: 1650px)").matches) {
+  gsap.to('.path-dot', {
+    scrollTrigger: {
+      trigger: pathDot,
+      start: "top 72%",
+      end: '+=5000px',
+      scrub: 1,
+    },
+    duration: 15,
+    immediateRender: true,
+    motionPath: {
+      path: pathLine,
+      align: pathLine,
+      alignOrigin: [0.5, 0.5],
+      start: 1,
+      end: 0
+    },
+  })
+}
+if (window.matchMedia("(max-width: 1440px)").matches) {
+  gsap.to('.path-dot', {
+    scrollTrigger: {
+      trigger: pathDot,
+      start: "top 72%",
+      end: '+=4700px',
+      scrub: 1,
+    },
+    duration: 15,
+    immediateRender: true,
+    motionPath: {
+      path: pathLine,
+      align: pathLine,
+      alignOrigin: [0.5, 0.5],
+      start: 1,
+      end: 0
+    },
+  })
+}
+if (window.matchMedia("(max-width: 1280px)").matches) {
+  gsap.to('.path-dot', {
+    scrollTrigger: {
+      trigger: pathDot,
+      start: "top 85%",
+      end: '+=4000px',
+      scrub: 1,
+    },
+    duration: 15,
+    immediateRender: true,
+    motionPath: {
+      path: pathLine,
+      align: pathLine,
+      alignOrigin: [0.5, 0.5],
+      start: 1,
+      end: 0
+    },
+  })
+}
+
+
+
+
+
 
 const trackCoord = (element, corrX, corrY, isReverse) => {
   let x = element.getBoundingClientRect().x
