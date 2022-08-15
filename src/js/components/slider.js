@@ -1,8 +1,6 @@
 import { Swiper } from "swiper/bundle";
 
 
-
-
 // Инициализация слайдеров
 const captionSwiper = new Swiper('.caption-swiper', {
   navigation: {
@@ -185,12 +183,52 @@ const swiperHistory = new Swiper('.company-history__swiper', {
       slidesPerView: 4,
     },
   }
-
 });
 
+const swiperOffice = new Swiper('.company-office__swiper', {
+  navigation: {
+    nextEl: '.company-office__swiper-button-next',
+    prevEl: '.company-office__swiper-button-prev'
+  },
+  slidesPerView: 1.41,
+  centeredSlides: true,
+  spaceBetween: 35,
+  initialSlide: 1,
 
+  pagination: {
+    el: '.company-office__pagination',
+    type: 'fraction',
+  },
+});
 
+const swiperWork = new Swiper('.company-work__swiper', {
+  navigation: {
+    nextEl: '.company-work__swiper-button-next',
+    prevEl: '.company-work__swiper-button-prev'
+  },
 
+  noSwiping: true,
+  noSwipingClass: 'swiper-no-swiping',
+  observer: true,
 
+  slidesPerView: 1,
+  spaceBetween: 25,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 25
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1280: {
+      spaceBetween: 42,
+      slidesPerView: 4,
+    },
+  }
+});
+
+export { swiperWork }
 
 

@@ -1,0 +1,116 @@
+@media (max-width: 1650px) {
+  .company .company-features {
+    padding: 100px 0 0 0;
+    background-size: auto 103%;
+    width: 96%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .company .company-indicators__list-item {
+    text-align: center;
+
+    span {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  .company .company-features__list-title {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .company .company-features__list {
+    justify-content: space-around;
+  }
+  .company .company-history .history-swiper__img::before {
+    width: 100%;
+  }
+
+  .company .company-team__inner {
+    flex-direction: column;
+  }
+  .company .company-team__desc {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .company .company-team__img {
+    transform: translateY(0);
+    align-self: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .company .company-caption__title {
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 35px;
+  }
+  .company .company-caption__desc {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .company .company-indicators__list-item {
+    font-size: 40px;
+    line-height: 120px;
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .company .company-features__list-title h2 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  .company .company-features__item-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .company .company-features {
+    padding: 60px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .company .company-indicators__list-item {
+    margin-bottom: 50px;
+    width: 48%;
+  }
+
+  .company .company-features {
+    width: 100%;
+    border-radius: 0 0 0 0;
+  }
+
+  .company .company-features__list-item:not(.company-features__list-title) {
+    width: 46%;
+    margin-bottom: 58px;
+  }
+  .company .company-features__list {
+    justify-content: space-between;
+  }
+
+  .company .company-history .history-swiper__img::before {
+    height: 21px;
+  }
+}
+
+@media (max-width: 520px) {
+  .company .company-indicators__list {
+    flex-direction: column;
+  }
+  .company .company-indicators__list-item {
+    width: 90%;
+  }
+
+  .company .company-features__list-item:not(.company-features__list-title) {
+    width: 100%;
+    margin-bottom: 58px;
+  }
+}
