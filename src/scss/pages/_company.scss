@@ -310,13 +310,13 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 0 170px;
+        padding: 0 180px;
       }
 
 
       .company-office__pagination {
         position: static;
-        width: 7%;
+        width: 45px;
         @include mudkty-regular;
         font-size: 18px;
         line-height: 28px;
@@ -395,6 +395,7 @@
   }
 
   .company-work {
+    margin-bottom: 15px;
 
     &__top {
       display: flex;
@@ -536,10 +537,10 @@
   }
 
   .company-global {
-    background: url("../img/global-bg.jpg") no-repeat 0 53%;
+    background: url("../img/global-bg.jpg") no-repeat 0 56%;
     background-size: cover;
     height: 970px;
-    padding-top: 185px;
+    padding-top: 8%;
 
     &__title {
       @include montserrat-bold;
@@ -562,7 +563,6 @@
     .container {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
     }
 
     &__title {
