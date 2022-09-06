@@ -24,6 +24,9 @@
 .site-container {
   position: relative;
   overflow-x: hidden;
+  &._disabled {
+    overflow-x: visible;
+  }
 }
 
 // Страницы
@@ -31,11 +34,16 @@
 @import "./pages/products";
 @import "./pages/one-product";
 @import "./pages/company";
+@import "./pages/blog";
+@import "./pages/careers";
 
 // Компоненты и медиа
 @import "./components/header";
 @import "./components/footer";
+@import "./components/careers-modals";
 @import "media/media-home";
 @import "media/media-products";
 @import "media/media-one-product";
 @import "media/media-company";
+@import "media/media-blog";
+@import "media/media-careers";

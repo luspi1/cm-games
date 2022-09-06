@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Blog'
+})
+
+<body class="page__body">
+
+<div class="search-overlay"></div>
+<div class="site-container _disabled">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+  <main class="main blog">
+    <section class="section blog-caption">
+      <div class="container">
+        <div class="blog-caption__img">
+          <img src="img/blog-main.jpg" alt="blog main image">
+        </div>
+        <ul class="blog-caption__menu">
+          <li>
+            <button class="blog-caption__menu-btn">All</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn">Art</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn">Development</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn">QA</button>
+          </li>
+          <li>
+            <button
+              class="blog-caption__menu-btn blog-caption__menu-btn_active">Game
+              Design
+            </button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn">Audio Design</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn">News</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn">Interviews</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn">Bonuses</button>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section class="blog-content">
+      <div class="container">
+        <article class="blog-item">
+          <div class="blog-item__socials-wrapper">
+            <ul class="blog-item__socials">
+              <li>
+                <a href="#" class="blog-item__socials-link">
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path class="blog-path__bg" opacity="0.5"
+                          d="M17.0004 33.4H16.7004C7.70039 33.4 0.400391 26.1 0.400391 17.1V16.8C0.400391 7.79999 7.70039 0.5 16.7004 0.5H17.0004C26.0004 0.5 33.3004 7.79999 33.3004 16.8V17.1C33.3004 26.1 26.0004 33.4 17.0004 33.4Z"
+                          fill="#A5B4C4"/>
+                    <path
+                      d="M7.2998 21.6C7.3998 21.4 7.3998 21.1 7.4998 20.9C7.6998 20.2 7.99981 19.5 8.59981 19C9.99981 17.6 11.2998 16.3 12.6998 14.9C14.6998 13 17.9998 13.4 19.4998 15.8V15.9C19.1998 16.2 18.9998 16.5 18.6998 16.7C18.2998 17.1 17.6998 17 17.1998 16.6C16.6998 16.2 16.1998 16 15.5998 16C14.9998 16 14.4998 16.2 14.0998 16.6C12.7998 17.9 11.4998 19.2 10.1998 20.5C9.2998 21.4 9.3998 22.8 10.1998 23.6C11.0998 24.5 12.3998 24.5 13.2998 23.6C14.0998 22.8 14.9998 22 15.7998 21.1C15.8998 21 15.9998 20.9 16.1998 21C16.9998 21.3 17.7998 21.4 18.6998 21.2H18.7998C18.6998 21.3 18.6998 21.3 18.5998 21.4C17.3998 22.6 16.1998 23.8 14.9998 25C14.1998 25.8 13.2998 26.2 12.2998 26.4H12.1998C11.8998 26.4 11.6998 26.4 11.3998 26.4H11.2998C9.4998 26.1 8.19981 25.1 7.59981 23.4C7.49981 23.1 7.3998 22.7 7.3998 22.4C7.2998 22.1 7.2998 21.9 7.2998 21.6Z"
+                      fill="white"/>
+                    <path
+                      d="M26.3002 12.3C26.2002 12.6 26.2002 13 26.1002 13.3C25.9002 13.9 25.6002 14.5 25.1002 14.9C23.7002 16.3 22.4002 17.7 21.0002 19C19.3002 20.7 16.4002 20.6 14.8002 18.8C14.6002 18.6 14.4002 18.3 14.2002 18C14.5002 17.7 14.8002 17.4 15.1002 17.2C15.5002 16.9 16.1002 16.9 16.5002 17.3C16.9002 17.6 17.3002 17.9 17.8002 17.9C18.5002 18 19.2002 17.8 19.7002 17.3C20.5002 16.5 21.3002 15.7 22.1002 14.9C22.6002 14.4 23.1002 14 23.5002 13.5C24.1002 12.9 24.3002 12.1 24.1002 11.3C23.9002 10.5 23.3002 9.89999 22.5002 9.79999C21.7002 9.59999 21.0002 9.80002 20.5002 10.4C19.7002 11.2 18.8002 12.1 18.0002 12.9C17.9002 13 17.8002 13 17.7002 13C16.9002 12.7 16.0002 12.6 15.1002 12.7C15.1002 12.7 15.1002 12.6 15.0002 12.6C15.1002 12.6 15.1002 12.6 15.2002 12.5C16.4002 11.3 17.6002 10.1 18.8002 8.90002C19.6002 8.10002 20.5002 7.7 21.5002 7.5H21.6002C21.9002 7.5 22.1002 7.5 22.4002 7.5H22.5002C24.3002 7.7 25.8002 8.99999 26.3002 10.8C26.4002 11 26.4002 11.3 26.5002 11.5C26.3002 11.8 26.3002 12 26.3002 12.3Z"
+                      fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="blog-item__socials-link">
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path class="blog-path__bg" opacity="0.5"
+                          d="M17.1 33.7H16.8C7.8 33.7 0.5 26.4 0.5 17.4V17.1C0.5 8.09998 7.8 0.799988 16.8 0.799988H17.1C26.1 0.799988 33.4 8.09998 33.4 17.1V17.4C33.3 26.4 26 33.7 17.1 33.7Z"
+                          fill="#A5B4C4"/>
+                    <path
+                      d="M23 22.6L23.7 18.1H19.3V15.1C19.3 13.9 19.9 12.6 21.9 12.6H23.9V8.69995C23.9 8.69995 22.1 8.40002 20.4 8.40002C16.8 8.40002 14.5 10.6 14.5 14.5V18H10.5V22.5H14.5V33.5C15.3 33.6 16.1 33.7 17 33.7C17.8 33.7 18.7 33.6 19.5 33.5V22.5H23V22.6Z"
+                      fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="blog-item__socials-link">
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path class="blog-path__bg" opacity="0.5"
+                          d="M17.3998 33.4H17.0998C8.09981 33.4 0.799805 26.1 0.799805 17.1V16.8C0.799805 7.80005 8.09981 0.5 17.0998 0.5H17.3998C26.3998 0.5 33.6998 7.80005 33.6998 16.8V17.1C33.6998 26.1 26.3998 33.4 17.3998 33.4Z"
+                          fill="#A5B4C4"/>
+                    <path
+                      d="M14.0996 25.6C21.7996 25.6 25.9996 19.2 25.9996 13.7C25.9996 13.5 25.9996 13.3 25.9996 13.2C26.7996 12.6 27.4996 11.9 28.0996 11C27.3996 11.3 26.4996 11.6 25.6996 11.7C26.5996 11.2 27.1996 10.4 27.4996 9.40002C26.6996 9.90002 25.7996 10.2 24.7996 10.4C23.9996 9.60002 22.9996 9.09998 21.6996 9.09998C19.3996 9.09998 17.4996 11 17.4996 13.3C17.4996 13.6 17.4996 13.9 17.5996 14.3C14.0996 14.1 10.9996 12.5 8.9996 9.90002C8.5996 10.5 8.3996 11.2 8.3996 12C8.3996 13.4 9.09961 14.7 10.2996 15.5C9.59961 15.5 8.9996 15.3 8.3996 15C8.3996 15 8.3996 15 8.3996 15.1C8.3996 17.1 9.79961 18.8 11.7996 19.2C11.3996 19.3 11.0996 19.3 10.6996 19.3C10.3996 19.3 10.1996 19.3 9.8996 19.2C10.3996 20.9 11.9996 22.1 13.7996 22.1C12.3996 23.2 10.5996 23.9 8.59961 23.9C8.29961 23.9 7.89961 23.9 7.59961 23.8C9.49961 24.9 11.6996 25.6 14.0996 25.6Z"
+                      fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="blog-item__content">
+            <h1 class="blog-item__title">
+              Геймдизайн VR-игр: особенности и рекомендации
+            </h1>
+            <div class="blog-item__info">
+              <a class="blog-item__info-category" href="#">Game Design</a>
+              <span class="blog-item__info-date">08 июня 2022</span>
+            </div>
+
+            <p class="blog-item__main-text">
+              Меня зовут Антон Суббота, работаю гейм-дизайнером 7 лет. В этой
+              статье расскажу про особенности VR-игр на примере нашего большого
+              VR
+              проекта Into the Radius. На нем работаю главным гейм-дизайнером
+              последние 2 года, так что подробностей будет много!
+            </p>
+
+            <p class="blog-item__text">
+              Статья будет полезна для тех, кто хочет лучше разобраться в
+              разработке VR-игр, сравнить их с обычными играми, узнать
+              неочевидные
+              особенности и как адаптировать их под VR.
+            </p>
+            <p class="blog-item__text">
+              В отличии от «плоских» игр (на мониторе или телевизоре), VR-игры
+              работают иначе. У игрока есть шлем, через который он смотрит в мир
+              игры, и контроллеры, которые повторяют движения его физических
+              рук.
+              В таких играх всё происходящее видно от лица игрока и
+              воспринимается
+              более личным. Но это создает новые и необычные проблемы для
+              разработчиков таких игр.
+            </p>
+
+            <h3 class="blog-item__subtitle">
+              Отличия VR игр от обычных игр</h3>
+
+            <p class="blog-item__text blog-item__bulleted-text">
+              Из-за этого крайне сложно делать кат-сцены, так как классические
+              приёмы неприменимы. Например, пролет камер, смена ракурса,
+              цветофильтры. Игрока может укачивать.
+            </p>
+
+            <p class="blog-item__text">
+              Виртуальные руки повторяют движения физических рук.
+            </p>
+
+            <p class="blog-item__text blog-item__bulleted-text">
+              Благодаря конструкции, VR контроллеры передают взаимодействие с
+              окружающим миром игры более правдоподобно, нежели клавиатура или
+              геймпад.
+            </p>
+            <p class="blog-item__text blog-item__bulleted-text">
+              Например, у VR-контроллеров есть специальная кнопка для хватания.
+              Нажатие довольно близко к реальному хватанию. Пускай упрощение, но
+              достаточное для создания правильных ощущений.
+            </p>
+
+            <div class="swiper blog-item__swiper">
+              <div class="swiper-wrapper blog-item__swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="blog-item__img">
+                    <img src="img/blog-item-slide1.jpg" alt="Into the Radius">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item__img">
+                    <img src="img/blog-item-slide1.jpg" alt="Into the Radius">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item__img">
+                    <img src="img/blog-item-slide1.jpg" alt="Into the Radius">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item__img">
+                    <img src="img/blog-item-slide1.jpg" alt="Into the Radius">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item__img">
+                    <img src="img/blog-item-slide1.jpg" alt="Into the Radius">
+                  </div>
+                </div>
+              </div>
+              <button class="blog-item__swiper-button-prev">
+                <svg width="45" height="85" viewBox="0 0 45 85" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M43.7804 85C43.9218 85 44.0632 84.932 44.2046 84.8641C44.4167 84.6601 44.4167 84.2521 44.2046 84.0482L1.43166 42.9844L44.8409 0.968815C45.053 0.764855 45.053 0.356929 44.8409 0.152969C44.6288 -0.0509898 44.2046 -0.0509898 43.9925 0.152969L0.159073 42.5765C-0.0530243 42.7804 -0.0530243 43.1884 0.159073 43.3923L43.3562 84.8641C43.4269 84.932 43.639 85 43.7804 85Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+              <button class="blog-item__swiper-button-next">
+                <svg width="45" height="85" viewBox="0 0 45 85" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.21956 85C1.07816 85 0.936759 84.932 0.795361 84.8641C0.583263 84.6601 0.583263 84.2521 0.795361 84.0482L43.5683 42.9844L0.159073 0.968815C-0.0530243 0.764855 -0.0530243 0.356929 0.159073 0.152969C0.37117 -0.0509898 0.795374 -0.0509898 1.00747 0.152969L44.8409 42.5765C45.053 42.7804 45.053 43.1884 44.8409 43.3923L1.64376 84.8641C1.50236 84.932 1.36096 85 1.21956 85Z"
+                    fill="#D2D6DC"/>
+                </svg>
+
+              </button>
+            </div>
+
+            <h3 class="blog-item__subtitle">
+              Отличия VR игр от обычных игр</h3>
+
+            <p class="blog-item__text">
+              Очевидно, что это не все особенности, так как я работал только над
+              шутером,то в других жанрах вылезут новые проблемы. К тому же,
+              что-то
+              точно упустил.Но надеюсь, теперь вам понятно, насколько сильно
+              VR-игры другие, и что они требуют других подходов для разработки
+              игр. Конечно же, что-то можно взятьиз «плоских» игр, но в VR очень
+              много уникальных моментов.
+            </p>
+
+            <p class="blog-item__text">
+              Многие вещи приходится переизобретать — интерфейсы, взаимодействие
+              с
+              окружением, механики перемещения. Нельзя вслепую брать устоявшиеся
+              элементы из обычных игр и добавлять в VR-игру. Много придется
+              прототипировать и экспериментировать, чтобы встроить механики в
+              виртуальное пространство гармонично. Потому что часто механики на
+              бумаге будут ощущаться иначев VR-пространстве.
+            </p>
+
+            <p class="blog-item__text">
+              Другая важная вещь — VR-игры гораздо ближе к игроку, любые страхи
+              и
+              физиологические особенности вылезают на первый план. Поэтому важно
+              тестировать игру на разных людях, чтобы как можно раньше
+              обнаружить
+              проблемные места.
+            </p>
+
+            <a class="blog-item__more-btn" href="#">
+              read more
+              <svg width="39" height="21" viewBox="0 0 39 21" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.7996 9H0.599609V11.3999H35.7996V9Z" fill="white"/>
+                <path
+                  d="M27.6 20.2L26 18.3999L34.8 10.2L26 2L27.6 0.199951L38.4 10.2L27.6 20.2Z"
+                  fill="white"/>
+              </svg>
+            </a>
+
+          </div>
+        </article>
+        <aside class="blog-sidebar">
+          <div class="blog-sidebar__item">
+            <div class="blog-sidebar__img">
+              <img src="img/blog-sidebar1.jpg" alt="sidebar-img">
+            </div>
+            <p class="blog-sidebar__text">
+              How to draw icons of different complexity levels
+            </p>
+          </div>
+          <div class="blog-sidebar__item blog-sidebar__category-item">
+            <a href="#">Careers</a>
+            <p class="blog-sidebar__category-text">Character interaction
+              designer (mental health)</p>
+            <p class="blog-sidebar__category-sub">Location, full-time</p>
+          </div>
+          <div class="blog-sidebar__item">
+            <div class="blog-sidebar__img">
+              <img src="img/blog-sidebar2.jpg" alt="sidebar-img">
+            </div>
+            <p class="blog-sidebar__text">
+              Оrdering basic gifts and common events from mass...
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="blog__more-articles">
+      <div class="container">
+        <h2 class="more-articles__title">Еще статьи на эту тему</h2>
+        <div class="blog-caption__swiper more-articles-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="more-articles-swiper__img">
+                <img src="img/work-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="more-articles-swiper__category">Events</a>
+              <div class="more-articles-swiper__content swiper-no-swiping">
+                <p class="more-articles-swiper__text">Transparency is an
+                  essential part of our values</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="more-articles-swiper__img">
+                <img src="img/work-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="more-articles-swiper__category">Events</a>
+              <div class="more-articles-swiper__content swiper-no-swiping">
+                <p class="more-articles-swiper__text">We love to host quests and
+                  apontaneous events</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="more-articles-swiper__img">
+                <img src="img/work-slide-3.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="more-articles-swiper__category">Bonuses</a>
+              <div class="more-articles-swiper__content swiper-no-swiping">
+                <p class="more-articles-swiper__text">How to draw icons of
+                  different
+                  complexity levels</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="more-articles-swiper__img">
+                <img src="img/work-slide-4.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="more-articles-swiper__category">Events</a>
+              <div class="more-articles-swiper__content swiper-no-swiping">
+                <p class="more-articles-swiper__text">Ordering basic gifts and
+                  common events from mass...</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="more-articles-swiper__img">
+                <img src="img/work-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="more-articles-swiper__category">Events</a>
+              <div class="more-articles-swiper__content swiper-no-swiping">
+                <p class="more-articles-swiper__text">Transparency is an
+                  essential part of our values</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="more-articles-swiper__img">
+                <img src="img/work-slide-3.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="more-articles-swiper__category">Bonuses</a>
+              <div class="more-articles-swiper__content swiper-no-swiping">
+                <p class="more-articles-swiper__text">How to draw icons of
+                  different
+                  complexity levels</p>
+              </div>
+            </div>
+          </div>
+          <div class="more-articles-swiper__swiper-panel">
+            <button class="more-articles-swiper__btn">
+              Все статьи
+            </button>
+            <div class="more-articles-swiper__swiper-controls">
+              <button class="more-articles-swiper__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+              <button class="more-articles-swiper__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>

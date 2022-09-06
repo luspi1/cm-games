@@ -1,0 +1,702 @@
+// Главный экрна модалки
+.careers-modal {
+  position: fixed;
+  top: 0;
+  background: #FFFFFF;
+  width: 61.5%;
+  height: 100%;
+  right: 0;
+  transition: all .3s;
+  padding-top: 50px;
+  z-index: -1;
+  opacity: 0;
+  overflow: auto;
+  visibility: hidden;
+
+  &__wrapper {
+    padding: 0 93px 0 70px;
+  }
+
+  &._active {
+    z-index: 999999;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__back-btn {
+    @include mudkty-regular;
+    font-size: 22px;
+    line-height: 32px;
+    color: #9196A0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+    padding-left: 40px;
+    transition: all .3s;
+
+    &:hover {
+      color: #00C9FF;
+    }
+
+    &:hover svg path {
+      fill: #00C9FF;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -10px;
+
+      path {
+        transition: all .3s;
+      }
+    }
+  }
+
+
+  &__title {
+    @include mudkty-regular;
+    font-size: 50px;
+    line-height: 73px;
+    color: #1C283A;
+    margin-bottom: 35px;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    margin-right: 60px;
+    width: 360px;
+
+    p {
+      @include montserrat-light;
+      font-size: 16px;
+      line-height: 34px;
+      color: #1C283A;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__desc-btn {
+    @include montserrat-extra;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 23px 42px;
+    background: #00B9EE;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 27px;
+
+    &:hover {
+      background: #00C9FF;
+    }
+  }
+
+  &__rec-btn {
+    background: #ffffff;
+    color: #A5B4C4;
+    border: 1px solid #A5B4C4;
+    padding: 22px 33px;
+
+    &:hover {
+      color: #FFFFFF;
+      border-color: transparent;
+      background: #00C9FF;
+    }
+  }
+
+  &__lists {
+    width: 50%;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+
+    li {
+      @include montserrat-regular;
+      font-size: 16px;
+      line-height: 28px;
+      color: #1C283A;
+    }
+
+    .careers-modal__list-title {
+      @include montserrat-bold;
+    }
+  }
+
+  p.careers-modal__list-title {
+    @include montserrat-bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1C283A;
+  }
+
+
+  &__list-text {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -25px;
+      top: 13px;
+      background-color: #00B9EE;
+      width: 16px;
+      height: 1px;
+    }
+  }
+
+  &__materials {
+    background: #F3F3F3;
+    padding: 46px 0;
+  }
+
+  &__swiper-title {
+    @include montserrat-bold;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: #1C283A;
+  }
+
+  .careers-modals-swiper {
+    overflow: hidden;
+
+
+    .swiper-wrapper {
+      margin-bottom: 35px;
+    }
+
+    .swiper-slide {
+      transition: all .3s;
+      border-radius: 10px;
+      padding-bottom: 25px;
+
+      &__wrapper {
+        padding: 0 20px 0 17px;
+      }
+
+      &:hover {
+        background-color: #ffffff;
+      }
+    }
+
+
+    .swiper-slide:hover .careers-modals-swiper__text {
+      opacity: 1;
+      z-index: 20;
+      visibility: visible;
+    }
+
+    .swiper-slide:hover .careers-modals-swiper__caption {
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+    }
+
+    &__category {
+      @include mudkty-light;
+      font-size: 17px;
+      line-height: 25px;
+      color: #00B7F1;
+      display: inline-block;
+      margin-top: 22px;
+      margin-bottom: 5px;
+    }
+
+    &__content {
+      min-height: 100px;
+      position: relative;
+    }
+
+    &__caption {
+      max-width: 377px;
+      font-size: 22px;
+      line-height: 32px;
+      color: #1C283A;
+      transition: all .3s;
+    }
+
+    &__text {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all .3s;
+      @include montserrat-regular;
+      font-size: 16px;
+      line-height: 28px;
+      color: #000000;
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+    }
+
+    &__swiper-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__swiper-controls {
+      height: 35px;
+      display: flex;
+      align-items: center;
+    }
+
+
+    &__swiper-button-prev,
+    &__swiper-button-next {
+      background: none;
+      border: none;
+      width: 55px;
+      height: 25px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &__swiper-button-next {
+      margin-left: 5px;
+    }
+
+    &__swiper-button-prev svg path,
+    &__swiper-button-next svg path {
+      transition: all .3s;
+    }
+
+    &__swiper-button-prev:hover svg path,
+    &__swiper-button-next:hover svg path {
+      fill: #00B9EE;
+    }
+
+    &__btn {
+      background: none;
+      border: none;
+      @include mudkty-medium;
+      font-size: 22px;
+      line-height: 33px;
+      color: $secondary;
+      cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        color: #00C9FF;
+      }
+    }
+
+
+  }
+
+
+}
+
+.careers-modal__main {
+  display: none;
+
+  &._active {
+    display: block;
+  }
+}
+
+// Форма модалки
+
+.careers-form {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  display: none;
+
+  &._active {
+    display: block;
+  }
+
+  &__form {
+    padding-bottom: 40px;
+
+  }
+
+
+  &__back-btn {
+    @include mudkty-regular;
+    font-size: 22px;
+    line-height: 32px;
+    color: #9196A0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+    padding-left: 40px;
+    transition: all .3s;
+
+    &:hover {
+      color: #00C9FF;
+    }
+
+    &:hover svg path {
+      fill: #00C9FF;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -10px;
+
+      path {
+        transition: all .3s;
+      }
+    }
+  }
+
+  &__title {
+    @include mudkty-regular;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #1C283A;
+    margin-bottom: 45px;
+  }
+
+  &__input {
+    padding: 20px 20px 20px 0;
+    width: 100%;
+    @include montserrat-regular;
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px solid #A5B4C4;
+    background: none;
+    transition: all .3s;
+    outline: none;
+    margin-bottom: 45px;
+
+    &:focus {
+      border-bottom: 1px solid #00B7F1;
+    }
+
+
+    &::placeholder {
+      @include montserrat-light;
+      color: #A5B4C4;
+    }
+  }
+
+  &__file-inputs {
+    display: flex;
+    align-items: flex-end;
+
+    .careers-form__link-wrapper {
+      margin-right: 25px;
+      position: relative;
+
+      svg {
+        position: absolute;
+        right: -13px;
+        top: 20px;
+
+        rect {
+          transition: all .3s;
+        }
+      }
+
+      input:focus + svg rect {
+        fill: #00B7F1;
+      }
+
+    }
+
+    .careers-form__link-wrapper,
+    .careers-form__input-file {
+      width: 50%;
+    }
+  }
+
+
+  .careers-form__input-file {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("../img/download-icon.png") no-repeat;
+    }
+  }
+
+  .careers-form__file-text {
+    @include montserrat-light;
+    color: #A5B4C4;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding-right: 15px;
+  }
+
+  .careers-form__input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+
+  &__textarea-wrapper {
+    margin-top: -16px;
+    background: url("../img/svg/careers-textarea-bg.svg") no-repeat 0 75px;
+    margin-bottom: 20px;
+  }
+
+  &__input-textarea {
+    resize: none;
+    width: 100%;
+    line-height: 60px;
+    height: 360px;
+    border-bottom: none;
+
+    overflow-y: hidden;
+
+    &:focus {
+      border-bottom: none;
+    }
+  }
+
+  &__checkbox-wrapper {
+    margin-bottom: 46px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    & + label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+      @include montserrat-regular;
+      font-size: 20px;
+      line-height: 24px;
+      color: #666666;
+    }
+
+    & + label::before {
+      content: '';
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #666666;
+      margin-right: 19px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 15px 15px;
+    }
+
+    &:checked + label::before {
+      background-image: url("../img/careers-mark.png");
+    }
+  }
+
+  &__submit-btn {
+    background: #FFFFFF;
+    border: 1px solid #A5B4C4;
+    border-radius: 50px;
+    @include montserrat-extra;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #A5B4C4;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 23px 117px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $secondary;
+      border-color: transparent;
+    }
+
+  }
+
+
+}
+
+
+// Адаптив
+
+@media (max-width: 1650px) {
+  .careers-modal__content {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1280px) {
+  .careers-modal__wrapper {
+    padding: 0 30px 0 30px;
+  }
+
+  .careers-modal {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .careers-modal {
+    width: 75%;
+  }
+
+  .careers-modal__title {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 20px;
+  }
+
+  .careers-modal__desc p {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  .careers-modal__desc-btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 25px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+  }
+
+  .careers-modal__rec-btn {
+    padding: 14px 18px;
+  }
+
+  .careers-modal__desc {
+    margin-right: 50px;
+    width: 278px;
+  }
+
+  .careers-modal__list li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .careers-modal__list {
+    margin-bottom: 20px;
+  }
+
+  .careers-modal p.careers-modal__list-title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .careers-form__title {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
+
+
+  .careers-form__checkbox + label {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  .careers-modal {
+    width: 100%;
+  }
+
+  .careers-modal__title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .careers-modal__content {
+    flex-direction: column;
+  }
+
+  .careers-modal__desc {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .careers-modal__lists {
+    width: 100%;
+    padding-left: 26px;
+  }
+
+  .careers-form__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .careers-form__file-inputs {
+    flex-direction: column;
+  }
+
+  .careers-form__file-inputs .careers-form__link-wrapper svg {
+    display: none;
+  }
+
+  .careers-form__file-inputs .careers-form__link-wrapper {
+    margin-right: 0;
+  }
+
+  .careers-form__file-inputs .careers-form__link-wrapper,
+  .careers-form__file-inputs .careers-form__input-file {
+    width: 100%;
+  }
+
+  .careers-form__back-btn {
+    margin-bottom: 40px;
+  }
+
+  .careers-form__submit-btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 100px;
+  }
+
+}
