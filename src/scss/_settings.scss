@@ -20,6 +20,16 @@ body {
   }
 }
 
+main {
+  min-height: calc(100vh - 273px);
+  @media (max-width: 1024px) {
+    min-height: calc(100vh - 266px);
+  }
+  @media (max-width: 768px) {
+    min-height: calc(100vh - 348px);
+  }
+}
+
 
 
 ul,
