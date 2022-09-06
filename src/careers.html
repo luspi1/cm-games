@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Careers'
+})
+
+<body class="page__body">
+
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+  <main class="main careers-page">
+    @include('partials/careers-modals.html')
+    <section class="section careers-page__caption careers-caption">
+      <div class="container">
+        <h1 class="careers-caption__title">Careers</h1>
+        <div class="careers-caption__inner">
+          <ul class="careers-caption__list">
+            <li class="careers-caption__list-item">
+              <div class="careers-caption__item-top">
+                <h3 class="careers-caption__item-title">Lead unity developer</h3>
+                <p class="careers-caption__item-text">Location, full-time</p>
+              </div>
+              <button class="careers-caption__item-btn" data-career="career1">More info +</button>
+            </li>
+            <li class="careers-caption__list-item">
+              <div class="careers-caption__item-top">
+                <h3 class="careers-caption__item-title">Art lead</h3>
+                <p class="careers-caption__item-text">Location, full-time</p>
+              </div>
+              <button class="careers-caption__item-btn" data-career="career2">More info +</button>
+            </li>
+            <li class="careers-caption__list-item">
+              <div class="careers-caption__item-top">
+                <h3 class="careers-caption__item-title">Character interaction designer(mental health)</h3>
+                <p class="careers-caption__item-text">Location, full-time</p>
+              </div>
+              <button class="careers-caption__item-btn" data-career="career3">More info +</button>
+            </li>
+            <li class="careers-caption__list-item">
+              <div class="careers-caption__item-top">
+                <h3 class="careers-caption__item-title">Lead unity developer</h3>
+                <p class="careers-caption__item-text">Location, full-time</p>
+              </div>
+              <button class="careers-caption__item-btn" data-career="career4">More info +</button>
+            </li>
+            <li class="careers-caption__list-item">
+              <div class="careers-caption__item-top">
+                <h3 class="careers-caption__item-title">Art lead</h3>
+                <p class="careers-caption__item-text">Location, full-time</p>
+              </div>
+              <button class="careers-caption__item-btn">More info +</button>
+            </li>
+            <li class="careers-caption__list-item">
+              <div class="careers-caption__item-top">
+                <h3 class="careers-caption__item-title">Lead unity developer</h3>
+                <p class="careers-caption__item-text">Location, full-time</p>
+              </div>
+              <button class="careers-caption__item-btn">More info +</button>
+            </li>
+            <li class="careers-caption__list-item">
+              <div class="careers-caption__item-top">
+                <h3 class="careers-caption__item-title">Character interaction designer(mental health)</h3>
+                <p class="careers-caption__item-text">Location, full-time</p>
+              </div>
+              <button class="careers-caption__item-btn">More info +</button>
+            </li>
+            <li class="careers-caption__list-item">
+              <div class="careers-caption__item-top">
+                <h3 class="careers-caption__item-title">Art lead</h3>
+                <p class="careers-caption__item-text">Location, full-time</p>
+              </div>
+              <button class="careers-caption__item-btn">More info +</button>
+            </li>
+          </ul>
+          <ul class="careers-caption__menu">
+            <li>
+              <button
+                class="careers-caption__menu-btn careers-caption__menu-btn_active">
+                All
+              </button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">Art</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">Development</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">QA</button>
+            </li>
+            <li>
+              <button
+                class="careers-caption__menu-btn">Game
+                Design
+              </button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">Audio Design</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">Analytics</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">Data Science</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">Marketing</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">HR</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">Finance</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn">Management</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section careers-work">
+      <div class="container">
+        <div class="careers-work__top">
+          <h2 class="careers-work__title">
+            Work at CM Games
+          </h2>
+          <ul class="careers-work__menu">
+            <li class="careers-work__menu-item">
+              <button
+                class="careers-work__menu-btn careers-work__menu-btn_active" data-filter="all" type="button">All</button>
+            </li>
+            <li class="careers-work__menu-item">
+              <button class="careers-work__menu-btn"
+                      data-filter="bonuses" type="button">Bonuses</button>
+            </li>
+            <li class="careers-work__menu-item">
+              <button class="careers-work__menu-btn"
+                      data-filter="culture" type="button">Culture</button>
+            </li>
+            <li class="careers-work__menu-item">
+              <button class="careers-work__menu-btn"
+                      data-filter="events" type="button">Events</button>
+            </li>
+            <li class="careers-work__menu-item">
+              <button class="careers-work__menu-btn"
+                      data-filter="stories" type="button">Stories</button>
+            </li>
+          </ul>
+        </div>
+        <div class="careers-work__swiper careers-work-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="events">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Events</a>
+              <div class="careers-careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-work-swiper__text">Transparency is an essential part of our values</p>
+              </div>
+            </div>
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="events">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Events</a>
+              <div class="careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-work-swiper__text">We love to host quests and
+                  apontaneous events</p>
+              </div>
+            </div>
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="bonuses">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-3.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Bonuses</a>
+              <div class="careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-work-swiper__text">How to draw icons of different
+                  complexity levels</p>
+              </div>
+            </div>
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="events">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-4.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Events</a>
+              <div class="careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-work-swiper__text">Ordering basic gifts and
+                  common events from mass...</p>
+              </div>
+            </div>
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="bonuses">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Bonuses</a>
+              <div class="careers-careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-careers-work-swiper__text">How to draw icons of different
+                  complexity levels</p>
+              </div>
+            </div>
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="culture">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Culture</a>
+              <div class="careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-work-swiper__text">Transparency is an essential part of our values</p>
+              </div>
+            </div>
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="stories">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Stories</a>
+              <div class="careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-work-swiper__text">How to draw icons of different
+                  complexity levels</p>
+              </div>
+            </div>
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="events">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Events</a>
+              <div class="careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-work-swiper__text">Ordering basic gifts and
+                  common events from mass...</p>
+              </div>
+            </div>
+            <div class="swiper-slide careers-work-swiper__slide" data-filter="events">
+              <div class="careers-work-swiper__img">
+                <img src="img/work-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="careers-work-swiper__category">Events</a>
+              <div class="careers-work-swiper__content swiper-no-swiping">
+                <p class="careers-work-swiper__text">Ordering basic gifts and
+                  common events from mass...</p>
+              </div>
+            </div>
+          </div>
+          <div class="careers-work__swiper-panel">
+            <button class="careers-work__btn">
+              View all
+            </button>
+            <div class="careers-work__swiper-controls">
+              <button class="careers-work__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+              <button class="careers-work__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section careers-cta">
+      <div class="container">
+        <div class="careers-cta__content">
+          <h2 class="careers-cta__title">Don't see the role you're looking for? Drop us a line</h2>
+        </div>
+        <button class="careers-cta__btn btn">APPLY</button>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>

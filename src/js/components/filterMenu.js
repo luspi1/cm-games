@@ -1,11 +1,16 @@
 import { removeClasses, filterByCategory } from "../_functions";
-import { swiperWork } from "./slider";
+import { swiperWork, swiperCareersWork } from "./slider";
 
 const productBtns = document.querySelectorAll('.products-main__menu-btn')
+const blogBtns = document.querySelectorAll('.blog-caption__menu-btn')
+const careersBtns = document.querySelectorAll('.careers-caption__menu-btn')
 
 const workBtns = document.querySelectorAll('.company-work__menu-btn')
 const workSlides = document.querySelectorAll('.work-swiper__slide')
-const workSlider = document.querySelector('.company-work__swiper .swiper-wrapper')
+
+
+const careersWorkBtns = document.querySelectorAll('.careers-work__menu-btn')
+const careersWorkSlides = document.querySelectorAll('.careers-work-swiper__slide')
 
 // Переключения активных вкладок меню фильтрации продуктов
 
@@ -31,6 +36,40 @@ workBtns.forEach(btn => {
   })
 })
 
+// Фильтрация слайдов на странице карьеры
+
+careersWorkBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    removeClasses('careers-work__menu-btn_active')
+    btn.classList.add('careers-work__menu-btn_active')
+    swiperCareersWork.removeAllSlides()
+    swiperCareersWork.appendSlide(filterByCategory(careersWorkSlides, btn.dataset.filter))
+
+  })
+})
+
+
+// Переключения активных вкладок меню на странице блога
+
+blogBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    removeClasses('blog-caption__menu-btn_active')
+    btn.classList.add('blog-caption__menu-btn_active')
+  })
+})
+
+
+// Переключения активных вкладок меню на странице карьеры
+
+careersBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    removeClasses('careers-caption__menu-btn_active')
+    btn.classList.add('careers-caption__menu-btn_active')
+  })
+})
 
 
 

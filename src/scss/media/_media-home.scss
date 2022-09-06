@@ -23,7 +23,7 @@
     }
 
     &__slider {
-      width: 53%;
+      width: 48%;
     }
 
     &__br_active {
@@ -85,14 +85,14 @@
 
 
     &__slider {
-      width: 85%;
+      width: 75%;
 
       .swiper {
-        border-radius: 50px 50px 0 0;
+        border-radius: 30px 30px 0 0;
       }
 
       .caption__slider-panel {
-        border-radius: 0 0 50px 50px;
+        border-radius: 0 0 30px 30px;
       }
     }
   }
@@ -150,6 +150,12 @@
       font-size: 16px;
       line-height: 24px;
     }
+  }
+
+
+
+  .news .news-swiper .swiper-slide:hover img {
+    transform: scale(1.05);
   }
 
   .products {
@@ -247,8 +253,12 @@
   .caption {
     padding: 0 30px;
 
+    &__slider {
+      width: 80%;
+    }
+
     &__slider .swiper {
-      border-radius: 30px 30px 0 0;
+      border-radius: 20px 20px 0 0;
     }
 
     &__title {
@@ -258,12 +268,12 @@
 
     .caption__slider-panel {
       padding: 15px 30px 15px 30px;
-      border-radius: 0 0 30px 30px;
+      border-radius: 0 0 20px 20px;
       flex-direction: column;
       align-items: center;
 
       .slider-panel__content {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       .slider-panel__controls {
@@ -278,6 +288,11 @@
   }
 
   .news {
+
+    .news-swiper .swiper-wrapper {
+      margin-bottom: 10px;
+    }
+
     .news-swiper .news__swiper-panel {
       flex-direction: column;
       align-items: center;
@@ -298,10 +313,11 @@
 
   }
 
+
   .products {
     width: 100%;
     border-radius: 0;
-    padding: 40px 30px 50px 30px;
+    padding: 40px 20px 50px 20px;
 
     &__title {
       line-height: 45px;
@@ -333,7 +349,15 @@
         margin-bottom: 20px;
       }
     }
+
+   .services-swiper__img {
+      width: 23%;
+      padding-top: 20%;
+    }
+
   }
+
+
 
   .careers {
     .careers-swiper {
@@ -368,6 +392,13 @@
 }
 
 @media (max-width: 420px) {
+
+  .caption {
+    &__slider {
+      width: 100%;
+    }
+  }
+
   .news {
     .news-swiper {
       padding: 15px;
@@ -394,8 +425,8 @@
     line-height: 25px;
   }
   .services .services-swiper__img {
-    width: 55%;
-    padding-top: 27%;
+    width: 63%;
+    padding-top: 36%;
     margin-right: 10px;
   }
 

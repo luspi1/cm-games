@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   padding-left: 10%;
   margin-bottom: 125px;
 
@@ -10,7 +11,6 @@
     @include montserrat-bold;
     font-size: 67px;
     line-height: 82px;
-    padding-top: 75px;
     max-width: 40%;
 
     span {
@@ -19,7 +19,7 @@
   }
 
   &__slider {
-    width: 58%;
+    width: 50%;
 
     .swiper {
       border-radius: 50px 0 0 0;
@@ -47,19 +47,19 @@
     display: flex;
     justify-content: space-between;
     background-color: $secondary;
-    padding: 20px 130px 15px 38px;
+    padding: 20px 130px 25px 38px;
     border-radius: 0 0 0 50px;
-    min-height: 110px;
+    min-height: 50px;
+    align-items: center;
 
     .slider-panel__content {
       max-width: 621px;
     }
 
     .slider-panel__controls {
-      align-self: flex-end;
       max-width: 640px;
-      margin-bottom: 10px;
       display: flex;
+      align-items: center;
     }
 
 
@@ -125,9 +125,10 @@
 
   .news-swiper {
     overflow: hidden;
+    padding: 20px;
 
     .swiper-wrapper {
-      margin-bottom: 20px;
+      margin-bottom: 70px;
     }
 
     &__img {
@@ -156,22 +157,15 @@
       margin-bottom: 10px;
     }
 
-    &__content {
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      min-height: 70px;
-      margin-bottom: 80px;
+    .swiper-slide:hover img {
+      transform: scale(1.1);
     }
 
+
     &__text {
-      position: absolute;
-      left: 0;
-      top: 0;
       max-width: 377px;
       margin-bottom: 17px;
       min-height: 100px;
-      transition: all .4s;
     }
 
     .news__swiper-panel {
@@ -217,7 +211,7 @@
   width: 96%;
   padding: 47px 0 50px 0;
   background: left / cover no-repeat url("../img/products-bg.jpg");
-  background-size: auto 111%;
+  background-size: auto 113%;
   border-radius: 0 70px 70px 0;
 
   &__title {
@@ -244,6 +238,7 @@
     }
 
     &__img {
+      display: block;
       padding-top: 94%;
       position: relative;
       border-radius: 10px;
@@ -326,8 +321,8 @@
     }
 
     &__img {
-      width: 37%;
-      padding-top: 32%;
+      width: 31%;
+      padding-top: 28%;
       position: relative;
       border-radius: 20px;
       margin-right: 15px;

@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import anime from "animejs";
+
 
 
 // Анимация точки по траектории
@@ -18,7 +18,7 @@ gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 gsap.defaults({ease: "none"});
 
 
-if (window.matchMedia("(min-width: 1651px)").matches) {
+if (window.matchMedia("(min-width: 1651px)").matches && pathDot) {
   gsap.to('.path-dot', {
     scrollTrigger: {
       trigger: pathDot,
@@ -38,7 +38,7 @@ if (window.matchMedia("(min-width: 1651px)").matches) {
   })
 }
 
-if (window.matchMedia("(max-width: 1650px)").matches) {
+if (window.matchMedia("(max-width: 1650px)").matches && pathDot) {
   gsap.to('.path-dot', {
     scrollTrigger: {
       trigger: pathDot,
@@ -57,7 +57,7 @@ if (window.matchMedia("(max-width: 1650px)").matches) {
     },
   })
 }
-if (window.matchMedia("(max-width: 1440px)").matches) {
+if (window.matchMedia("(max-width: 1440px)").matches && pathDot) {
   gsap.to('.path-dot', {
     scrollTrigger: {
       trigger: pathDot,
@@ -76,7 +76,7 @@ if (window.matchMedia("(max-width: 1440px)").matches) {
     },
   })
 }
-if (window.matchMedia("(max-width: 1280px)").matches) {
+if (window.matchMedia("(max-width: 1280px)").matches && pathDot) {
   gsap.to('.path-dot', {
     scrollTrigger: {
       trigger: pathDot,

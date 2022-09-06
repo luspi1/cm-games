@@ -1,11 +1,9 @@
-import { body } from "../_vars";
+import { body, searchOverlay, pageWrapper } from "../_vars";
 
 
 const searchBtn = document.querySelector('.search-btn')
 const closeBtn = document.querySelector('.close-btn')
 const searchMenu = document.querySelector('.search-menu')
-const searchOverlay = document.querySelector('.search-overlay')
-const pageWrapper = document.querySelector('.site-container')
 
 
 // Управление состоянием меню поиска
