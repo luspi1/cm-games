@@ -1,14 +1,12 @@
 import Choices from "choices.js";
 
-const headerSelect = document.querySelector('.lang-switch select')
+const langSwitch = document.querySelector('.lang-switch select')
 
-
-
-
-if (headerSelect) {
-  const choices = new Choices(headerSelect, {
+if (langSwitch) {
+  const choices = new Choices(langSwitch, {
     searchEnabled: false,
     itemSelectText: '',
     shouldSort: false,
   });
 }
+
