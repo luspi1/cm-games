@@ -36,6 +36,9 @@
 @import "./pages/company";
 @import "./pages/blog";
 @import "./pages/careers";
+@import "./pages/contacts";
+@import "./pages/press-kit";
+@import "./pages/404";
 
 // Компоненты и медиа
 @import "./components/header";
@@ -47,3 +50,5 @@
 @import "media/media-company";
 @import "media/media-blog";
 @import "media/media-careers";
+@import "media/media-contacts";
+@import "media/media-press-kit";

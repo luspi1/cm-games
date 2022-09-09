@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Contacts'
+})
+
+<body class="page__body">
+
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+  <main class="main contacts-page">
+
+    <section class="section contacts-caption">
+      <div class="container">
+        <h1 class="contacts-caption__title">Contact <span>us</span></h1>
+        <ul class="contacts-caption__list">
+          <li class="contacts-caption__list-item">
+            <p>If you're a player and need help, please visit our <a
+              href="#">Support page.</a></p>
+          </li>
+          <li class="contacts-caption__list-item">
+            <p>For jobs at CM Games,
+              please see our <a href="careers.html">Careers page.</a></p>
+          </li>
+          <li class="contacts-caption__list-item">
+            <p>All — <a href="mailto:info@cm.games">info@cm.games</a></p>
+            <p>Marketing & Press — <a href="mailto:marketing@cm.games">marketing@cm.games</a>
+            </p>
+          </li>
+        </ul>
+        <h3 class="contacts-caption__socials-title">Мы в соцсетях</h3>
+        <ul class="contacts-caption__socials-list">
+          <li class="contacts-caption__socials-item"><a href="#">Facebook</a>
+          </li>
+          <li class="contacts-caption__socials-item"><a href="#">Instagram</a>
+          </li>
+          <li class="contacts-caption__socials-item"><a href="#">Twitter</a>
+          </li>
+          <li class="contacts-caption__socials-item"><a href="#">Linkedin</a>
+          </li>
+          <li class="contacts-caption__socials-item"><a href="#">Render</a></li>
+          <li class="contacts-caption__socials-item"><a href="#">DTF</a></li>
+          <li class="contacts-caption__socials-item"><a href="#">YouTube</a>
+          </li>
+          <li class="contacts-caption__socials-item"><a href="#">Habr</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section contacts-map">
+      <div class="container">
+        <div class="contacts-map__inner">
+          <div class="contacts-map__address">
+            <p class="contacts-map__address-text">A. H. Tammsaare tee 92,<br> 13423
+              Tallinn, Estonia</p>
+            <p class="contacts-map__address-reg">
+              Reg. nr: 11617092, VAT ID: EE101406176</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>

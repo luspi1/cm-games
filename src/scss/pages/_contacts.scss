@@ -1,0 +1,120 @@
+.contacts-page {
+  padding: 50px 0;
+
+  .contacts-caption {
+
+    &__title {
+      @include mudkty-bold;
+      font-size: 58px;
+      line-height: 92px;
+      color: #1C283A;
+      margin-bottom: 42px;
+
+      span {
+        color: #00B7F1;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 43px;
+    }
+
+
+    &__list-item:not(:last-child) {
+      padding-right: 30px;
+      margin-right: 30px;
+      max-width: 550px;
+      border-right: 1px solid #A5B4C4;
+    }
+
+    &__list-item p {
+      @include mudkty-light;
+      font-size: 32px;
+      line-height: 48px;
+      color: #1C283A;
+
+      a {
+        color: #00B7F1;
+      }
+    }
+
+    &__list-item:last-child p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 20px;
+    }
+
+    &__socials-title {
+      @include montserrat-regular;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1C283A;
+      margin-bottom: 8px;
+    }
+
+    &__socials-list {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 790px;
+    }
+
+    &__socials-item {
+      margin-right: 22px;
+
+      a {
+        @include mudkty-regular;
+        font-size: 20px;
+        line-height: 29px;
+        color: #1C283A;
+        transition: all .3s;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+
+    margin-bottom: 30px;
+
+  }
+
+  .contacts-map {
+
+    &__inner {
+      background: no-repeat center/100% url("../img/contacts-map.jpg");
+      background-size: cover;
+      border-radius: 20px;
+      height: 660px;
+      position: relative;
+    }
+
+    &__address {
+      position: absolute;
+      left: 25%;
+      top: 25%;
+
+      background-color: #FFFFFF;
+      padding: 50px 37px 40px;
+      @include mudkty-regular;
+      color: #1C283A;
+      font-size: 32px;
+      line-height: 47px;
+      border-radius: 25px;
+      max-width: 500px;
+
+    }
+
+    &__address-reg {
+      margin-top: 36px;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+
+  }
+
+
+}
