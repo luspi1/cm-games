@@ -41,15 +41,11 @@
     }
   }
 
-
 }
 
 .press-kit {
-
-  height: 7860px;
-  background: url("../img/press-bg.jpg") no-repeat 100% 0;
-  background-size: cover;
-
+  background: linear-gradient(0deg, #CAD1DB 0.53%, #F7F7F8 100%);
+  padding-bottom: 110px;
   &__subtitle {
     @include montserrat-bold;
     font-size: 48px;
@@ -83,8 +79,9 @@
   }
 
   &__caption {
-    background: url("../img/press-caption-bg.png") no-repeat 0 20%;
     margin-bottom: 120px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(#00B7F1, 0.5) 0%, rgba(255, 255, 255, 0) 100%) no-repeat -1300px 70px;
   }
 
   &__caption-title {
@@ -250,6 +247,7 @@
         display: inline-block;
         padding-right: 42px;
         position: relative;
+
         svg {
           position: absolute;
           right: 0;
@@ -272,6 +270,7 @@
 
       h3 {
         color: #FFFFFF;
+
         svg path {
           fill: #FFFFFF;
         }
@@ -305,6 +304,7 @@
         display: inline-block;
         padding-right: 38px;
         position: relative;
+
         svg {
           cursor: pointer;
           position: absolute;
@@ -320,6 +320,218 @@
 
     li:last-child {
       background-color: #DADFE5;
+    }
+
+
+  }
+
+
+  &__typography {
+    margin-bottom: 100px;
+  }
+
+  &__typography-list_lg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+    margin-bottom: 43px;
+
+
+    li {
+      background-color: #ffffff;
+      border-radius: 30px;
+      width: 49%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 217px 20px 80px 20px;
+      height: 530px;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &:last-child {
+        padding-top: 180px;
+      }
+
+      h3 {
+        @include montserrat-bold;
+        font-size: 68px;
+        line-height: 84px;
+        text-align: center;
+        color: #1C283A;
+      }
+
+      p {
+        display: inline-block;
+        margin-right: 50px;
+        @include montserrat-bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #DADFE5;
+      }
+
+      button {
+        @include montserrat-bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #00AEEA;
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  &__typography-list_sm {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      width: 32%;
+      height: 455px;
+      background: #FFFFFF;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 65px 20px;
+
+      &:not(:last-child) {
+        margin-right: 42px;
+      }
+
+      p {
+        @include montserrat-regular;
+        font-size: 18px;
+        line-height: 22px;
+        color: #DADFE5;
+      }
+    }
+  }
+
+
+  &__icons {
+    margin-bottom: 124px;
+  }
+
+  &__icons-inner {
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 105px 157px 97px 100px;
+  }
+
+  &__icons-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 140px;
+    }
+  }
+
+  &__game-title {
+    @include montserrat-bold;
+    font-size: 82px;
+    line-height: 100px;
+    color: #1C283A;
+    margin-bottom: 50px;
+  }
+
+  &__game-desc {
+    @include montserrat-medium;
+    font-size: 24px;
+    line-height: 38px;
+    color: #1C283A;
+    margin-bottom: 40px;
+    max-width: 1070px;
+  }
+
+
+  &__game {
+
+    .press-kit__logo-items {
+      margin-bottom: 110px;
+    }
+
+    .press-kit__logo-item {
+      padding: 178px 0 42px
+    }
+
+    .press-kit__logo-img {
+      width: 54%;
+      padding-top: 18%;
+    }
+
+  }
+
+  &__game-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+
+    li {
+      background-color: #ffffff;
+      border-radius: 30px;
+      width: 49%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px 20px 67px 20px;
+      height: 530px;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      p {
+        @include montserrat-regular;
+        font-size: 18px;
+        line-height: 22px;
+        color: #DADFE5;
+      }
+    }
+  }
+
+  .press-kit__game .press-kit__gameplay-items{
+    margin-bottom: 42px;
+  }
+
+  &__gameplay-items {
+    .press-kit__logo-item {
+      padding: 59px 60px 37px;
+    }
+
+    .press-kit__logo-img {
+      width: 100%;
+      padding-top: 46%;
+      margin-bottom: 25px;
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .press-kit__gameplay-items_sm {
+    margin-bottom: 0;
+    .press-kit__logo-item {
+      padding: 54px 20px 46px;
+      width: 32%;
+    }
+
+    .press-kit__logo-img {
+      width: 56%;
+      padding-top: 120%;
+      margin-bottom: 35px;
+      img {
+        border-radius: 15px;
+      }
     }
 
 
