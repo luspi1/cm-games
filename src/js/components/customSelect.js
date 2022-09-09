@@ -1,5 +1,7 @@
 import Choices from "choices.js";
 
+// Кастомный селект
+
 const langSwitch = document.querySelector('.lang-switch select')
 
 if (langSwitch) {

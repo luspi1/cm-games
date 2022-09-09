@@ -4,7 +4,6 @@ const careersModals = document.querySelectorAll('.careers-modal')
 
 const careersList = document.querySelector('.careers-caption__list')
 
-
 // Функция открытия нужной модалки карьеры
 const openCareerModal = (targetModal) => {
   careersModals.forEach(modal => {
