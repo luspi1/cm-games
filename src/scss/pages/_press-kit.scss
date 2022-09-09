@@ -46,6 +46,7 @@
 .press-kit {
   background: linear-gradient(0deg, #CAD1DB 0.53%, #F7F7F8 100%);
   padding-bottom: 110px;
+
   &__subtitle {
     @include montserrat-bold;
     font-size: 48px;
@@ -72,6 +73,7 @@
     padding: 14px 44px;
     transition: all .3s;
     margin-left: 38px;
+    min-width: 240px;
 
     &:hover {
       background-color: #00C9FF;
@@ -422,17 +424,33 @@
   &__icons-inner {
     background: #FFFFFF;
     border-radius: 30px;
-    padding: 105px 157px 97px 100px;
+    padding: 105px 35px 97px 100px;
   }
 
   &__icons-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
-    &:not(:last-child) {
-      margin-bottom: 140px;
+    li {
+      margin-right: 100px;
+      width: 12%;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        margin-bottom: 145px;
+      }
+
+      &:nth-child(5),
+      &:nth-child(10) {
+        margin-right: 0;
+      }
     }
+
   }
 
   &__game-title {
@@ -499,7 +517,7 @@
     }
   }
 
-  .press-kit__game .press-kit__gameplay-items{
+  .press-kit__game .press-kit__gameplay-items {
     margin-bottom: 42px;
   }
 
@@ -512,6 +530,7 @@
       width: 100%;
       padding-top: 46%;
       margin-bottom: 25px;
+
       img {
         border-radius: 15px;
       }
@@ -520,6 +539,7 @@
 
   .press-kit__gameplay-items_sm {
     margin-bottom: 0;
+
     .press-kit__logo-item {
       padding: 54px 20px 46px;
       width: 32%;
@@ -529,6 +549,7 @@
       width: 56%;
       padding-top: 120%;
       margin-bottom: 35px;
+
       img {
         border-radius: 15px;
       }
