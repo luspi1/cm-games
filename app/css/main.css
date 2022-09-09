@@ -3239,6 +3239,7 @@ h2.section-title {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   margin-left: 38px;
+  min-width: 240px;
 }
 .press-kit__download-btn:hover {
   background-color: #00C9FF;
@@ -3587,7 +3588,7 @@ h2.section-title {
 .press-kit__icons-inner {
   background: #FFFFFF;
   border-radius: 30px;
-  padding: 105px 157px 97px 100px;
+  padding: 105px 35px 97px 100px;
 }
 .press-kit__icons-list {
   display: -webkit-box;
@@ -3599,9 +3600,18 @@ h2.section-title {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-.press-kit__icons-list:not(:last-child) {
-  margin-bottom: 140px;
+.press-kit__icons-list li {
+  margin-right: 100px;
+  width: 12%;
+}
+.press-kit__icons-list li:nth-child(1), .press-kit__icons-list li:nth-child(2), .press-kit__icons-list li:nth-child(3), .press-kit__icons-list li:nth-child(4), .press-kit__icons-list li:nth-child(5) {
+  margin-bottom: 145px;
+}
+.press-kit__icons-list li:nth-child(5), .press-kit__icons-list li:nth-child(10) {
+  margin-right: 0;
 }
 .press-kit__game-title {
   font-family: "Montserrat", sans-serif;
@@ -6572,7 +6582,35 @@ h2.section-title {
     width: 250px;
   }
 }
+@media (max-width: 1400px) {
+  .press-kit__colors-list_lg li h3 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .press-kit__colors-list_lg li p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1280px) {
+  .press-kit__colors-list_lg li {
+    padding: 60px 20px 150px 20px;
+  }
+  .press-kit__typography-list_sm li {
+    height: 360px;
+  }
+  .press-kit__icons-inner {
+    padding: 105px 35px 97px 35px;
+  }
+  .press-kit__icons-list li {
+    margin-right: 70px;
+  }
+}
 @media (max-width: 1024px) {
+  .press-kit__subtitle {
+    font-size: 40px;
+    line-height: 48px;
+  }
   .press-header {
     margin-bottom: 40px;
   }
@@ -6592,6 +6630,110 @@ h2.section-title {
   }
   .press-kit__socials-list li {
     margin-right: 25px;
+  }
+  .press-kit__colors-list_lg {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .press-kit__colors-list_lg li {
+    width: 46%;
+  }
+  .press-kit__colors-list_lg li:not(:last-child) {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .press-kit__colors-list_lg li:first-child {
+    margin-right: 40px;
+  }
+  .press-kit__colors-list_sm {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .press-kit__colors-list_sm li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .press-kit__colors-list_sm li:first-child {
+    margin-right: 30px;
+  }
+  .press-kit__colors-list_sm li {
+    padding: 48px 30px 150px 30px;
+    width: 45%;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+  }
+  .press-kit__typography-list_lg li h3 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+  .press-kit__typography-list_lg li {
+    padding: 132px 20px 80px 20px;
+    height: 394px;
+  }
+  .press-kit__typography-list_lg li:last-child {
+    padding-top: 100px;
+  }
+  .press-kit__typography-list_lg li p {
+    margin-right: 30px;
+  }
+  .press-kit__typography-list_sm {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .press-kit__typography-list_sm li {
+    width: 47%;
+  }
+  .press-kit__typography-list_sm li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .press-kit__typography-list_sm li:first-child {
+    margin-right: 40px;
+  }
+  .press-kit__icons-inner {
+    padding: 60px 50px 60px 50px;
+  }
+  .press-kit__icons-list li {
+    margin-right: 51px;
+  }
+  .press-kit__game-title {
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 30px;
+  }
+  .press-kit__game-desc {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  .press-kit__game-items li {
+    height: 420px;
+  }
+  .press-kit__gameplay-items .press-kit__logo-item {
+    padding: 30px 30px 37px;
+  }
+  .press-kit .press-kit__gameplay-items_sm {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .press-kit .press-kit__gameplay-items_sm .press-kit__logo-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .press-kit .press-kit__gameplay-items_sm .press-kit__logo-item:first-child {
+    margin-right: 40px;
+  }
+  .press-kit .press-kit__gameplay-items_sm .press-kit__logo-item {
+    padding: 30px 20px 46px;
+    width: 47%;
   }
 }
 @media (max-width: 768px) {
@@ -6615,8 +6757,152 @@ h2.section-title {
     width: 28%;
     margin-bottom: 10px;
   }
+  .press-kit__logo-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .press-kit__logo-items .press-kit__logo-item {
+    width: 100%;
+  }
+  .press-kit__logo-items .press-kit__logo-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .press-kit__colors-list_lg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .press-kit__colors-list_lg li:first-child {
+    margin-right: 0;
+  }
+  .press-kit__colors-list_lg li {
+    width: 100%;
+  }
+  .press-kit__colors-list_sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .press-kit__colors-list_sm li:first-child {
+    margin-right: 0;
+  }
+  .press-kit__colors-list_sm li {
+    width: 100%;
+  }
+  .press-kit__typography-list_lg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .press-kit__typography-list_lg li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .press-kit__typography-list_lg li {
+    width: 100%;
+  }
+  .press-kit__typography-list_lg li h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .press-kit__typography-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .press-kit__typography-list_lg li p {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .press-kit__typography-list_sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .press-kit__typography-list_sm li {
+    height: 320px;
+    width: 100%;
+  }
+  .press-kit__icons-list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .press-kit__icons-list li {
+    width: 34%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .press-kit .press-kit__icons-list li {
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+  .press-kit__game-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .press-kit__game-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .press-kit__game-items li {
+    height: 380px;
+    width: 100%;
+  }
+  .press-kit__game-items li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .press-kit .press-kit__gameplay-items_sm .press-kit__logo-item:first-child {
+    margin-right: 0;
+  }
+  .press-kit .press-kit__gameplay-items_sm .press-kit__logo-item {
+    width: 100%;
+  }
+  .press-kit .press-kit__gameplay-items_sm {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 @media (max-width: 550px) {
+  .press-kit__subtitle-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .press-kit__subtitle {
+    text-align: center;
+  }
+  .press-kit__download-btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
   .press-kit__socials-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6629,6 +6915,9 @@ h2.section-title {
   .press-kit__socials-list li {
     margin-right: 0;
     width: auto;
+  }
+  .press-kit__icons-list li {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

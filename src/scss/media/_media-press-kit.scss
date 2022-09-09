@@ -1,4 +1,42 @@
+@media (max-width: 1400px) {
+  .press-kit__colors-list_lg li h3 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .press-kit__colors-list_lg li p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .press-kit__colors-list_lg li {
+    padding: 60px 20px 150px 20px;
+  }
+
+  .press-kit__typography-list_sm li {
+    height: 360px;
+  }
+
+  .press-kit__icons-inner {
+    padding: 105px 35px 97px 35px;
+  }
+
+  .press-kit__icons-list li {
+    margin-right: 70px;
+  }
+
+
+}
+
 @media (max-width: 1024px) {
+
+  .press-kit__subtitle {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
 
   .press-header {
     margin-bottom: 40px;
@@ -19,14 +57,134 @@
 
   .press-kit__socials-list {
     flex-wrap: wrap;
+
     li {
       margin-right: 25px;
     }
   }
 
+  .press-kit__colors-list_lg {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .press-kit__colors-list_lg li {
+    width: 46%;
+  }
+
+  .press-kit__colors-list_lg li:not(:last-child) {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
+  .press-kit__colors-list_lg li:first-child {
+    margin-right: 40px;
+  }
+
+  .press-kit__colors-list_sm {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .press-kit__colors-list_sm li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .press-kit__colors-list_sm li:first-child {
+    margin-right: 30px;
+  }
+  .press-kit__colors-list_sm li {
+    padding: 48px 30px 150px 30px;
+    width: 45%;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+  }
+
+  .press-kit__typography-list_lg li h3 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .press-kit__typography-list_lg li {
+    padding: 132px 20px 80px 20px;
+    height: 394px;
+  }
+
+  .press-kit__typography-list_lg li:last-child {
+    padding-top: 100px;
+  }
+
+  .press-kit__typography-list_lg li p {
+    margin-right: 30px;
+  }
+
+  .press-kit__typography-list_sm {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .press-kit__typography-list_sm li {
+    width: 47%;
+  }
+
+  .press-kit__typography-list_sm li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .press-kit__typography-list_sm li:first-child {
+    margin-right: 40px;
+  }
+
+  .press-kit__icons-inner {
+    padding: 60px 50px 60px 50px;
+  }
+
+
+  .press-kit__icons-list li {
+    margin-right: 51px;
+  }
+
+  .press-kit__game-title {
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .press-kit__game-desc {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+
+  .press-kit__game-items li {
+    height: 420px;
+  }
+
+  .press-kit__gameplay-items .press-kit__logo-item {
+    padding: 30px 30px 37px;
+  }
+
+  .press-kit .press-kit__gameplay-items_sm {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .press-kit__logo-item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    .press-kit__logo-item:first-child {
+      margin-right: 40px;
+    }
+  }
+
+  .press-kit .press-kit__gameplay-items_sm .press-kit__logo-item {
+    padding: 30px 20px 46px;
+    width: 47%;
+  }
+
+
 }
-
-
 
 @media (max-width: 768px) {
   .press-header__menu-list {
@@ -34,6 +192,7 @@
 
     li {
       margin-right: 20px;
+
       &:not(:last-child) {
         margin-bottom: 20px;
       }
@@ -52,15 +211,156 @@
       margin-bottom: 10px;
     }
   }
+
+  .press-kit__logo-items {
+    flex-direction: column;
+
+    .press-kit__logo-item {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .press-kit__colors-list_lg {
+    flex-direction: column;
+  }
+
+  .press-kit__colors-list_lg li:first-child {
+    margin-right: 0;
+  }
+  .press-kit__colors-list_lg li {
+    width: 100%;
+  }
+
+
+  .press-kit__colors-list_sm {
+    flex-direction: column;
+  }
+
+  .press-kit__colors-list_sm li:first-child {
+    margin-right: 0;
+  }
+  .press-kit__colors-list_sm li {
+    width: 100%;
+  }
+
+  .press-kit__typography-list_lg {
+    flex-direction: column;
+  }
+  .press-kit__typography-list_lg li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .press-kit__typography-list_lg li {
+    width: 100%;
+  }
+
+  .press-kit__typography-list_lg li h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .press-kit__typography-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .press-kit__typography-list_lg li p {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .press-kit__typography-list_sm {
+    flex-direction: column;
+
+    li {
+      height: 320px;
+      width: 100%;
+    }
+  }
+
+
+  .press-kit__icons-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+      width: 34%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .press-kit .press-kit__icons-list li {
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+
+  .press-kit__game-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .press-kit__game-items {
+    flex-direction: column;
+  }
+  .press-kit__game-items li {
+    height: 380px;
+    width: 100%;
+  }
+
+  .press-kit__game-items li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .press-kit .press-kit__gameplay-items_sm .press-kit__logo-item:first-child {
+    margin-right: 0;
+  }
+
+  .press-kit .press-kit__gameplay-items_sm .press-kit__logo-item {
+    width: 100%;
+  }
+
+  .press-kit .press-kit__gameplay-items_sm {
+    align-items: center;
+  }
+
 }
 
 @media (max-width: 550px) {
+
+  .press-kit__subtitle-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .press-kit__subtitle {
+    text-align: center;
+  }
+
+  .press-kit__download-btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
   .press-kit__socials-list {
     flex-direction: column;
     align-items: center;
+
     li {
       margin-right: 0;
       width: auto;
     }
+  }
+
+  .press-kit__icons-list li {
+
+    width: 100%;
   }
 }
