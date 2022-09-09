@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nitro Nation</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  <header class="header">
+  <div class="container">
+    <div class="header__top header_border">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="company.html">company</a></li>
+          <li class="nav__list-item"><a href="products.html">projects</a></li>
+          <li class="nav__list-item"><a href="blog.html">blog</a></li>
+          <li class="nav__list-item"><a href="careers.html">careers</a></li>
+          <li class="nav__list-item"><a href="contacts.html">contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__controls">
+        <button class="search-btn">
+          <svg width="29" height="30" viewBox="0 0 29 30" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28.4 25.0001L22.9 20.3001C22.8 20.2001 22.6 20.2001 22.5 20.2001C22.2 20.2001 22.1 20.3001 21.9 20.5001C21.3 21.4001 20.4 22.1001 19.6 22.8001C19.5 22.9001 19.3 23.1001 19.3 23.2001C19.3 23.3001 19.3 23.6001 19.4 23.8001L24.1 29.3001C24.4 29.7001 24.8 29.9001 25.4 29.9001C25.8 29.9001 26.3 29.8001 26.6 29.5001L28.5 27.6001C28.8 27.3001 28.9 26.9001 28.9 26.4001C29 25.7001 28.8 25.3001 28.4 25.0001Z"
+              fill="black"/>
+            <path
+              d="M12.5 25.6C15.8 25.6 18.9 24.3 21.2 22C23.5 19.7 24.8 16.6 24.8 13.3C24.8 6.50003 19.3 0.900024 12.4 0.900024C5.60002 1.00002 0 6.60002 0 13.4C0 20.2 5.7 25.6 12.5 25.6ZM4.09998 13.4C4.09998 8.70002 7.90002 5.10002 12.4 5.10002C17.1 5.10002 20.7 8.90002 20.7 13.4C20.7 15.6 19.8 17.8 18.2 19.2C16.6 20.8 14.6 21.7 12.4 21.7C7.90002 21.7 4.09998 17.9 4.09998 13.4Z"
+              fill="black"/>
+          </svg>
+        </button>
+        <div class="lang-switch">
+          <select>
+            <option>En</option>
+            <option>Ru</option>
+          </select>
+        </div>
+      </div>
+      <div class="search-menu">
+        <button class="close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.7002 31.5C2.1002 31.5 2.4002 31.4 2.7002 31.2L15.7002 18L28.7002 31C28.9002 31.2 29.2002 31.3 29.7002 31.3C30.1002 31.3 30.4002 31.2 30.7002 31C31.0002 30.7 31.1002 30.4 31.1002 30.1C31.1002 29.8 31.0002 29.5 30.7002 29.2L17.5002 16.2L30.7002 3.20002C30.9002 2.90002 31.1002 2.60003 31.1002 2.30003C31.1002 2.00003 31.0002 1.70002 30.7002 1.40002C30.2002 0.900024 29.4003 0.900024 28.9003 1.40002L15.7002 14.4L2.7002 1.20002C2.5002 1.00002 2.1002 0.900024 1.7002 0.900024C1.3002 0.900024 1.0002 1.00002 0.700195 1.20002C0.500195 1.40002 0.400293 1.70002 0.300293 2.00002C0.300293 2.40002 0.400195 2.70002 0.700195 3.00002L13.9003 16.2L0.700195 29.2C0.500195 29.5 0.300293 29.8 0.300293 30.1C0.300293 30.4 0.400195 30.7 0.700195 31C1.0002 31.4 1.2002 31.5 1.7002 31.5Z"
+              fill="#A5B4C4"/>
+          </svg>
+        </button>
+        <form class="search-menu__form" action="#" autocomplete="off">
+          <input class="search-menu__input" type="text"
+                 placeholder="Search">
+        </form>
+        <div class="search-menu__content">
+          <p class="search-menu__results">
+            3 результата
+          </p>
+          <ul class="search-menu__list search-list">
+            <li class="search-list__item">
+              <a class="search-list__title-link" href="#">Senior game
+                designer</a>
+              <a class="search-list__remote-link" href="#">Remote</a>
+            </li>
+            <li class="search-list__item">
+              <a class="search-list__title-link" href="#">Lead unity
+                developer</a>
+              <a class="search-list__remote-link" href="#">Remote</a>
+            </li>
+            <li class="search-list__item">
+              <a class="search-list__title-link" href="#">Art lead</a>
+              <a class="search-list__remote-link" href="#">Remote</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="burger-btn">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 30 30" width="60px" height="60px">
+          <path
+            d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="main product-one">
+    <section class="section product-caption">
+      <div class="container product-caption__container">
+        <div class="product-caption__content">
+          <h1 class="product-caption__content-title">NITRO NATION</h1>
+          <p class="product-caption__content-desc">
+            Nitro Nation takes drag and drift racing to the next level with a 3D
+            world full of stunning new customizable cars, amazing racing
+            physics, and unlimited in-depth gameplay that guarantees racers an
+            unforgettable experience, all on your mobile device!
+          </p>
+          <ul class="product-caption__platform-list">
+            <li>
+              <a href="#">
+                <img src="img/platform-appstore.png" alt="App Store">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/platform-googleplay.png" alt="Google Play">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/platform-microsoft.png" alt="Microsoft">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/platform-steam.png" alt="Steam">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="product-caption__video">
+          <img src="img/nitronation-video.jpg" alt="Nitro Nation">
+        </div>
+      </div>
+    </section>
+    <section class="section product-indicators">
+      <div class="container">
+        <ul class="product-indicators__list">
+          <li class="product-indicators__list-item">
+            <p class="product-indicators__text-wrapper">
+              <span>15M+</span> <p>installs</p>
+            </p>
+          </li>
+          <li class="product-indicators__list-item">
+            <p class="product-indicators__text-wrapper">
+              <span>30K</span> <p>DAU</p>
+            </p>
+          </li>
+          <li
+            class="product-indicators__list-item product-indicators__rating-item">
+            <p class="product-indicators__text-wrapper">
+              <span>4.5   </span> <p>рейтинг</p>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section product-features">
+      <div class="container">
+        <ul class="product-features__list">
+          <li class="product-features__list-item product-features__list-title">
+            <h2>Features</h2>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/product-features1.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Race more than <span>150 licensed car models</span> from Bugatti,
+              McLaren ™, Porsche, Mitsubishi, Nissan, Ford, Dodge and other
+              world class brands!
+            </p>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/product-features2.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Drive around in <span>five heavily detailed locales</span> made
+              for drag or drift racing!
+            </p>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/product-features3.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Customize your car with different colors, visual effects and
+              <span>HUNDREDS of decals!</span>
+            </p>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/product-features4.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Win over a <span>MILLION</span> prizes and upgrade your car to win
+              even more!
+            </p>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/product-features5.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Start a team, win tournaments with your crew, work your way up
+              <span>the leaderboard rankings!</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section product-gallery">
+      <div class="container">
+        <div class="swiper product-gallery__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/gallery-slide1.jpg" alt="Nitro Nation">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/gallery-slide1.jpg" alt="Nitro Nation">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/gallery-slide1.jpg" alt="Nitro Nation">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/gallery-slide1.jpg" alt="Nitro Nation">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/gallery-slide1.jpg" alt="Nitro Nation">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination product-gallery__pagination"></div>
+          <button class="product-gallery__swiper-button-prev">
+            <svg width="64" height="126" viewBox="0 0 64 126" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M61.925 125.025C62.125 125.025 62.325 124.925 62.525 124.825C62.825 124.525 62.825 123.925 62.525 123.625L2.025 63.2251L63.425 1.42501C63.725 1.12501 63.725 0.525 63.425 0.225C63.125 -0.075 62.525 -0.075 62.225 0.225L0.225 62.625C-0.075 62.925 -0.075 63.525 0.225 63.825L61.325 124.825C61.425 124.925 61.725 125.025 61.925 125.025Z"
+                fill="#D2D6DC"/>
+            </svg>
+          </button>
+          <button class="product-gallery__swiper-button-next">
+            <svg width="64" height="126" viewBox="0 0 64 126" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.725 125.025C1.525 125.025 1.32499 124.925 1.12499 124.825C0.824994 124.525 0.824994 123.925 1.12499 123.625L61.625 63.2251L0.225 1.42501C-0.075 1.12501 -0.075 0.525 0.225 0.225C0.525 -0.075 1.12501 -0.075 1.42501 0.225L63.425 62.625C63.725 62.925 63.725 63.525 63.425 63.825L2.32501 124.825C2.12501 124.925 1.925 125.025 1.725 125.025Z"
+                fill="#D2D6DC"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section product-connect">
+      <div class="container">
+        <div class="product-connect__support">
+          <h2 class="product-connect__support-title product-one__subtitle">
+            Нужна помощь?
+          </h2>
+          <p class="product-connect__support-text">
+            Если у вас возникли проблемы с игрой, обратитесь в службу поддержки.
+          </p>
+          <button class="product-connect__support-btn btn" type="button">получить
+            поддержку
+          </button>
+        </div>
+        <div class="product-connect__socials">
+          <h2 class="product-connect__socials-title product-one__subtitle">
+            Соцсети
+          </h2>
+          <ul class="product-connect__socials-list">
+            <li>
+              <a href="#">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.6999 30.1001H15.3999C7.1999 30.1001 0.599854 23.5 0.599854 15.2V14.8999C0.599854 6.6999 7.1999 0.100098 15.3999 0.100098H15.6999C23.8999 0.100098 30.5999 6.6999 30.5999 14.8999V15.2C30.4999 23.4 23.8999 30.1001 15.6999 30.1001Z"
+                    fill="#00B7F1"/>
+                  <path
+                    d="M21.0999 20L21.6999 15.8H17.6999V13.1001C17.6999 12.0001 18.2999 10.8999 19.9999 10.8999H21.7999V7.3999C21.7999 7.3999 20.1999 7.1001 18.5999 7.1001C15.2999 7.1001 13.1999 9.09995 13.1999 12.7V15.8999H9.59985V20.1001H13.1999V30.1001C13.8999 30.2001 14.6999 30.3 15.3999 30.3C16.0999 30.3 16.8999 30.2001 17.5999 30.1001V20.1001H21.0999V20Z"
+                    fill="white"/>
+                </svg>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.2001 30.1001H14.9001C6.70015 30.1001 0.100098 23.5 0.100098 15.2V14.8999C0.100098 6.6999 6.70015 0.100098 14.9001 0.100098H15.2001C23.4001 0.100098 30.1001 6.6999 30.1001 14.8999V15.2C30.0001 23.4 23.4001 30.1001 15.2001 30.1001Z"
+                    fill="#00B7F1"/>
+                  <path
+                    d="M15 7.69995C17.4 7.69995 17.7 7.70005 18.7 7.80005C19.6 7.80005 20.1 8.0001 20.4 8.1001C20.8 8.3001 21.1 8.50005 21.4 8.80005C21.7 9.10005 21.9 9.40005 22.1 9.80005C22.2 10.1 22.4 10.6 22.4 11.5C22.4 12.5 22.5 12.7 22.5 15.2C22.5 17.7 22.5 17.8999 22.4 18.8999C22.4 19.7999 22.2 20.3001 22.1 20.6001C21.9 21.0001 21.7 21.3001 21.4 21.6001C21.1 21.9001 20.8 22.1 20.4 22.3C20.1 22.4 19.6 22.6001 18.7 22.6001C17.7 22.6001 17.5 22.7 15 22.7C12.5 22.7 12.3 22.7001 11.3 22.6001C10.4 22.6001 9.89998 22.4 9.59998 22.3C9.19998 22.1 8.89998 21.9001 8.59998 21.6001C8.29998 21.3001 8.10002 21.0001 7.90002 20.6001C7.80002 20.3001 7.59998 19.7999 7.59998 18.8999C7.59998 17.8999 7.5 17.7 7.5 15.2C7.5 12.7 7.49998 12.5 7.59998 11.5C7.59998 10.6 7.80002 10.1 7.90002 9.80005C8.10002 9.40005 8.29998 9.10005 8.59998 8.80005C8.89998 8.50005 9.19998 8.3001 9.59998 8.1001C9.89998 8.0001 10.4 7.80005 11.3 7.80005C12.3 7.70005 12.6 7.69995 15 7.69995ZM15 6C12.5 6 12.2 6.0001 11.3 6.1001C10.3 6.1001 9.69998 6.3 9.09998 6.5C8.49998 6.7 8 7 7.5 7.5C7 8 6.7 8.5001 6.5 9.1001C6.3 9.7001 6.09998 10.3 6.09998 11.3C6.09998 12.3 6 12.6 6 15C6 17.4 5.99998 17.8 6.09998 18.7C6.09998 19.7 6.3 20.2999 6.5 20.8999C6.7 21.4999 7 22 7.5 22.5C8 23 8.49998 23.3 9.09998 23.5C9.69998 23.7 10.3 23.8999 11.3 23.8999C12.3 23.8999 12.6 24 15 24C17.5 24 17.8 23.9999 18.7 23.8999C19.7 23.8999 20.3 23.7 20.9 23.5C21.5 23.3 22 23 22.5 22.5C23 22 23.3 21.4999 23.5 20.8999C23.7 20.2999 23.9 19.7 23.9 18.7C23.9 17.7 24 17.4 24 15C24 12.6 24 12.2 23.9 11.3C23.9 10.3 23.7 9.7001 23.5 9.1001C23.3 8.5001 23 8 22.5 7.5C22 7 21.5 6.7 20.9 6.5C20.3 6.3 19.7 6.1001 18.7 6.1001C17.8 6.0001 17.5 6 15 6Z"
+                    fill="white"/>
+                  <path
+                    d="M14.9999 10.3999C12.3999 10.3999 10.3999 12.5 10.3999 15C10.3999 17.6 12.4999 19.6001 14.9999 19.6001C17.4999 19.6001 19.5999 17.5 19.5999 15C19.6999 12.5 17.5999 10.3999 14.9999 10.3999ZM14.9999 18.1001C13.2999 18.1001 11.9999 16.8001 11.9999 15.1001C11.9999 13.4001 13.2999 12.1001 14.9999 12.1001C16.6999 12.1001 17.9999 13.4001 17.9999 15.1001C17.9999 16.7001 16.6999 18.1001 14.9999 18.1001Z"
+                    fill="white"/>
+                  <path
+                    d="M19.8 11.3C20.4076 11.3 20.9 10.8075 20.9 10.2C20.9 9.59244 20.4076 9.1001 19.8 9.1001C19.1925 9.1001 18.7 9.59244 18.7 10.2C18.7 10.8075 19.1925 11.3 19.8 11.3Z"
+                    fill="white"/>
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.1 30.1001H14.8C6.60005 30.1001 0 23.5 0 15.2V14.8999C0 6.6999 6.60005 0.100098 14.8 0.100098H15.1C23.3 0.100098 29.9 6.6999 29.9 14.8999V15.2C29.9 23.4 23.3 30.1001 15.1 30.1001Z"
+                    fill="#00B7F1"/>
+                  <path
+                    d="M11.9999 22.9001C18.9999 22.9001 22.8999 17.1002 22.8999 12.0002C22.8999 11.8002 22.8999 11.7002 22.8999 11.5002C23.5999 11.0002 24.2999 10.3002 24.7999 9.50024C24.0999 9.80024 23.3999 10.0003 22.5999 10.1003C23.3999 9.60034 23.9999 8.90024 24.2999 8.00024C23.5999 8.40024 22.6999 8.80015 21.8999 8.90015C21.1999 8.20015 20.1999 7.7002 19.0999 7.7002C16.9999 7.7002 15.2999 9.40024 15.2999 11.5002C15.2999 11.8002 15.2999 12.1001 15.3999 12.4001C12.1999 12.2001 9.39988 10.7001 7.49988 8.40015C7.19988 9.00015 6.99988 9.60029 6.99988 10.3003C6.99988 11.6003 7.69983 12.8002 8.69983 13.5002C8.09983 13.5002 7.49988 13.3002 6.99988 13.0002C6.99988 14.8002 8.29985 16.4002 10.0999 16.7002C9.79985 16.8002 9.39985 16.8003 9.09985 16.8003C8.89985 16.8003 8.5999 16.8002 8.3999 16.7002C8.8999 18.2002 10.2999 19.3003 11.9999 19.3003C10.6999 20.3003 9.09993 20.9001 7.29993 20.9001C6.99993 20.9001 6.6999 20.9003 6.3999 20.8003C7.7999 22.3003 9.79988 22.9001 11.9999 22.9001Z"
+                    fill="white"/>
+                </svg>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.1 30.1001H14.8C6.60005 30.1001 0 23.5 0 15.2V14.8999C0 6.6999 6.60005 0.100098 14.8 0.100098H15.1C23.3 0.100098 29.9 6.6999 29.9 14.8999V15.2C29.9 23.4 23.3 30.1001 15.1 30.1001Z"
+                    fill="#00B7F1"/>
+                  <path
+                    d="M5.1001 19.2C5.1001 18.7 5.1001 18.1001 5.1001 17.6001C5.1001 17.5001 5.1001 17.3999 5.1001 17.3999C5.2001 16.7999 5.20017 16.2001 5.30017 15.6001C5.70017 13.2001 6.70012 11.1 8.00012 9C8.00012 8.9 8.10007 8.90005 8.20007 8.80005C9.40007 8.20005 10.7001 7.9001 12.0001 7.6001C12.1001 7.6001 12.2001 7.59995 12.2001 7.69995C12.3001 7.99995 12.5001 8.2 12.6001 8.5C12.7001 8.7 12.7001 8.69995 12.9001 8.69995C13.5001 8.59995 14.0001 8.6001 14.6001 8.6001C15.4001 8.6001 16.2001 8.69995 17.0001 8.69995C17.1001 8.69995 17.2002 8.7001 17.3002 8.6001C17.4002 8.3001 17.5001 8.10005 17.7001 7.80005C17.7001 7.70005 17.8001 7.69995 17.9001 7.69995C19.2001 7.89995 20.5001 8.2999 21.7001 8.8999C21.8001 8.8999 21.9001 9.0001 21.9001 9.1001C22.2001 9.7001 22.6001 10.2 22.9001 10.8C23.9001 12.6 24.5001 14.5001 24.7001 16.6001C24.7001 17.0001 24.8002 17.3 24.8002 17.7C24.8002 18.2 24.8002 18.8 24.8002 19.3C24.8002 19.6 24.8001 19.8001 24.7001 20.1001C24.7001 20.2001 24.6001 20.3 24.6001 20.3C23.2001 21.3 21.8001 22.1001 20.2001 22.6001C19.8001 22.8001 19.7001 22.7999 19.5001 22.3999C19.2001 21.9999 19.0001 21.5001 18.7001 21.1001C19.0001 21.0001 19.3001 20.9 19.6001 20.7C19.9001 20.6 20.1001 20.4 20.4001 20.3C20.1001 20 20.1001 19.9001 19.7001 20.1001C16.6001 21.4001 13.4002 21.4001 10.3002 20.1001C10.0002 20.0001 9.9001 20 9.6001 20.3C10.1001 20.6 10.7002 20.8001 11.3002 21.1001C11.0002 21.6001 10.6002 22.1 10.3002 22.7C10.2002 22.8 10.2001 22.8 10.0001 22.8C8.30012 22.3 6.70017 21.4999 5.30017 20.3999C5.20017 20.2999 5.20007 20.2 5.20007 20.2C5.10007 19.7 5.1001 19.4 5.1001 19.2ZM20.0001 15.8C20.0001 15.7 20.0001 15.6 20.0001 15.5C20.0001 15.4 19.9001 15.2001 19.9001 15.1001C19.5001 13.9001 18.0001 13.5 17.1001 14.3C16.3001 15.1 16.3001 16.5 17.1001 17.3C17.8001 18 18.8001 17.9 19.4001 17.3C19.8001 16.9 20.0001 16.4 20.0001 15.8ZM13.5001 15.8C13.4001 15.6 13.4002 15.3001 13.3002 15.1001C12.9002 13.9001 11.5001 13.5 10.6001 14.3C9.7001 15.1 9.7001 16.5999 10.6001 17.3999C11.3001 17.9999 12.3001 18 12.9001 17.3C13.3001 16.9 13.4001 16.4 13.5001 15.8Z"
+                    fill="white"/>
+                </svg>
+                Discord
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.4998 30.1001H15.1998C6.99983 30.1001 0.299805 23.5 0.299805 15.2V14.8999C0.299805 6.6999 6.89983 0.100098 15.1998 0.100098H15.4998C23.6998 0.100098 30.2998 6.6999 30.2998 14.8999V15.2C30.3998 23.4 23.6998 30.1001 15.4998 30.1001Z"
+                    fill="#00B7F1"/>
+                  <path
+                    d="M24.3998 10.5C24.1998 9.7 23.4998 9.10005 22.6998 8.80005C21.1998 8.40005 15.2998 8.3999 15.2998 8.3999C15.2998 8.3999 9.39984 8.40005 7.89984 8.80005C7.09984 9.00005 6.49983 9.7 6.19983 10.5C5.79983 12 5.7998 15 5.7998 15C5.7998 15 5.79983 18.1 6.19983 19.5C6.39983 20.3 7.09984 20.9 7.89984 21.2C9.39984 21.6 15.2998 21.6001 15.2998 21.6001C15.2998 21.6001 21.1998 21.6 22.6998 21.2C23.4998 21 24.0998 20.3 24.3998 19.5C24.7998 18 24.7998 15 24.7998 15C24.7998 15 24.7998 12 24.3998 10.5ZM13.4998 17.8999V12.2L18.3998 15L13.4998 17.8999Z"
+                    fill="white"/>
+                </svg>
+                YouTube
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.4999 30.1001H15.1998C6.99983 30.1001 0.399902 23.5 0.399902 15.2V14.8999C0.399902 6.6999 6.99983 0.100098 15.1998 0.100098H15.4999C23.6999 0.100098 30.2999 6.6999 30.2999 14.8999V15.2C30.2999 23.4 23.6999 30.1001 15.4999 30.1001Z"
+                    fill="#00B7F1"/>
+                  <path
+                    d="M16.7999 7.29969C16.4999 8.89969 16.0999 10.4997 15.7999 12.0997C16.1999 12.0997 16.5998 12.1996 16.9998 12.1996C18.6998 12.3996 20.1998 12.9995 21.5998 13.8995C21.7998 13.9995 21.8998 13.9995 21.9998 13.8995C22.9998 13.0995 24.4998 13.3995 25.1998 14.3995C25.8998 15.4995 25.6998 16.8997 24.5998 17.5997C24.4998 17.5997 24.4998 17.6997 24.4998 17.7997C24.5998 19.6997 23.7998 21.1995 22.3998 22.3995C20.9998 23.5995 19.3998 24.1996 17.5998 24.4996C15.2998 24.8996 12.9998 24.6997 10.8998 23.7997C9.39984 23.1997 8.09977 22.2995 7.19977 20.8995C6.59977 19.9995 6.39984 18.9995 6.39984 17.8995C6.39984 17.6995 6.39977 17.6997 6.19977 17.5997C5.29977 17.0997 4.89979 16.1996 5.09979 15.1996C5.19979 14.2996 5.99984 13.5995 6.89984 13.3995C7.59984 13.2995 8.19977 13.3997 8.69977 13.7997C8.79977 13.8997 8.89979 13.8997 9.09979 13.7997C10.7998 12.6997 12.6999 12.0996 14.7999 11.9996C14.8999 11.9996 14.9998 11.8997 14.9998 11.7997C15.2998 10.0997 15.6998 8.49969 16.0998 6.79969C16.1998 6.29969 16.3998 6.19969 16.8998 6.29969C17.9998 6.49969 19.1999 6.79965 20.2999 6.99965C20.3999 6.99965 20.4998 6.99955 20.5998 6.89955C20.9998 6.29955 21.7998 6.09955 22.4998 6.39955C23.0998 6.69955 23.4998 7.39974 23.3998 8.09974C23.2998 8.79974 22.5998 9.29969 21.8998 9.29969C21.1998 9.29969 20.5998 8.79974 20.3998 8.09974C20.3998 7.99974 20.2998 7.89955 20.1998 7.89955C18.9998 7.69955 17.8999 7.49969 16.7999 7.29969ZM20.3998 17.2997C20.3998 16.3997 19.6998 15.6996 18.8998 15.6996C18.0998 15.6996 17.3998 16.3996 17.3998 17.1996C17.3998 18.0996 18.1998 18.7997 19.0998 18.7997C19.6998 18.7997 20.3998 18.0997 20.3998 17.2997ZM11.5998 15.5997C10.7998 15.5997 10.0998 16.2997 9.99982 17.0997C9.99982 17.9997 10.6998 18.6996 11.4998 18.6996C12.3998 18.6996 13.0998 17.9996 13.0998 17.1996C13.1998 16.2996 12.4998 15.5997 11.5998 15.5997ZM15.2999 22.6996C15.6999 22.6996 15.9998 22.6997 16.3998 22.5997C16.7998 22.4997 17.0998 22.4997 17.4998 22.2997C17.9998 22.0997 18.4998 21.6996 19.0998 21.4996C19.2998 21.3996 19.2999 21.2997 19.2999 21.0997C19.1999 20.8997 19.0998 20.7997 18.8998 20.7997C18.7998 20.7997 18.6998 20.8995 18.5998 20.8995C16.9998 22.0995 13.9999 22.1995 12.2999 20.8995C12.1999 20.8995 12.1998 20.7997 12.0998 20.7997C11.9998 20.7997 11.7998 20.7995 11.6998 20.8995C11.5998 20.9995 11.5998 21.1997 11.5998 21.2997C11.5998 21.3997 11.6999 21.4997 11.7999 21.5997C12.6999 22.2997 13.9999 22.6996 15.2999 22.6996Z"
+                    fill="white"/>
+                </svg>
+                Reddit
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15 0.100098C11.2 0.100098 7.60005 1.5001 4.80005 4.1001C2.00005 6.7001 0.3 10.1999 0 13.8999L8 17.2C8.7 16.7 9.50002 16.5 10.4 16.5H10.6L14.2 11.3V11.2C14.2 10.1 14.5 9.0001 15.2 8.1001C15.8 7.2001 16.7 6.4 17.7 6C18.7 5.6 19.9 5.49995 21 5.69995C22.1 5.89995 23.1 6.50005 23.9 7.30005C24.7 8.10005 25.2 9.09995 25.4 10.2C25.6 11.3 25.5 12.4 25.1 13.5C24.7 14.5 23.9 15.4 23 16C22.1 16.6 21 17 19.9 17H19.8L14.7 20.6001V20.8C14.7 21.9 14.3 22.9 13.6 23.7C12.9 24.5 11.9 25.0001 10.9 25.1001C9.80002 25.2001 8.80002 24.9 7.90002 24.3C7.10002 23.7 6.50005 22.7 6.30005 21.7L0.5 19.3C1.3 22 2.80005 24.4 4.80005 26.3C6.90005 28.2 9.39995 29.5 12.2 30C14.9 30.5 17.8 30.3 20.4 29.2C23 28.2 25.3 26.5 27 24.2C28.7 22 29.7 19.3 30 16.5C30.3 13.7 29.7 10.8999 28.5 8.3999C27.3 5.8999 25.3 3.80005 23 2.30005C20.5 0.900049 17.8 0.100098 15 0.100098Z"
+                        fill="#00B7F1"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.40015 22.8003L7.6001 22.0002C7.9001 22.6002 8.30017 23.0003 8.80017 23.3003C9.30017 23.6003 9.9001 23.8003 10.6001 23.8003C11.2001 23.8003 11.8002 23.6002 12.3002 23.2002C12.8002 22.8002 13.2001 22.4003 13.4001 21.8003C13.6001 21.2003 13.7001 20.6002 13.6001 20.0002C13.5001 19.4002 13.2002 18.8001 12.8002 18.4001C12.4002 18.0001 11.8001 17.7002 11.2001 17.5002C10.6001 17.4002 10.0001 17.4003 9.40015 17.6003L11.3002 18.4001C11.9002 18.6001 12.3001 19.1002 12.6001 19.7002C12.8001 20.3002 12.8001 20.9002 12.6001 21.5002C12.4001 22.1002 11.9002 22.5003 11.3002 22.8003C10.6002 23.1003 10.0001 23.1003 9.40015 22.8003Z"
+                        fill="#00B7F1"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M23.0998 9.09986C23.4998 9.69986 23.6997 10.4997 23.6997 11.1997C23.6997 12.1997 23.2998 13.1997 22.5998 13.8997C21.8998 14.5997 20.8998 14.9998 19.8998 14.9998C19.1998 14.9998 18.3998 14.7997 17.7998 14.3997C17.1998 13.9997 16.6998 13.3997 16.3998 12.6997C16.0998 11.9997 15.9997 11.2998 16.1997 10.4998C16.2997 9.79976 16.6997 9.09986 17.1997 8.59986C17.6997 8.09986 18.3998 7.69986 19.0998 7.59986C19.7998 7.49986 20.5998 7.49981 21.2998 7.79981C22.0998 7.99981 22.6998 8.49986 23.0998 9.09986Z"
+                        fill="#00B7F1"/>
+                </svg>
+                Steam Community
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="page-section articles">
+      <div class="container">
+        <h2 class="section-title articles__title">Product articles </h2>
+        <div class="articles__swiper articles-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">News</a>
+              <div class="articles-swiper__content swiper-no-swiping">
+                <p class="articles-swiper__text">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">News</a>
+              <div class="articles-swiper__content swiper-no-swiping">
+                <p class="articles-swiper__text">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-3.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">News</a>
+              <div class="articles-swiper__content swiper-no-swiping">
+                <p class="articles-swiper__text">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-4.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">News</a>
+              <div class="articles-swiper__content swiper-no-swiping">
+                <p class="articles-swiper__text">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">News</a>
+              <div class="articles-swiper__content swiper-no-swiping">
+                <p class="articles-swiper__text">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="articles-swiper__img">
+                <img src="img/articles-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="articles-swiper__category">News</a>
+              <div class="articles-swiper__content swiper-no-swiping">
+                <p class="articles-swiper__text">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="articles__swiper-panel">
+            <button class="articles__btn">
+              View all
+            </button>
+            <div class="articles__swiper-controls">
+              <button class="articles__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+              <button class="articles__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section product-career">
+      <div class="container">
+        <div class="product-career__content">
+          <h2 class="product-career__title product-one__subtitle">Let’s kick-off your career</h2>
+          <p class="product-career__text">Ready to create powerful gaming experiences for our players? </p>
+        </div>
+        <button class="product-career__btn btn">see careers</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <p class="footer__company">
+        <span class="copyright-symbol">©</span> 2010 — 2022 CREATIVE MOBILE OÜ
+      </p>
+      <ul class="footer__menu">
+        <li class="footer__menu-item">
+          <a href="#">PRIVACY</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#">TERMS</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="press-kit.html">PRESS KIT</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#">DICTIONARY</a>
+        </li>
+      </ul>
+      <ul class="footer__socials">
+        <li class="footer__socials-item">
+          <a href="#" class="footer__socials-link">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="socials-bg"
+                d="M15.6999 30.1001H15.3999C7.1999 30.1001 0.599854 23.5 0.599854 15.2V14.8999C0.599854 6.6999 7.1999 0.100098 15.3999 0.100098H15.6999C23.8999 0.100098 30.5999 6.6999 30.5999 14.8999V15.2C30.4999 23.4 23.8999 30.1001 15.6999 30.1001Z"
+                fill="#00B7F1"/>
+              <path
+                d="M21.0999 20L21.6999 15.8H17.6999V13.1001C17.6999 12.0001 18.2999 10.8999 19.9999 10.8999H21.7999V7.3999C21.7999 7.3999 20.1999 7.1001 18.5999 7.1001C15.2999 7.1001 13.1999 9.09995 13.1999 12.7V15.8999H9.59985V20.1001H13.1999V30.1001C13.8999 30.2001 14.6999 30.3 15.3999 30.3C16.0999 30.3 16.8999 30.2001 17.5999 30.1001V20.1001H21.0999V20Z"
+                fill="white"/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="#"
+             class="footer__socials-link">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="socials-bg"
+                d="M15.2001 30.1001H14.9001C6.70015 30.1001 0.100098 23.5 0.100098 15.2V14.8999C0.100098 6.6999 6.70015 0.100098 14.9001 0.100098H15.2001C23.4001 0.100098 30.1001 6.6999 30.1001 14.8999V15.2C30.0001 23.4 23.4001 30.1001 15.2001 30.1001Z"
+                fill="#00B7F1"/>
+              <path
+                d="M15 7.69995C17.4 7.69995 17.7 7.70005 18.7 7.80005C19.6 7.80005 20.1 8.0001 20.4 8.1001C20.8 8.3001 21.1 8.50005 21.4 8.80005C21.7 9.10005 21.9 9.40005 22.1 9.80005C22.2 10.1 22.4 10.6 22.4 11.5C22.4 12.5 22.5 12.7 22.5 15.2C22.5 17.7 22.5 17.8999 22.4 18.8999C22.4 19.7999 22.2 20.3001 22.1 20.6001C21.9 21.0001 21.7 21.3001 21.4 21.6001C21.1 21.9001 20.8 22.1 20.4 22.3C20.1 22.4 19.6 22.6001 18.7 22.6001C17.7 22.6001 17.5 22.7 15 22.7C12.5 22.7 12.3 22.7001 11.3 22.6001C10.4 22.6001 9.89998 22.4 9.59998 22.3C9.19998 22.1 8.89998 21.9001 8.59998 21.6001C8.29998 21.3001 8.10002 21.0001 7.90002 20.6001C7.80002 20.3001 7.59998 19.7999 7.59998 18.8999C7.59998 17.8999 7.5 17.7 7.5 15.2C7.5 12.7 7.49998 12.5 7.59998 11.5C7.59998 10.6 7.80002 10.1 7.90002 9.80005C8.10002 9.40005 8.29998 9.10005 8.59998 8.80005C8.89998 8.50005 9.19998 8.3001 9.59998 8.1001C9.89998 8.0001 10.4 7.80005 11.3 7.80005C12.3 7.70005 12.6 7.69995 15 7.69995ZM15 6C12.5 6 12.2 6.0001 11.3 6.1001C10.3 6.1001 9.69998 6.3 9.09998 6.5C8.49998 6.7 8 7 7.5 7.5C7 8 6.7 8.5001 6.5 9.1001C6.3 9.7001 6.09998 10.3 6.09998 11.3C6.09998 12.3 6 12.6 6 15C6 17.4 5.99998 17.8 6.09998 18.7C6.09998 19.7 6.3 20.2999 6.5 20.8999C6.7 21.4999 7 22 7.5 22.5C8 23 8.49998 23.3 9.09998 23.5C9.69998 23.7 10.3 23.8999 11.3 23.8999C12.3 23.8999 12.6 24 15 24C17.5 24 17.8 23.9999 18.7 23.8999C19.7 23.8999 20.3 23.7 20.9 23.5C21.5 23.3 22 23 22.5 22.5C23 22 23.3 21.4999 23.5 20.8999C23.7 20.2999 23.9 19.7 23.9 18.7C23.9 17.7 24 17.4 24 15C24 12.6 24 12.2 23.9 11.3C23.9 10.3 23.7 9.7001 23.5 9.1001C23.3 8.5001 23 8 22.5 7.5C22 7 21.5 6.7 20.9 6.5C20.3 6.3 19.7 6.1001 18.7 6.1001C17.8 6.0001 17.5 6 15 6Z"
+                fill="white"/>
+              <path
+                d="M14.9999 10.3999C12.3999 10.3999 10.3999 12.5 10.3999 15C10.3999 17.6 12.4999 19.6001 14.9999 19.6001C17.4999 19.6001 19.5999 17.5 19.5999 15C19.6999 12.5 17.5999 10.3999 14.9999 10.3999ZM14.9999 18.1001C13.2999 18.1001 11.9999 16.8001 11.9999 15.1001C11.9999 13.4001 13.2999 12.1001 14.9999 12.1001C16.6999 12.1001 17.9999 13.4001 17.9999 15.1001C17.9999 16.7001 16.6999 18.1001 14.9999 18.1001Z"
+                fill="white"/>
+              <path
+                d="M19.8 11.3C20.4076 11.3 20.9 10.8075 20.9 10.2C20.9 9.59244 20.4076 9.1001 19.8 9.1001C19.1925 9.1001 18.7 9.59244 18.7 10.2C18.7 10.8075 19.1925 11.3 19.8 11.3Z"
+                fill="white"/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="#"
+             class="footer__socials-link">
+            <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="socials-bg"
+                d="M15.1 30.1001H14.8C6.60005 30.1001 0 23.5 0 15.2V14.8999C0 6.6999 6.60005 0.100098 14.8 0.100098H15.1C23.3 0.100098 29.9 6.6999 29.9 14.8999V15.2C29.9 23.4 23.3 30.1001 15.1 30.1001Z"
+                fill="#00B7F1"/>
+              <path
+                d="M11.9999 22.9001C18.9999 22.9001 22.8999 17.1002 22.8999 12.0002C22.8999 11.8002 22.8999 11.7002 22.8999 11.5002C23.5999 11.0002 24.2999 10.3002 24.7999 9.50024C24.0999 9.80024 23.3999 10.0003 22.5999 10.1003C23.3999 9.60034 23.9999 8.90024 24.2999 8.00024C23.5999 8.40024 22.6999 8.80015 21.8999 8.90015C21.1999 8.20015 20.1999 7.7002 19.0999 7.7002C16.9999 7.7002 15.2999 9.40024 15.2999 11.5002C15.2999 11.8002 15.2999 12.1001 15.3999 12.4001C12.1999 12.2001 9.39988 10.7001 7.49988 8.40015C7.19988 9.00015 6.99988 9.60029 6.99988 10.3003C6.99988 11.6003 7.69983 12.8002 8.69983 13.5002C8.09983 13.5002 7.49988 13.3002 6.99988 13.0002C6.99988 14.8002 8.29985 16.4002 10.0999 16.7002C9.79985 16.8002 9.39985 16.8003 9.09985 16.8003C8.89985 16.8003 8.5999 16.8002 8.3999 16.7002C8.8999 18.2002 10.2999 19.3003 11.9999 19.3003C10.6999 20.3003 9.09993 20.9001 7.29993 20.9001C6.99993 20.9001 6.6999 20.9003 6.3999 20.8003C7.7999 22.3003 9.79988 22.9001 11.9999 22.9001Z"
+                fill="white"/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="#"
+             class="footer__socials-link">
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  class="socials-bg" d="M13.9 26.4H13.6C6.50002 26.4 0.700027 20.6 0.700027 13.5V13.2C0.700027 6.10004 6.50002 0.300049 13.6 0.300049H13.9C21 0.300049 26.8 6.10004 26.8 13.2V13.5C26.7 20.6 21 26.4 13.9 26.4Z" fill="#00B7F1"/>
+              <path d="M14.8 12.2C15 12 15.2 11.7 15.4 11.5C16 10.9 16.8 10.6 17.7 10.6C18.2 10.6 18.7 10.6 19.1 10.8C20.2 11.1 20.8 11.9 21.1 12.9C21.3 13.7 21.4 14.5 21.4 15.3C21.4 17 21.4 18.7 21.4 20.5C21.4 20.7 21.4 20.7 21.2 20.7C20.3 20.7 19.4 20.7 18.5 20.7C18.3 20.7 18.3 20.7 18.3 20.5C18.3 18.9 18.3 17.2 18.3 15.6C18.3 15.2 18.3 14.8 18.2 14.4C18 13.7 17.5 13.3 16.7 13.3C15.6 13.4 15.1 13.9 15 14.9C15 15.2 15 15.4 15 15.7C15 17.3 15 18.9 15 20.5C15 20.7 15 20.7 14.8 20.7C13.9 20.7 13 20.7 12.1 20.7C12 20.7 11.9 20.7 11.9 20.5C11.9 17.3 11.9 14.2 11.9 11C11.9 10.8 12 10.8 12.1 10.8C12.9 10.8 13.8 10.8 14.6 10.8C14.8 10.8 14.8 10.8 14.8 11C14.8 11.5 14.8 11.9 14.8 12.2Z" fill="#FEFEFE"/>
+              <path d="M9.90001 15.8C9.90001 17.4 9.90001 18.9 9.90001 20.5C9.90001 20.7 9.90003 20.7 9.70003 20.7C8.80003 20.7 7.90002 20.7 7.00002 20.7C6.90002 20.7 6.8 20.7 6.8 20.5C6.8 17.3 6.8 14.2 6.8 11C6.8 10.9 6.80002 10.8 7.00002 10.8C7.90002 10.8 8.80003 10.8 9.70003 10.8C9.90003 10.8 9.90001 10.9 9.90001 11C9.90001 12.7 9.90001 14.3 9.90001 15.8Z" fill="#FEFEFE"/>
+              <path d="M10.2 7.8C10.2 8.8 9.40001 9.6 8.40001 9.6C7.40001 9.6 6.60002 8.8 6.60002 7.8C6.60002 6.8 7.40001 6 8.40001 6C9.40001 6 10.2 6.8 10.2 7.8Z" fill="#FEFEFE"/>
+            </svg>
+
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+
+</html>
