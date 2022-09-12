@@ -4,6 +4,7 @@ import { swiperWork, swiperCareersWork } from "./slider";
 const productBtns = document.querySelectorAll('.products-main__menu-btn')
 const blogBtns = document.querySelectorAll('.blog-caption__menu-btn')
 const careersBtns = document.querySelectorAll('.careers-caption__menu-btn')
+const articlesBtns = document.querySelectorAll('.articles-page__menu-btn')
 
 const workBtns = document.querySelectorAll('.company-work__menu-btn')
 const workSlides = document.querySelectorAll('.work-swiper__slide')
@@ -50,7 +51,7 @@ careersWorkBtns.forEach(btn => {
 })
 
 
-// Переключения активных вкладок меню на странице блога
+// Переключения активных вкладок меню на странице статьи блога
 
 blogBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
@@ -71,6 +72,14 @@ careersBtns.forEach(btn => {
   })
 })
 
+// Переключения активных вкладок страницы блога
 
+articlesBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    removeClasses('articles-page__menu-btn_active')
+    btn.classList.add('articles-page__menu-btn_active')
+  })
+})
 
 
