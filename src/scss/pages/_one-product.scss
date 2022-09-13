@@ -342,6 +342,9 @@
     }
 
     &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 280px;
       height: 70px;
     }

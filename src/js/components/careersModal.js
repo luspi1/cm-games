@@ -83,7 +83,7 @@ const careersUsernameInput = document.querySelector('.careers-form__input[name="
 const mediaQuery = window.matchMedia('(max-width: 768px)')
 
 
-function handleTabletChange(e) {
+function handleTabletChange (e) {
   if (e.matches) {
     careersUsernameInput.placeholder = 'Username in messengers'
   }
@@ -94,5 +94,3 @@ if (careersUsernameInput) {
   mediaQuery.addListener(handleTabletChange)
   handleTabletChange(mediaQuery)
 }
-
-
