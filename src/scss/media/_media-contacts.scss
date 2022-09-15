@@ -1,3 +1,10 @@
+@media (min-width: 1940px) {
+  .contacts-page .contacts-caption__list {
+    justify-content: flex-start;
+  }
+}
+
+
 @media (max-width: 1550px) {
   .contacts-page .contacts-map__address {
     left: 20%;

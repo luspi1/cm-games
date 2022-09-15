@@ -22,11 +22,13 @@
     }
 
 
-    &__list-item:not(:last-child) {
-      padding-right: 30px;
-      margin-right: 30px;
-      max-width: 550px;
-      border-right: 1px solid #A5B4C4;
+    &__list-item {
+      max-width: 533px;
+      &:not(:last-child) {
+        border-right: 1px solid #A5B4C4;
+        padding-right: 25px;
+        margin-right: 25px;
+      }
     }
 
     &__list-item p {
@@ -40,12 +42,6 @@
       }
     }
 
-    &__list-item:last-child p {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 29px;
-      margin-bottom: 20px;
-    }
 
     &__socials-title {
       @include montserrat-regular;

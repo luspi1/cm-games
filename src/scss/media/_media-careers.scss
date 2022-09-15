@@ -1,23 +1,17 @@
 @media (max-width: 1280px) {
-  .careers-page .careers-cta .container {
-    flex-direction: column;
+  .careers-page .careers-caption__list {
+    height: 842px;
   }
-
-  .careers-page .careers-cta__content {
-    margin-right: 0;
-    max-width: 85%;
-    margin-bottom: 50px;
-
-    h2 {
-      text-align: center;
-    }
-  }
-
 
 }
 
-
 @media (max-width: 1024px) {
+
+  .careers-page .careers-caption__title {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
   .careers-page .careers-caption__inner {
     flex-direction: column;
   }
@@ -37,28 +31,29 @@
     padding: 5px 15px;
   }
 
-  .careers-page .careers-caption__item-title {
-    font-size: 40px;
-    line-height: 53px;
-  }
 
-  .careers-page .careers-caption__item-text {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .careers-page .careers-caption__item-btn {
-    font-size: 30px;
-    line-height: 45px;
+  .careers-page .careers-caption__list {
+    height: 490px;
   }
 
   .careers-page .careers-caption__list-item {
-    padding: 38px 20px 10px 20px;
+    padding: 15px 20px 15px 20px;
   }
+
+  .careers-page .careers-work {
+    padding: 20px 0 0 0;
+  }
+
 
   .careers-page .careers-work__top {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .careers-page .careers-caption__application a {
+    padding: 18px 15px 22px;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .careers-page .careers-work__title {
@@ -68,34 +63,20 @@
     line-height: 50px;
   }
 
-  .careers-page .careers-cta__title {
-    font-size: 40px;
-    line-height: 62px;
-
-  }
-
-  .careers-page .careers-cta__btn {
-    width: 260px;
-    height: 70px;
-    font-size: 28px;
-    line-height: 38px;
-  }
-
-
 }
-
 
 @media (max-width: 768px) {
   .careers-page .careers-caption__list {
     width: 100%;
     margin-right: 0;
-    height: 1040px;
+    height: 472px;
     padding-right: 30px;
   }
 
 
   .careers-page .careers-caption__list-item {
     padding: 20px 20px 10px 20px;
+    width: 100%;
   }
 
   .careers-page .careers-caption__item-title {
@@ -116,14 +97,8 @@
     padding: 5px 15px;
   }
 
-  .careers-page .careers-cta__title {
-    font-size: 30px;
-    line-height: 45px;
-  }
-
 
 }
-
 
 @media (max-width: 400px) {
   .careers-page .careers-caption__menu {
@@ -131,14 +106,10 @@
     align-items: center;
   }
 
-
-  .careers-page .careers-caption__list-item {
-    height: 360px;
-  }
-
   .careers-page .careers-caption__list {
-    height: 1170px;
+    height: 330px;
   }
+
 
 
   .careers-page .careers-work .careers-work-swiper .careers-work__swiper-panel {

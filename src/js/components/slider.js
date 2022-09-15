@@ -321,11 +321,17 @@ const swiperCareersModal = new Swiper('.careers-modals-swiper', {
     400: {
       slidesPerView: 1,
     },
-    1024: {
+    768: {
       slidesPerView: 2,
+      spaceBetween: 20
     },
     1280: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1450: {
       slidesPerView: 3,
+      spaceBetween: 20
     },
   }
 });

@@ -183,27 +183,11 @@
       transition: all .3s;
       border-radius: 10px;
       padding-bottom: 25px;
+      background-color: #ffffff;
 
       &__wrapper {
         padding: 0 20px 0 17px;
       }
-
-      &:hover {
-        background-color: #ffffff;
-      }
-    }
-
-
-    .swiper-slide:hover .careers-modals-swiper__text {
-      opacity: 1;
-      z-index: 20;
-      visibility: visible;
-    }
-
-    .swiper-slide:hover .careers-modals-swiper__caption {
-      opacity: 0;
-      z-index: -1;
-      visibility: hidden;
     }
 
     &__category {
@@ -229,19 +213,6 @@
       transition: all .3s;
     }
 
-    &__text {
-      position: absolute;
-      left: 0;
-      top: 0;
-      transition: all .3s;
-      @include montserrat-regular;
-      font-size: 16px;
-      line-height: 28px;
-      color: #000000;
-      opacity: 0;
-      z-index: -1;
-      visibility: hidden;
-    }
 
     &__swiper-panel {
       display: flex;
@@ -301,11 +272,7 @@
         color: #00C9FF;
       }
     }
-
-
   }
-
-
 }
 
 .careers-modal__main {
@@ -344,7 +311,7 @@
     border: none;
     background: none;
     cursor: pointer;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-left: 40px;
     transition: all .3s;
 
@@ -374,7 +341,7 @@
     line-height: 60px;
     text-transform: uppercase;
     color: #1C283A;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   &__input {
@@ -389,7 +356,7 @@
     background: none;
     transition: all .3s;
     outline: none;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 
     &:focus {
       border-bottom: 1px solid #00B7F1;
@@ -469,10 +436,34 @@
     height: 0;
   }
 
+  .careers-form__add-message-btn {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 30px;
 
+    .careers-form__svg-bg {
+      transition: all .3s;
+    }
+
+    &:hover {
+      .careers-form__svg-bg {
+        fill: #00B9EE;
+      }
+    }
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
 
 
   &__input-textarea {
+    display: none;
     margin-top: 20px;
     padding-top: 10px;
     padding-left: 10px;
@@ -483,8 +474,13 @@
     border-radius: 5px;
     overflow: hidden;
     border: 1px solid #A5B4C4;
+
     &:focus {
       border: 1px solid #00B7F1;;
+    }
+
+    &.careers-form__input-textarea_active {
+      display: block;
     }
   }
 

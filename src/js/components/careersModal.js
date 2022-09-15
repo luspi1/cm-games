@@ -53,13 +53,26 @@ const closeCareerModal = (targetModal) => {
 
 if (careersList) {
   careersList.addEventListener('click', (e) => {
-    if (e.target.classList.contains('careers-caption__item-btn')) {
+    if (e.target.classList.contains('careers-caption__list-item')) {
       const modal = e.target.dataset.career
       openCareerModal(modal)
       closeCareerModal(modal)
     }
   })
 }
+
+//Открытие textarea по нажатию на плюс
+
+careersModals.forEach(modal => {
+  const textareaInput = modal.querySelector('.careers-form__input-textarea')
+  const addTextareaBtn = modal.querySelector('.careers-form__add-message-btn')
+  if (addTextareaBtn) {
+    addTextareaBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      textareaInput.classList.toggle('careers-form__input-textarea_active')
+    })
+  }
+})
 
 
 // Кастомный инпут файла
