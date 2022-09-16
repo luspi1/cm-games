@@ -149,7 +149,7 @@ const swiperGallery = new Swiper('.product-gallery__swiper', {
     prevEl: '.product-gallery__swiper-button-prev'
   },
 
-  spaceBetween: 210,
+  spaceBetween: 250,
 
   pagination: {
     el: '.product-gallery__pagination',
