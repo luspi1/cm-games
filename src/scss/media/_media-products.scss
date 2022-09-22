@@ -34,6 +34,13 @@
     width: 50%;
   }
 
+
+  .products-main .game-item__img-wrapper {
+    height: 270px;
+    width: 280px;
+  }
+
+
   .products-main .products-main__path .prompt1 {
     top: -103px;
   }
@@ -84,11 +91,30 @@
     left: -70px;
   }
 
+
+.products-main .game-item.game-item_right .game-item__hover-video::after {
+  width: 102%;
+  height: 102%;
+  left: -4px;
+  top: -1px;
+}
+
+
+
+  .products-main .game-item__img::after {
+    height: 340px;
+  }
+
+  .products-main .game-item__hover-video video {
+    border-radius: 35px;
+  }
+
+
   .products-main .game-item.game-item_right .game-item__img:hover .game-item__hover-video {
     transform: translateX(-10px);
   }
   .products-main .game-item__img {
-    width: 66%;
+    width: 62%;
   }
 
   .products-main .products-main__path .prompt2 {
@@ -150,6 +176,16 @@
     width: 90%;
     margin-right: 85px;
   }
+
+
+  .products-main .game-item__img-wrapper {
+    width: 220px;
+    height: 210px;
+  }
+  .products-main .game-item__hover-video video {
+    border-radius: 30px;
+  }
+
 
   .products-main .game-item.game-item_right .game-item__content {
     margin-left: 110px;
@@ -295,11 +331,14 @@
     order: -1;
     margin-bottom: 30px;
   }
+
+
   .products-main .game-item__img-wrapper {
     display: block;
     position: relative;
     padding-top: 52%;
     top: 0;
+
     img {
       position: absolute;
       height: 100%;
@@ -368,9 +407,6 @@
     line-height: 27px;
     margin-bottom: 25px;
   }
-
-
-
 
 
   .products-main .game-item {

@@ -1,13 +1,18 @@
-const hoverTarget = document.querySelector('.game-item__img')
+const hoverTargets = document.querySelectorAll('.game-item__img')
 
-if (hoverTarget) {
-  hoverTarget.addEventListener('mouseover', (e) => {
-    const video = e.currentTarget.querySelector('video')
-    video.play()
+if (hoverTargets) {
+
+  hoverTargets.forEach(target => {
+    target.addEventListener('mouseover', (e) => {
+      const video = e.currentTarget.querySelector('video')
+      video.play()
+    })
+
+    target.addEventListener('mouseout', (e) => {
+      const video = e.currentTarget.querySelector('video')
+      video.pause()
+    })
   })
 
-  hoverTarget.addEventListener('mouseout', (e) => {
-    const video = e.currentTarget.querySelector('video')
-    video.pause()
-  })
+
 }

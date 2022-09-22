@@ -214,13 +214,16 @@
       margin-left: 265px;
     }
 
-    .game-item__img,
-    .game-item__img-wrapper {
+    .game-item__img {
       transform: rotate(180deg);
     }
 
-    .game-item__hover-video img {
-      transform: rotate(180deg) translate(50%, 50%);
+    .game-item__img-wrapper img{
+      transform: rotate(180deg);
+    }
+
+    .game-item__hover-video video {
+      transform: rotate(180deg) ;
     }
 
     .game-item__hover-video {
@@ -237,7 +240,8 @@
 
     .game-item__img-wrapper {
       left: -45px;
-      top: 35px;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
   }
@@ -302,7 +306,7 @@
   }
 
   .game-item__img {
-    width: 46%;
+    width: 41%;
     cursor: pointer;
     position: relative;
 
@@ -334,10 +338,11 @@
 
   .game-item__img-wrapper {
     position: absolute;
-    height: 100%;
-    width: 350px;
+    height: 355px;
+    width: 376px;
     left: 0;
-    top: -20px;
+    top: 50%;
+    transform: translateY(-50%);
 
     img {
       border-radius: 20px;
@@ -354,36 +359,26 @@
     position: relative;
     opacity: 0;
     z-index: 999;
-    height: 340px;
+    height: 100%;
     transform: translateX(100%);
 
     video {
-      width: 81%;
+      width: 100%;
       height: auto;
-      max-height: 100%;
-      border-radius: 40px;
+      border-radius: 50px;
     }
 
     &::after {
       content: '';
       position: absolute;
       background: no-repeat top/100% url("../img/border-phone.png");
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: -4px;
+      width: 101%;
+      height: 102%;
+      left: -1px;
+      top: -2px;
       transition: all .5s;
     }
 
-    //img {
-    //  position: absolute;
-    //  left: 50%;
-    //  top: 50%;
-    //  transform: translate(-50%, -50%);
-    //  width: 99%;
-    //  height: 92%;
-    //  border-radius: 30px;
-    //}
   }
 }
 
