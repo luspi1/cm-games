@@ -108,6 +108,7 @@
     }
 
     &__item-text {
+      max-width: 470px;
       @include montserrat-light;
       font-size: 18px;
       line-height: 30px;
