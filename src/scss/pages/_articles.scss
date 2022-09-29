@@ -11,15 +11,30 @@
     background-size: cover;
     width: 100%;
     height: 1555px;
-
   }
 }
 
 .articles-page {
-  padding: 60px 0 50px;
+  padding: 108px 0 50px;
 
-  .container {
+
+  &__inner {
     display: flex;
+  }
+
+  &__title {
+    margin-right: 100px;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 80px;
+    align-items: flex-start;
+
+    p {
+      max-width: 860px;
+    }
+
   }
 
   &__content {
@@ -44,9 +59,6 @@
   }
 
   &__title {
-    @include mudkty-regular;
-    font-size: 55px;
-    line-height: 80px;
     color: #00B7F1;
   }
 
@@ -55,25 +67,16 @@
     margin-bottom: 15px;
 
     a {
-      @include montserrat-light;
-      font-size: 16px;
-      line-height: 20px;
       color: #00B7F1;
       margin-right: 20px;
     }
 
     p {
-      @include montserrat-light;
-      font-size: 16px;
-      line-height: 20px;
       color: #808080;
     }
   }
 
   &__main-desc {
-    @include montserrat-regular;
-    font-size: 18px;
-    line-height: 28px;
     margin-bottom: 58px;
     color: #1C283A;
   }
@@ -91,8 +94,6 @@
       border: none;
       background: none;
       border-radius: 50px;
-      font-size: 22px;
-      line-height: 32px;
       padding: 6px 20px;
       cursor: pointer;
       transition: all .3s;
@@ -134,17 +135,11 @@
   }
 
   &__item-title {
-    @include mudkty-regular;
-    font-size: 40px;
-    line-height: 58px;
     color: #1C283A;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   &__item-desc {
-    @include montserrat-regular;
-    font-size: 18px;
-    line-height: 28px;
     color: #1C283A;
     margin-bottom: 20px;
   }
@@ -153,17 +148,11 @@
     display: flex;
 
     a {
-      @include montserrat-light;
-      font-size: 16px;
-      line-height: 20px;
       color: #00B7F1;
       margin-right: 17px;
     }
 
     p {
-      @include montserrat-light;
-      font-size: 16px;
-      line-height: 20px;
       color: #808080;
     }
   }
@@ -172,9 +161,6 @@
     border: none;
     background: none;
     cursor: pointer;
-    @include mudkty-regular;
-    font-size: 26px;
-    line-height: 38px;
     text-transform: uppercase;
     color: #00B7F1;
   }
@@ -186,10 +172,6 @@
   min-width: 515px;
 
   &__subtitle {
-    @include mudkty-regular;
-    font-size: 30px;
-    line-height: 44px;
-    color: #1C283A;
     margin-bottom: 28px;
   }
 
@@ -223,16 +205,10 @@
     margin-top: -10px;
 
     a {
-      @include mudkty-regular;
-      font-size: 20px;
-      line-height: 29px;
       color: #1C283A;
     }
 
     p {
-      @include montserrat-regular;
-      font-size: 16px;
-      line-height: 28px;
       color: #1C283A;
       max-width: 330px;
     }

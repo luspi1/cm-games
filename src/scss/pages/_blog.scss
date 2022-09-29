@@ -35,8 +35,6 @@
       border: none;
       background: none;
       border-radius: 50px;
-      font-size: 22px;
-      line-height: 32px;
       padding: 6px 20px;
       cursor: pointer;
       color: #1C283A;
@@ -63,10 +61,6 @@
   }
 
   .more-articles__title {
-    @include montserrat-semibold;
-    font-size: 45px;
-    line-height: 55px;
-    color: #1C283A;
     margin-bottom: 27px;
   }
 
@@ -99,9 +93,6 @@
     }
 
     &__category {
-      @include mudkty-light;
-      font-size: 17px;
-      line-height: 25px;
       color: #00B7F1;
       display: inline-block;
       margin-top: 22px;
@@ -168,9 +159,6 @@
     &__btn {
       background: none;
       border: none;
-      @include mudkty-medium;
-      font-size: 22px;
-      line-height: 33px;
       color: $secondary;
       cursor: pointer;
       transition: all .3s;
@@ -224,9 +212,6 @@
 
 
   &__title {
-    @include montserrat-semibold;
-    font-size: 52px;
-    line-height: 80px;
     margin-bottom: 35px;
   }
 
@@ -235,32 +220,20 @@
   }
 
   &__info-category {
-    @include montserrat-regular;
-    font-size: 18px;
-    line-height: 22px;
     color: #00B7F1;
     margin-right: 25px;
   }
 
   &__info-date {
-    @include montserrat-regular;
-    font-size: 18px;
-    line-height: 22px;
     color: #808080;
   }
 
   &__main-text {
-    @include montserrat-semibold;
-    font-size: 24px;
-    line-height: 44px;
     color: #1C283A;
     margin-bottom: 35px;
   }
 
   &__text {
-    @include montserrat-regular;
-    font-size: 20px;
-    line-height: 32px;
     color: #1C283A;
     margin-bottom: 35px;
   }
@@ -283,9 +256,6 @@
   }
 
   &__subtitle {
-    @include montserrat-semibold;
-    font-size: 25px;
-    line-height: 32px;
     color: #1C283A;
     margin-bottom: 25px;
     margin-top: 60px;
@@ -354,9 +324,6 @@
   &__more-btn {
     margin-top: 40px;
     display: inline-block;
-    @include montserrat-extra;
-    font-size: 20px;
-    line-height: 24px;
     text-transform: uppercase;
     color: #FFFFFF;
     cursor: pointer;
@@ -407,12 +374,6 @@
     }
   }
 
-  &__text {
-    @include montserrat-medium;
-    font-size: 18px;
-    line-height: 26px;
-    color: #1C283A;
-  }
 
   &__item:first-child {
     margin-top: 210px;
@@ -430,24 +391,14 @@
     margin-bottom: 500px;
 
     a {
-      @include montserrat-light;
-      font-size: 16px;
-      line-height: 26px;
       color: #00B7F1;
     }
 
     .blog-sidebar__category-text {
-      @include montserrat-medium;
-      font-size: 18px;
-      line-height: 26px;
-      color: #1C283A;
       margin-bottom: 10px;
     }
 
     .blog-sidebar__category-sub {
-      @include montserrat-medium;
-      font-size: 15px;
-      line-height: 18px;
       color: #A5B4C4;
     }
 

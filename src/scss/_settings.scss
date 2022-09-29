@@ -10,10 +10,10 @@ body {
   margin: 0;
   min-width: 340px;
   overflow-x: hidden;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 28px;
   position: relative;
-  @include mudkty-light;
+  @include montserrat-regular;
   color: $primary;
 
   &._lock {
@@ -77,12 +77,67 @@ select::-ms-expand {
   margin: 0 auto;
 }
 
-h2.section-title {
+
+// шрифты
+
+.main-title {
+  @include mudkty-regular;
+  font-size: 108px;
+  line-height: 65px;
+  color: #00B9EE;
+}
+
+
+.accent-text {
+  @include mudkty-regular;
+  font-size: 28px;
+  line-height: 38px;
+  color: #1C283A;
+}
+
+.main-subtitle {
+  @include mudkty-regular;
   font-size: 45px;
   line-height: 66px;
-  font-weight: 300;
-  color: $secondary;
+  color: #1C283A;
 }
+
+.regular-text {
+  @include montserrat-regular;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1C283A;
+}
+
+.title-text {
+  @include montserrat-semibold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1C283A;
+}
+
+.main-link {
+  @include mudkty-regular;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000000;
+}
+
+
+.category-text {
+  @include montserrat-regular;
+  font-size: 16px;
+  line-height: 26px;
+  color: #00B7F1;
+}
+
+.factage-text {
+  @include mudkty-bold;
+  font-size: 81px;
+  line-height: 157px;
+  color: #1C283A;
+}
+
 
 .btn {
   text-transform: uppercase;
@@ -126,45 +181,4 @@ h2.section-title {
     }
   }
 
-
-  //.choices {
-  //  width: 65px;
-  //  z-index: 999;
-  //}
-  //
-  //.choices__placeholder {
-  //  opacity: 1;
-  //}
-  //
-  //.choices__inner {
-  //  border: none;
-  //  @include mudkty-regular;
-  //  font-size: 23px;
-  //  line-height: 34px;
-  //  color: #000000;
-  //  background-color: transparent;
-  //}
-  //
-  //.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
-  //  padding-right: 0;
-  //}
-  //
-  //.choices__list--single {
-  //  padding: 4px 16px 4px 0;
-  //}
-  //
-  //
-  //
-  //.choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
-  //  background-color: #F8F8FA;
-  //  color: #00B7F1;
-  //}
-  //
-  //.choices__list--dropdown, .choices__list[aria-expanded] {
-  //  border: 1px solid #F2F1F7;
-  //  filter: drop-shadow(0px 0px 20px rgba(10, 35, 91, 0.15));
-  //  margin-top: 10px;
-  //  top: 76%;
-  //
-  //}
 }

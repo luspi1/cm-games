@@ -10,7 +10,7 @@
 <div class="site-container">
   @include('partials/header.html', {})
 
-  <main class="main">
+  <main class="main home-page">
     <div class="caption">
       <h1 class="caption__title">Doing<br class="caption__br_active">
         <span>games and services</span> for millions of people!</h1>
@@ -51,7 +51,7 @@
         </div>
         <div class="caption__slider-panel slider-panel">
           <div class="slider-panel__content">
-            <h3>Welcome to our Tallinn office!</h3>
+            <h3 class="accent-text">Welcome to our Tallinn office!</h3>
           </div>
           <div class="slider-panel__controls">
             <button class="swiper-button-prev">
@@ -81,7 +81,7 @@
     </div>
     <section class="page-section news">
       <div class="container">
-        <h2 class="section-title">What's new</h2>
+        <h2 class="main-subtitle home-page__subtitle">What's new</h2>
         <div class="news__swiper news-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide ">
@@ -89,7 +89,7 @@
                 <img src="img/news-slide-1.jpg"
                      alt="slide">
               </div>
-              <a href="#" class="news-swiper__category">News</a>
+              <a href="#" class="news-swiper__category category-text">News</a>
               <div class="news-swiper__content swiper-no-swiping">
                 <p class="news-swiper__text">Into the radius is coming to Meta
                   Quest
@@ -101,7 +101,7 @@
                 <img src="img/news-slide-2.jpg"
                      alt="slide">
               </div>
-              <a href="blog.html" class="news-swiper__category">Blog</a>
+              <a href="blog.html" class="news-swiper__category category-text">Blog</a>
               <div class="news-swiper__content swiper-no-swiping">
                 <p class="news-swiper__text">Welcome to our all-new hq!
                   Our new home is here!</p>
@@ -112,7 +112,7 @@
                 <img src="img/news-slide-3.jpg"
                      alt="slide">
               </div>
-              <a href="#" class="news-swiper__category">News</a>
+              <a href="#" class="news-swiper__category category-text">News</a>
               <div class="news-swiper__content swiper-no-swiping">
                 <p class="news-swiper__text">Cm games partners with MINUDOC
                   PLATFORM</p>
@@ -123,7 +123,7 @@
                 <img src="img/news-slide-4.jpg"
                      alt="slide">
               </div>
-              <a href="#" class="news-swiper__category">News</a>
+              <a href="#" class="news-swiper__category category-text">News</a>
               <div class="news-swiper__content swiper-no-swiping">
                 <p class="news-swiper__text">It sounds crazy, but here we are —
                   10
@@ -135,7 +135,7 @@
                 <img src="img/news-slide-1.jpg"
                      alt="slide">
               </div>
-              <a href="#" class="news-swiper__category">News</a>
+              <a href="#" class="news-swiper__category category-text">News</a>
               <div class="news-swiper__content swiper-no-swiping">
                 <p class="news-swiper__text">Into the radius is coming to Meta
                   Quest
@@ -147,14 +147,13 @@
                 <img src="img/news-slide-2.jpg"
                      alt="slide">
               </div>
-              <a href="blog.html" class="news-swiper__category">Blog</a>
+              <a href="blog.html" class="news-swiper__category category-text">Blog</a>
               <div class="news-swiper__content swiper-no-swiping">
                 <p class="news-swiper__text">Into the radius is coming to Meta
                   Quest
                   2 in September 2022</p>
               </div>
             </div>
-
           </div>
           <div class="news__swiper-panel">
             <button class="btn">
@@ -186,7 +185,7 @@
     </section>
     <section class="page-section products">
       <div class="container">
-        <h2 class="products__title">Games</h2>
+        <h2 class="main-subtitle home-page__subtitle products__title">Games</h2>
         <div class="products__swiper products-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide ">
@@ -265,7 +264,8 @@
     </section>
     <section class="page-section services">
       <div class="container">
-        <h2 class="section-title">Services</h2>
+        <h2 class="main-subtitle home-page__subtitle services__title">
+          Services</h2>
         <div class="services__swiper services-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide ">
@@ -367,31 +367,33 @@
     </section>
     <section class="page-section careers">
       <div class="container">
-        <h2 class="section-title">Careers</h2>
+        <h2 class="main-subtitle home-page__subtitle careers__title">
+          Careers</h2>
         <div class="careers__swiper careers-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <h3 class="careers-swiper__title">Senior game designer</h3>
-              <a class="careers-swiper__link" href="#">Remote</a>
+              <h3 class="careers-swiper__title accent-text">Senior game designer</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
             </div>
             <div class="swiper-slide">
-              <h3 class="careers-swiper__title">Lead unity developer</h3>
-              <a class="careers-swiper__link" href="#">Remote</a>
+              <h3 class="careers-swiper__title accent-text">Lead unity developer</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
             </div>
             <div class="swiper-slide">
-              <h3 class="careers-swiper__title">Art lead</h3>
-              <a class="careers-swiper__link" href="#">Remote</a>
+              <h3 class="careers-swiper__title accent-text">Art lead</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
             </div>
             <div class="swiper-slide link-slide">
-              <a class="careers-swiper__title" href="careers.html">Join our team</a>
+              <a class="careers-swiper__title accent-text" href="careers.html">Join our
+                team</a>
             </div>
             <div class="swiper-slide">
-              <h3 class="careers-swiper__title">Senior game designer</h3>
-              <a class="careers-swiper__link" href="#">Remote</a>
+              <h3 class="careers-swiper__title accent-text">Senior game designer</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
             </div>
             <div class="swiper-slide">
-              <h3 class="careers-swiper__title">Lead unity developer</h3>
-              <a class="careers-swiper__link" href="#">Remote</a>
+              <h3 class="careers-swiper__title accent-text">Lead unity developer</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
             </div>
           </div>
           <div class="careers__swiper-panel">

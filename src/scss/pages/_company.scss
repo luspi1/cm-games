@@ -1,37 +1,25 @@
 .company {
-  h2.company-subtitle {
-    @include montserrat-bold;
-    font-size: 45px;
-    line-height: 55px;
-    color: #1C283A;
-    margin-bottom: 30px;
-  }
+  padding-top: 108px;
 
   .company-caption {
-    margin-top: 51px;
     margin-bottom: 84px;
 
     &__title {
-      @include mudkty-bold;
-      font-size: 58px;
-      line-height: 92px;
-      letter-spacing: 0.05em;
-      color: #1C283A;
-      margin-bottom: 40px;
+      margin-right: 100px;
     }
 
-    &__desc {
-      @include mudkty-light;
-      font-size: 38px;
-      line-height: 45px;
-      color: #1C283A;
-      max-width: 1380px;
-
-      a {
-        font-weight: 700;
-        color: #00B7F1;
+    &__top {
+      display: flex;
+      margin-bottom: 80px;
+      align-items: flex-start;
+      p {
+        max-width: 860px;
+        a {
+          color: #00B7F1;
+        }
       }
     }
+
   }
 
   .company-indicators {
@@ -45,9 +33,6 @@
     }
 
     &__list-item {
-      @include mudkty-bold;
-      font-size: 81px;
-      line-height: 157px;
       color: #1C283A;
       margin-bottom: 65px;
       width: 31%;
@@ -58,9 +43,6 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        @include montserrat-bold;
-        font-size: 24px;
-        line-height: 29px;
       }
     }
 
@@ -86,12 +68,6 @@
     }
 
     &__list-title {
-      h2 {
-        @include montserrat-bold;
-        font-size: 81px;
-        line-height: 99px;
-      }
-
       padding-top: 22px;
     }
 
@@ -100,19 +76,10 @@
       height: 100px;
     }
 
-    &__item-title {
-      @include montserrat-bold;
-      font-size: 20px;
-      line-height: 30px;
-      color: #1C283A;
-    }
+
 
     &__item-text {
       max-width: 470px;
-      @include montserrat-light;
-      font-size: 18px;
-      line-height: 30px;
-      color: #1C283A;
     }
 
   }
@@ -157,9 +124,6 @@
       }
 
       &__category {
-        @include montserrat-bold;
-        font-size: 25px;
-        line-height: 30px;
         color: #00B7F1;
         display: inline-block;
         margin-top: 62px;
@@ -174,9 +138,6 @@
       }
 
       &__text {
-        @include montserrat-regular;
-        font-size: 17px;
-        line-height: 28px;
         color: #1C283A;
         margin-bottom: 17px;
         min-height: 100px;
@@ -235,13 +196,6 @@
     &__desc {
       width: 45%;
       margin-right: 50px;
-
-      p {
-        @include montserrat-light;
-        font-size: 17px;
-        line-height: 28px;
-        color: #1C283A;
-      }
 
       p:not(:last-child) {
         margin-bottom: 29px;
@@ -318,9 +272,6 @@
       .company-office__pagination {
         position: static;
         width: 45px;
-        @include mudkty-regular;
-        font-size: 18px;
-        line-height: 28px;
         color: #00B7F1;
       }
 
@@ -361,19 +312,12 @@
     }
 
     &__content-title {
-      @include mudkty-regular;
-      font-size: 23px;
-      line-height: 30px;
       color: #1C283A;
       margin-bottom: 30px;
     }
 
     &__content-list li {
       position: relative;
-      @include montserrat-light;
-      font-size: 17px;
-      line-height: 28px;
-      color: #1C283A;
       max-width: 430px;
 
       span {
@@ -420,8 +364,6 @@
         border: none;
         background: none;
         border-radius: 50px;
-        font-size: 22px;
-        line-height: 32px;
         padding: 6px 20px;
         cursor: pointer;
         transition: all .3s;
@@ -462,9 +404,6 @@
       }
 
       &__category {
-        @include mudkty-light;
-        font-size: 17px;
-        line-height: 25px;
         color: #00B7F1;
         display: inline-block;
         margin-top: 22px;
@@ -523,9 +462,6 @@
     &__btn {
       background: none;
       border: none;
-      @include mudkty-medium;
-      font-size: 22px;
-      line-height: 33px;
       color: $secondary;
       cursor: pointer;
       transition: all .3s;
@@ -567,9 +503,6 @@
     }
 
     &__title {
-      @include mudkty-light;
-      font-size: 56px;
-      line-height: 69px;
       max-width: 64%;
       margin-right: 70px;
 
@@ -579,9 +512,6 @@
     }
 
     &__btn {
-      @include mudkty-light;
-      font-size: 27px;
-      line-height: 35px;
       text-align: center;
       cursor: pointer;
       text-transform: uppercase;

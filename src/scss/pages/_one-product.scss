@@ -1,14 +1,7 @@
 .product-one {
 
-  &__subtitle {
-    @include mudkty-light;
-    font-size: 45px;
-    line-height: 60px;
-    color: #000000;
-  }
-
   .product-caption {
-    margin-top: 150px;
+    margin-top: 108px;
     margin-bottom: 160px;
 
     &__container {
@@ -26,17 +19,11 @@
     }
 
     &__content-title {
-      @include montserrat-bold;
-      font-size: 80px;
-      line-height: 98px;
-      color: $secondary;
       margin-bottom: 45px;
+      line-height: 140px;
     }
 
     &__content-desc {
-      @include montserrat-light;
-      font-size: 26px;
-      line-height: 48px;
       margin-bottom: 73px;
     }
 
@@ -80,15 +67,10 @@
     }
 
     &__list-item {
-      @include mudkty-bold;
-      font-size: 24px;
-      line-height: 29px;
       width: 31%;
       border-top: 1px solid #A5B4C4;
 
       span {
-        font-size: 81px;
-        line-height: 158px;
         display: inline-block;
         margin-bottom: -35px;
       }
@@ -133,12 +115,6 @@
     }
 
     &__list-title {
-      h2 {
-        @include montserrat-bold;
-        font-size: 81px;
-        line-height: 99px;
-      }
-
       padding-top: 22px;
     }
 
@@ -148,13 +124,10 @@
     }
 
     &__item-text {
-      @include montserrat-regular;
-      font-size: 18px;
-      line-height: 28px;
       max-width: 460px;
 
       span {
-        font-weight: 700;
+        font-weight: 600;
       }
     }
 
@@ -276,22 +249,24 @@
     }
 
     &__support-text {
-      @include montserrat-light;
-      font-size: 22px;
-      line-height: 36px;
       margin-bottom: 25px;
     }
 
     &__support-btn {
-      @include montserrat-extra;
-      font-size: 20px;
-      line-height: 24px;
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;
       width: 380px;
       height: 70px;
+      border: none;
+      background: #00B7F1;
+      border-radius: 100px;
+      transition: all .3s;
+      cursor: pointer;
 
+      &:hover {
+        background: #00C9FF;
+      }
     }
 
     .product-connect__socials {
@@ -303,9 +278,6 @@
       flex-wrap: wrap;
 
       a {
-        @include mudkty-regular;
-        font-size: 23px;
-        line-height: 34px;
         color: #000000;
       }
 
@@ -344,18 +316,23 @@
       margin-bottom: 20px;
     }
 
-    &__text {
-      @include montserrat-light;
-      font-size: 22px;
-      line-height: 27px;
-    }
 
     &__btn {
       display: flex;
+      color: #ffffff;
+      text-transform: uppercase;
       justify-content: center;
       align-items: center;
       width: 280px;
       height: 70px;
+      border: none;
+      background: #00B7F1;
+      border-radius: 100px;
+      transition: all .3s;
+      cursor: pointer;
+      &:hover {
+        background: #00C9FF;
+      }
     }
 
   }

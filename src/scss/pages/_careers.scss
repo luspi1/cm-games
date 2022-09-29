@@ -1,17 +1,23 @@
 .careers-page {
-  padding-top: 43px;
+  padding-top: 108px;
   padding-bottom: 50px;
 
   .careers-caption {
     padding-bottom: 70px;
 
+    &__top {
+      display: flex;
+      margin-bottom: 80px;
+      align-items: flex-start;
+
+      p {
+        max-width: 860px;
+      }
+
+    }
+
     &__title {
-      @include mudkty-bold;
-      font-size: 58px;
-      line-height: 92px;
-      color: #1C283A;
-      margin-bottom: 26px;
-      letter-spacing: 0.05em;
+      margin-right: 100px;
     }
 
     &__inner {
@@ -54,18 +60,12 @@
     }
 
     &__item-title {
-      @include mudkty-regular;
-      font-size: 30px;
-      line-height: 40px;
       color: #1C283A;
       margin-bottom: 12px;
       pointer-events: none;
     }
 
     &__item-text {
-      @include montserrat-regular;
-      font-size: 20px;
-      line-height: 30px;
       color: #1C283A;
       pointer-events: none;
     }
@@ -77,9 +77,6 @@
         padding: 18px 15px 20px;
         background-color: #F3F3F3;
         width: 100%;
-        font-size: 22px;
-        line-height: 30px;
-        @include mudkty-regular;
         color: #1C283A;
         border-radius: 5px;
         transition: all .3s;
@@ -103,8 +100,6 @@
       border: none;
       background: none;
       border-radius: 50px;
-      font-size: 22px;
-      line-height: 32px;
       padding: 6px 20px;
       cursor: pointer;
       color: #1C283A;
@@ -129,10 +124,6 @@
     }
 
     &__title {
-      @include montserrat-bold;
-      font-size: 45px;
-      line-height: 55px;
-      color: #1C283A;
       margin-right: 50px;
     }
 
@@ -147,8 +138,6 @@
         border: none;
         background: none;
         border-radius: 50px;
-        font-size: 22px;
-        line-height: 32px;
         padding: 6px 20px;
         cursor: pointer;
         transition: all .3s;
@@ -189,9 +178,6 @@
       }
 
       &__category {
-        @include mudkty-light;
-        font-size: 17px;
-        line-height: 25px;
         color: #00B7F1;
         display: inline-block;
         margin-top: 22px;
@@ -255,9 +241,6 @@
     &__btn {
       background: none;
       border: none;
-      @include mudkty-medium;
-      font-size: 22px;
-      line-height: 33px;
       color: $secondary;
       cursor: pointer;
       transition: all .3s;
