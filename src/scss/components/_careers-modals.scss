@@ -130,7 +130,7 @@
       content: '';
       position: absolute;
       left: -25px;
-      top: 13px;
+      top: 14px;
       background-color: #00B9EE;
       width: 16px;
       height: 1px;
@@ -529,23 +529,18 @@
   }
 
   .careers-modal__title {
-    font-size: 40px;
-    line-height: 55px;
     margin-bottom: 20px;
   }
 
   .careers-modal__desc p {
-    font-size: 14px;
-    line-height: 28px;
     margin-bottom: 40px;
   }
 
   .careers-modal__desc-btn {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 15px 25px;
+    padding: 15px 5px;
     border-radius: 40px;
     margin-bottom: 20px;
+    width: 280px;
   }
 
   .careers-modal__rec-btn {
@@ -557,32 +552,13 @@
     width: 278px;
   }
 
-  .careers-modal__list li {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
   .careers-modal__list {
     margin-bottom: 20px;
   }
 
-  .careers-modal p.careers-modal__list-title {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
   .careers-form__title {
-    font-size: 40px;
-    line-height: 55px;
     margin-bottom: 30px;
   }
-
-
-  .careers-form__checkbox + label {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
 
 }
 
@@ -593,8 +569,6 @@
   }
 
   .careers-modal__title {
-    font-size: 35px;
-    line-height: 45px;
     margin-bottom: 15px;
   }
 
@@ -611,11 +585,6 @@
   .careers-modal__lists {
     width: 100%;
     padding-left: 26px;
-  }
-
-  .careers-form__title {
-    font-size: 35px;
-    line-height: 45px;
   }
 
   .careers-form__file-inputs {
@@ -643,8 +612,6 @@
     display: block;
     margin: 0 auto;
     border-radius: 40px;
-    font-size: 18px;
-    line-height: 24px;
     padding: 20px 100px;
   }
 

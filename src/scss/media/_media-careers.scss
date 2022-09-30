@@ -1,16 +1,23 @@
 @media (max-width: 1280px) {
+
+  .careers-page .careers-caption__top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .careers-page .careers-caption__title {
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+
+
   .careers-page .careers-caption__list {
-    height: 842px;
+    height: 810px;
   }
 
 }
 
 @media (max-width: 1024px) {
-
-  .careers-page .careers-caption__title {
-    font-size: 45px;
-    line-height: 60px;
-  }
 
   .careers-page .careers-caption__inner {
     flex-direction: column;
@@ -25,15 +32,9 @@
     justify-content: space-around;
   }
 
-  .careers-page .careers-caption__menu-btn {
-    font-size: 18px;
-    line-height: 26px;
-    padding: 5px 15px;
-  }
-
 
   .careers-page .careers-caption__list {
-    height: 490px;
+    height: 420px;
   }
 
   .careers-page .careers-caption__list-item {
@@ -52,24 +53,30 @@
 
   .careers-page .careers-caption__application a {
     padding: 18px 15px 22px;
-    font-size: 18px;
-    line-height: 26px;
   }
 
   .careers-page .careers-work__title {
     margin-right: 0;
     margin-bottom: 40px;
-    font-size: 40px;
-    line-height: 50px;
   }
 
 }
 
 @media (max-width: 768px) {
+
+  .careers-page {
+    padding-top: 60px;
+  }
+
+  .careers-page .careers-caption__title {
+    margin-bottom: 50px;
+  }
+
+
   .careers-page .careers-caption__list {
     width: 100%;
     margin-right: 0;
-    height: 472px;
+    height: 377px;
     padding-right: 30px;
   }
 
@@ -79,12 +86,6 @@
     width: 100%;
   }
 
-  .careers-page .careers-caption__item-title {
-    font-size: 30px;
-    line-height: 45px;
-  }
-
-
   .careers-page .careers-work__menu {
     width: 100%;
     justify-content: space-around;
@@ -92,8 +93,6 @@
 
   .careers-page .careers-work__menu .careers-work__menu-btn {
     border-radius: 30px;
-    font-size: 18px;
-    line-height: 25px;
     padding: 5px 15px;
   }
 
@@ -107,10 +106,8 @@
   }
 
   .careers-page .careers-caption__list {
-    height: 330px;
+    height: 274px;
   }
-
-
 
   .careers-page .careers-work .careers-work-swiper .careers-work__swiper-panel {
     flex-direction: column;

@@ -336,21 +336,6 @@
     margin-bottom: 180px;
   }
 
-
-  //.products-main .game-item__img-wrapper {
-  //  display: block;
-  //  position: relative;
-  //  padding-top: 52%;
-  //  top: 0;
-  //  img {
-  //    position: absolute;
-  //    left: 0;
-  //    top: 0;
-  //    height: 100%;
-  //    width: 100%;
-  //  }
-  //}
-
   .products-main .game-item.game-item_right .game-item__img-wrapper {
     left: 0;
     top: 0;
@@ -373,32 +358,24 @@
     transform: scale(1.05);
   }
 
-
   .check-careers__title {
     max-width: 90%;
-    font-size: 45px;
-    line-height: 55px;
     margin-bottom: 50px;
   }
 
 }
-
 
 @media (max-width: 768px) {
   .container {
     padding: 0 30px;
   }
 
-  .products-main .container {
-    margin-bottom: 160px;
+  .products-main {
+    padding-top: 60px;
   }
 
-  .products-main__title {
-    font-size: 70px;
-  }
-  .products-main__desc p {
-    font-size: 22px;
-    line-height: 28px;
+  .products-main .container {
+    margin-bottom: 160px;
   }
 
   .products-main .game-item__img {
@@ -406,14 +383,10 @@
   }
 
   .products-main .game-item__title {
-    font-size: 35px;
-    line-height: 45px;
     margin-bottom: 25px;
   }
 
   .products-main .game-item__text {
-    font-size: 18px;
-    line-height: 27px;
     margin-bottom: 25px;
   }
 
@@ -423,15 +396,12 @@
 
   .check-careers__title {
     max-width: 100%;
-    font-size: 30px;
-    line-height: 40px;
     margin-bottom: 35px;
   }
 }
 
 @media (max-width: 500px) {
   .check-careers__btn {
-    font-size: 16px;
     padding: 12px 27px;
   }
 
@@ -439,7 +409,6 @@
     width: 54%;
   }
 }
-
 
 @media (max-width: 400px) {
   .products-main .game-item__img {

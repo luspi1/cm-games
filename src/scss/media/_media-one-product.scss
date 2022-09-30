@@ -13,7 +13,6 @@
 
 }
 
-
 @media (max-width: 1650px) {
   .product-one .product-caption__container {
     padding-left: 15px;
@@ -89,14 +88,8 @@
   }
 
   .product-one .product-indicators__list-item {
-    font-size: 20px;
     width: 31%;
     text-align: center;
-
-    span {
-      font-size: 60px;
-      line-height: 158px;
-    }
   }
 
   .product-one .product-indicators__rating-item span::before {
@@ -139,15 +132,15 @@
 }
 
 @media (max-width: 1024px) {
+
+  .product-one .product-caption {
+    margin-top: 60px;
+  }
+
   .product-one .product-caption__content-title {
-    font-size: 60px;
-    line-height: 72px;
     margin-bottom: 30px;
   }
   .product-one .product-caption__content-desc {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 34px;
     margin-bottom: 60px;
   }
 
@@ -155,21 +148,14 @@
     border-radius: 35px;
   }
 
-  .product-one .product-features__list-title h2 {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 75px;
-  }
-
-  .product-one .product-features__item-text {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-
   .product-one .product-indicators__rating-item span::before {
     background-size: 70%;
     right: 17px;
+  }
+
+  .product-one .product-indicators__list-item .accent-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .product-one .product-features {
@@ -244,9 +230,8 @@
     padding-top: 41%;
   }
   .product-one .product-caption__content-title {
-    font-size: 45px;
-    line-height: 60px;
     margin-bottom: 25px;
+    line-height: 65px;
     text-align: center;
   }
 
@@ -299,9 +284,8 @@
   }
 
   .product-one .product-indicators__text-wrapper {
-     max-width: 100%;
+    max-width: 100%;
   }
-
 
 
   .product-one .product-gallery .product-gallery__swiper-button-prev svg,
@@ -341,15 +325,7 @@
     width: 100%;
   }
 
-
-  .product-one .product-connect__support-text {
-
-    font-size: 20px;
-    line-height: 25px;
-  }
   .product-one .product-connect__support-btn {
-    font-size: 18px;
-    line-height: 24px;
     width: 280px;
     height: 60px;
   }
@@ -366,7 +342,8 @@
   .product-one .product-career__content {
     margin-right: 0;
     width: 100%;
-    margin-bottom: 35px;text-align: center;
+    margin-bottom: 35px;
+    text-align: center;
 
   }
 
@@ -439,9 +416,7 @@
 
   .product-one .product-gallery .swiper-slide img {
     border-radius: 10px;
-
   }
-
 
 
   .product-one .product-connect__socials-list {

@@ -211,7 +211,7 @@
     width: 94%;
     padding: 47px 0 50px 110px;
     background: left/cover no-repeat url(../img/products-bg.jpg);
-    background-size: auto 119%;
+    background-size: auto 120%;
     border-radius: 0 70px 70px 0;
 
     &__title {
@@ -467,6 +467,7 @@
 
       &__title {
         max-width: 360px;
+        padding-right: 20px;
         margin-top: 25px;
         margin-left: 24px;
         color: $primary;

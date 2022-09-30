@@ -85,14 +85,31 @@ select::-ms-expand {
   font-size: 108px;
   line-height: 65px;
   color: #00B9EE;
-}
 
+  @media (max-width: 1024px) {
+    font-size: 80px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
+}
 
 .accent-text {
   @include mudkty-regular;
   font-size: 28px;
   line-height: 38px;
   color: #1C283A;
+
+  @media (max-width: 1024px) {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .main-subtitle {
@@ -100,6 +117,11 @@ select::-ms-expand {
   font-size: 45px;
   line-height: 66px;
   color: #1C283A;
+
+  @media (max-width: 768px) {
+    font-size: 35px;
+    line-height: 48px;
+  }
 }
 
 .regular-text {
@@ -121,6 +143,11 @@ select::-ms-expand {
   font-size: 22px;
   line-height: 32px;
   color: #000000;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 
@@ -136,6 +163,17 @@ select::-ms-expand {
   font-size: 81px;
   line-height: 157px;
   color: #1C283A;
+
+  @media (max-width: 1024px) {
+    font-size: 60px;
+    line-height: 120px;
+
+    .accent-text {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+  }
 }
 
 
