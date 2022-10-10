@@ -20,7 +20,7 @@ const swiperNews = new Swiper('.news__swiper', {
   noSwipingClass: 'swiper-no-swiping',
 
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 15,
   breakpoints: {
     768: {
       slidesPerView: 2,

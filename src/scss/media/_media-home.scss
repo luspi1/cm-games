@@ -35,6 +35,9 @@
     padding-left: 0;
   }
 
+  .products .products-swiper {
+    padding: 17px;
+  }
 
 }
 
@@ -150,7 +153,9 @@
   }
 
   .products {
-    padding: 40px 65px 73px 15px;
+    padding: 40px 65px 73px 0;
+
+
 
     &__title {
       font-size: 55px;
@@ -170,6 +175,10 @@
       }
     }
   }
+
+
+
+
 
   .footer {
     &__company {
@@ -289,14 +298,19 @@
     .news-swiper__content {
       margin-bottom: 30px;
     }
-
   }
 
+  .home-page .home-page__news-container {
+    padding: 0 15px;
+  }
+  .home-page .home-page__products-container {
+    padding: 0 15px;
+  }
 
   .products {
     width: 100%;
     border-radius: 0;
-    padding: 40px 20px 50px 20px;
+    padding: 40px 20px 50px 0;
 
     &__title {
       line-height: 45px;
@@ -385,13 +399,6 @@
 
     .news-swiper__content {
       margin-bottom: 80px;
-    }
-
-  }
-
-  .products {
-    .products-swiper {
-      padding: 10px;
     }
   }
 
