@@ -179,14 +179,14 @@ select::-ms-expand {
 
 .btn {
   text-transform: uppercase;
-  @include montserrat-bold;
-  font-size: 18px;
-  line-height: 22px;
+  @include mudkty-regular;
+  font-size: 22px;
+  line-height: 32px;
   text-align: center;
   border: none;
   background: #00B7F1;
   color: #FFFFFF;
-  width: 240px;
+  padding: 10px 30px;
   height: 55px;
   border-radius: 100px;
   transition: all .3s;
