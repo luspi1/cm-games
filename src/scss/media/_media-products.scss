@@ -135,6 +135,7 @@
   .products-main {
     margin-bottom: 0;
     margin-top: 0;
+    padding-top: 85px;
   }
 
   .products-main__top {
@@ -147,8 +148,14 @@
     margin-bottom: 50px;
   }
 
+
+  .products-main__desc p {
+    margin-bottom: 42px;
+  }
+
+
   .products-main .game-item__title {
-    margin-bottom: 10px;
+    margin-bottom: 19px;
   }
   .products-main .game-item__text {
     margin-bottom: 10px;
@@ -287,8 +294,13 @@
 
   .products-main {
     padding-bottom: 10px;
+    padding-top: 61px;
   }
 
+
+  .products-main__desc p {
+    margin-bottom: 38px;
+  }
 
   .products-main .game-item {
     flex-direction: column;
@@ -310,7 +322,10 @@
   }
   .products-main .game-item__title {
     max-width: 100%;
+    margin-bottom: 15px;
   }
+
+
   .products-main .game-item.game-item_right .game-item__content {
     margin-left: 0;
     margin-bottom: 0;

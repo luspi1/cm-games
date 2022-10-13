@@ -61,7 +61,6 @@
       margin-right: auto;
     }
 
-
     &__controls {
       margin-right: 30px;
     }
@@ -73,15 +72,54 @@
     &__top {
       justify-content: flex-end;
       margin-bottom: 0;
+      padding: 42px 0;
     }
   }
 
+  .news {
+    margin-bottom: 57px;
+  }
+
+  .news .news-swiper {
+    margin-top: -6px;
+  }
+
+  .news .news-swiper__category {
+    margin-top: 16px;
+    margin-bottom: 9px;
+  }
+  .news .news-swiper__text {
+    margin-bottom: 14px;
+  }
+
+  .products {
+    padding: 31px 0 25px 0;
+  }
+
+  .careers {
+    padding: 57px 0 32px;
+  }
+  .careers__title {
+    margin-bottom: 7px;
+  }
+  .careers .careers-swiper__title {
+    margin-top: 14px;
+  }
+
+  .careers .careers-swiper .link-slide a {
+    margin-top: 14px;
+  }
+
+  .careers .careers-swiper__link {
+    margin-bottom: 24px;
+  }
+
   .caption {
+    margin-top: 5px;
     flex-direction: column;
     align-items: center;
     padding-right: 5%;
-    margin-top: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 57px;
 
     &__title {
       padding: 0;
@@ -100,6 +138,7 @@
 
       .caption__slider-panel {
         border-radius: 0 0 30px 30px;
+        padding: 17px 130px 17px 38px;
       }
     }
   }
@@ -118,6 +157,10 @@
   .header {
     &__logo img {
       width: 70%;
+    }
+
+    &__top {
+      padding: 38px 0;
     }
 
     &__nav {
@@ -140,22 +183,42 @@
   }
 
   .caption {
+    margin-bottom: 44px;
+
     &__title {
       font-size: 50px;
       line-height: 60px;
     }
   }
 
+  .caption__slider .caption__slider-panel {
+    padding: 15px 130px 15px 38px;
+  }
 
+
+  .news {
+    margin-bottom: 44px;
+  }
+
+  .news .news-swiper__category {
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+
+  .news .news-swiper__text {
+    margin-bottom: 10px;
+  }
 
   .news .news-swiper .swiper-slide:hover img {
     transform: scale(1.05);
   }
 
+  .news .news-swiper {
+    margin-top: -10px;
+  }
+
   .products {
-    padding: 40px 65px 73px 0;
-
-
+    padding: 27px 65px 23px 0;
 
     &__title {
       font-size: 55px;
@@ -176,8 +239,24 @@
     }
   }
 
+  .careers {
+    padding: 44px 0 28px;
+  }
 
+  .careers__title {
+    margin-bottom: 3px;
+  }
+  .careers .careers-swiper__title {
+    margin-top: 10px;
+  }
 
+  .careers .careers-swiper .link-slide a {
+    margin-top: 10px;
+  }
+
+  .careers .careers-swiper__link {
+    margin-bottom: 20px;
+  }
 
 
   .footer {
@@ -194,6 +273,7 @@
 
     &__menu-item {
       padding-right: 15px;
+
       a {
         font-size: 14px;
       }
@@ -233,9 +313,11 @@
       width: 75px;
       font-size: 20px;
     }
+
     .search-menu {
       padding: 60px 50px 20px 50px;
       width: 100%;
+
       .close-btn {
         right: 57px;
         top: 23px;
@@ -343,7 +425,7 @@
       }
     }
 
-   .services-swiper__img {
+    .services-swiper__img {
       width: 23%;
       padding-top: 20%;
     }
@@ -351,8 +433,8 @@
   }
 
 
-
   .careers {
+
     .careers-swiper {
       .careers__swiper-panel {
         justify-content: center;
