@@ -16,7 +16,7 @@ h2.home-page__subtitle {
   flex-wrap: wrap;
   align-items: center;
   padding-left: 10%;
-  margin-bottom: 90px;
+  margin-bottom: 75px;
 
   &__title {
     @include mudkty-medium;
@@ -128,7 +128,7 @@ h2.home-page__subtitle {
   margin-bottom: 70px;
 
   h2 {
-    margin-bottom: 27px;
+    margin-bottom: 0;
   }
 
   .news-swiper {
