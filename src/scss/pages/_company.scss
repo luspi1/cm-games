@@ -1,8 +1,8 @@
 .company {
-  padding-top: 108px;
+  padding-top: 103px;
 
   .company-caption {
-    margin-bottom: 84px;
+    margin-bottom: 82px;
 
     &__title {
       margin-right: 100px;
@@ -25,8 +25,6 @@
   }
 
   .company-indicators {
-    margin-bottom: 37px;
-
     &__list {
       display: flex;
       justify-content: space-between;
@@ -36,28 +34,34 @@
 
     &__list-item {
       color: #1C283A;
-      margin-bottom: 65px;
+      margin-bottom: 106px;
       width: 31%;
       border-top: 1px solid #A5B4C4;
       position: relative;
+      &.factage-text {
+        line-height: 122px;
+      }
 
       span {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -18px;
       }
     }
 
   }
 
   .company-features {
-    padding: 100px 0 0 76px;
+    padding: 94px 0 0 76px;
     background: left / cover no-repeat url("../img/features-bg.png");
     border-radius: 0 70px 70px 0;
     background-size: auto 101%;
     width: 96%;
-    margin-bottom: 113px;
-
+    margin-bottom: 90px;
+    .main-title {
+      color: #1C283A;
+      line-height: 88px;
+    }
     &__list {
       display: flex;
       justify-content: space-between;
@@ -65,19 +69,24 @@
     }
 
     &__list-item {
-      width: 31%;
-      margin-bottom: 58px;
-    }
+      width: 31.2%;
+      margin-bottom: 83px;
+     }
 
     &__list-title {
       padding-top: 22px;
+
     }
 
     &__item-img {
-      margin-bottom: 17px;
+      margin-bottom: 27px;
       height: 100px;
     }
-
+    &__item-title {
+      &.title-text {
+        line-height: 32px;
+      }
+    }
 
     &__item-text {
       max-width: 470px;
@@ -86,7 +95,7 @@
   }
 
   .company-history {
-    margin-bottom: 93px;
+    margin-bottom: 90px;
 
     &__title {
       margin-bottom: 15px;
@@ -110,7 +119,7 @@
           width: 107%;
           height: 15px;
           left: 0;
-          bottom: -35px;
+          bottom: -39px;
           background: left / cover no-repeat url("../img/history-border.png");
           z-index: 9999;
         }
@@ -132,7 +141,7 @@
         color: #00B7F1;
         display: inline-block;
         margin-top: 62px;
-        margin-bottom: 20px;
+        margin-bottom: 12px;
       }
 
       &__content {
@@ -144,7 +153,7 @@
 
       &__text {
         color: #1C283A;
-        margin-bottom: 17px;
+        margin-bottom: 10px;
         min-height: 100px;
       }
 
@@ -187,29 +196,28 @@
   }
 
   .company-team {
-    margin-bottom: 65px;
-
     &__inner {
       display: flex;
       justify-content: space-between;
     }
 
     h2.company-team__title {
-      margin-bottom: 44px;
+      margin-bottom: 51px;
+      line-height: 36px;
     }
 
     &__desc {
-      width: 45%;
-      margin-right: 50px;
+      width: 49.2%;
+      margin-right: 30px;
 
       p:not(:last-child) {
-        margin-bottom: 29px;
+        margin-bottom: 28px;
       }
     }
 
     &__img {
       width: 800px;
-      transform: translateY(-74px);
+      transform: translateY(-90px);
 
 
       img {
@@ -219,10 +227,12 @@
   }
 
   .company-office {
-    margin-bottom: 130px;
+    margin-bottom: 75px;
 
     h2.company-office__title {
-      margin-bottom: 52px;
+      margin-bottom: 63px;
+      line-height: 25px;
+
     }
 
     &__inner {
@@ -239,7 +249,7 @@
 
     .office-swiper {
       .swiper-wrapper {
-        margin-bottom: 5px;
+        margin-bottom: 32px;
       }
 
       &__img {
@@ -280,6 +290,10 @@
         color: #00B7F1;
       }
 
+      .company-office__swiper-controls {
+      transform: translateY(-7px);
+      }
+
       .company-office__swiper-button-prev,
       .company-office__swiper-button-next {
         background: none;
@@ -318,7 +332,9 @@
 
     &__content-title {
       color: #1C283A;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
+      font-size: 22px;
+      line-height: 24px;
     }
 
     &__content-list li {
@@ -345,13 +361,15 @@
   }
 
   .company-work {
-    margin-bottom: 15px;
-
+    margin-bottom: 70px;
+    >.container {
+      padding: 0;
+    }
     &__top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 24px;
+      padding: 0 15px;
     }
 
     h2.company-work__title {
@@ -382,10 +400,10 @@
 
     .work-swiper {
       overflow: hidden;
-      padding: 20px;
+      padding: 10px 15px;
 
       .swiper-wrapper {
-        margin-bottom: 35px;
+        margin-bottom: 20px;
       }
 
       &__img {
@@ -405,13 +423,13 @@
       }
 
       .swiper-slide:hover img {
-        transform: scale(1.1);
+        transform: scale(1.07);
       }
 
       &__category {
         color: #00B7F1;
         display: inline-block;
-        margin-top: 22px;
+        margin: 20px 0 14px;
       }
 
       &__content {
@@ -479,14 +497,16 @@
   }
 
   .company-global {
-    background: url("../img/global-bg.jpg") no-repeat 0 56%;
+    background-image: url("../img/global-bg.jpg");
     background-size: cover;
-    height: 970px;
-    padding-top: 8%;
+    background-position: 0 54%;
+    background-repeat: no-repeat;
+    height: 837px;
+    padding-top: 75px;
 
     &__title {
       @include mudkty-regular;
-      font-size: 100px;
+      font-size: 108px;
       line-height: 122px;
       color: #1C283A;
 
@@ -500,7 +520,7 @@
   }
 
   .company-careers {
-    padding: 126px 0 110px;
+    padding: 90px 0;
 
     .container {
       display: flex;
@@ -510,6 +530,7 @@
     &__title {
       max-width: 64%;
       margin-right: 70px;
+      line-height: 52px;
 
       span {
         color: $secondary;
@@ -521,7 +542,7 @@
       cursor: pointer;
       text-transform: uppercase;
       color: #FFFFFF;
-      padding: 25px 65px;
+      padding: 20px 90px;
       transition: all .3s;
       background-color: #00B9EE;
       border-radius: 100px;
