@@ -4,7 +4,8 @@
     background-size: auto 103%;
     width: 96%;
   }
-  .company .company-office .office-swiper .company-office__swiper-panel {;
+
+  .company .company-office .office-swiper .company-office__swiper-panel {
     padding: 0 155px;
   }
 
@@ -14,7 +15,7 @@
 }
 
 @media (max-width: 1550px) {
-  .company .company-office .office-swiper .company-office__swiper-panel {;
+  .company .company-office .office-swiper .company-office__swiper-panel {
     padding: 0 145px;
   }
 
@@ -25,8 +26,13 @@
 }
 
 @media (max-width: 1280px) {
+  .company {
+    padding-top: 72px;
+  }
+
   .company .company-indicators__list-item {
     text-align: center;
+    margin-bottom: 92px;
 
     span {
       width: 100%;
@@ -35,17 +41,30 @@
     }
   }
 
+  .company .company-caption {
+    margin-bottom: 72px;
+  }
 
   .company .company-caption__top {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 72px;
   }
 
   .company .company-caption__title {
     margin-right: 0;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
+  .company .company-features {
+    margin-bottom: 72px;
+    padding-top: 72px;
+    padding-bottom: 22px;
+  }
+
+  .company .company-features__list-item {
+    margin-bottom: 42px;
+  }
 
   .company .company-features__list-title {
     padding-top: 0;
@@ -55,22 +74,49 @@
   .company .company-features__list {
     justify-content: space-around;
   }
+
+  .company .company-features__item-img _ {
+    margin-bottom: 22px;
+  }
+
+  .company .company-history {
+    margin-bottom: 72px;
+  }
+
   .company .company-history .history-swiper__img::before {
     width: 100%;
+  }
+
+  .company .company-history .history-swiper__category {
+    margin: 54px 0 6px;
+  }
+
+  .company .company-history .history-swiper .swiper-wrapper {
+    margin-bottom: 0;
+  }
+
+  .company .company-team h2.company-team__title {
+    margin-bottom: 34px;
   }
 
   .company .company-team__inner {
     flex-direction: column;
   }
+
   .company .company-team__desc {
     width: 80%;
     margin-right: 0;
     margin-bottom: 40px;
+    padding-bottom: 0;
   }
 
   .company .company-team__img {
     transform: translateY(0);
     align-self: center;
+  }
+
+  .company .company-office {
+    margin-bottom: 54px;
   }
 
   .company .company-office__inner {
@@ -84,7 +130,6 @@
     width: 100%;
     margin-bottom: 40px;
     transform: translateX(0);
-
   }
 
   .company .company-office__content {
@@ -97,12 +142,45 @@
     margin-left: -22px;
   }
 
+  .company .company-office h2.company-office__title {
+    margin: 70px 0 46px;
+  }
+
   .company .company-office__content-list li {
     max-width: 100%;
   }
 
+  .company .company-office .office-swiper .swiper-wrapper {
+    margin-bottom: 21px;
+  }
+
   .company .company-office .office-swiper .company-office__swiper-panel {
     padding: 0 20%;
+  }
+
+  .company .company-work {
+    margin-bottom: 52px;
+  }
+  .company .company-work .work-swiper {
+    padding-top: 12px;
+  }
+
+  .company .company-work .work-swiper .work-swiper__date.regular-text {
+    margin: 17px 0 8px;
+    line-height: 15px;
+  }
+
+  .company .company-work .work-swiper__category {
+    margin: 15px 0 7px;
+  }
+  .company .company-work__btn {
+    margin-top: 6px;
+  }
+  .company .company-global {
+    height: 650px;
+    padding-top: 58px;
+    background-position: 15% 54%;
+    background-size: auto;
   }
 
   .company .company-global__title {
@@ -116,9 +194,10 @@
     }
   }
 
-  .company .company-global {
-    height: 650px;
+  .company .company-careers {
+    padding: 66px 0 70px;
   }
+
 
   .company .company-careers .container {
     flex-direction: column;
@@ -127,16 +206,51 @@
   .company .company-careers__title {
     max-width: 80%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
     margin-right: 0;
   }
 }
 
 @media (max-width: 1024px) {
+  .company {
+    padding-top: 59px;
+  }
 
+  .company .company-caption__top {
+    margin-bottom: 20px;
+  }
+
+  .company .company-caption {
+    margin-bottom: 55px;
+  }
+
+  .company .company-caption__title {
+    margin-bottom: 48px;
+  }
+
+  .company .company-indicators__list-item {
+    margin-bottom: 74px;
+  }
 
   .company .company-features {
-    padding: 60px 0 0 0;
+    margin-bottom: 59px;
+    padding: 56px 0 21px 0;
+  }
+
+  .company .company-features .main-title {
+    line-height: 66px;
+  }
+
+  .company .company-features__list-item {
+    margin-bottom: 32px;
+  }
+
+  .company .company-history {
+    margin-bottom: 56px;
+  }
+
+  .company .company-team h2.company-team__title {
+    margin-bottom: 30px;
   }
 
   .company .company-team__desc {
@@ -152,17 +266,29 @@
     width: 100%;
   }
 
+  .company .company-office h2.company-office__title {
+    margin: 54px 0 42px;
+  }
+
   .company .company-office__content {
     width: 100%;
     padding: 0 37px;
   }
 
   .company .company-office {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+  }
+
+  .company .company-office__swiper-container {
+    margin-bottom: 50px;
   }
 
   .company .company-office .office-swiper .company-office__swiper-panel {
     padding: 0 15px;
+  }
+
+  .company .company-work {
+    margin-bottom: 38px;
   }
 
   .company .company-work__top {
@@ -171,12 +297,24 @@
   }
 
   .company .company-work h2.company-work__title {
-    margin-bottom: 40px;
+    margin-bottom: 22px;
   }
 
+  .company .company-work .work-swiper__text {
+    min-height: 70px;
+  }
 
+  .company .company-work .work-swiper .work-swiper__date.regular-text {
+    margin: 9px 0 15px;
+
+    line-height: 10px;
+  }
+  .company .company-work__btn {
+    margin-top: 0;
+  }
   .company .company-global {
     height: 485px;
+    padding-top: 48px;
   }
 
   .company .company-global__title {
@@ -187,6 +325,10 @@
       font-size: 22px;
       padding-left: 30px;
     }
+  }
+
+  .company .company-careers {
+    padding: 52px 0 59px 0;
   }
 
   .company .company-careers__title {
@@ -202,17 +344,10 @@
 
 @media (max-width: 768px) {
   .company .company-indicators__list-item {
-    margin-bottom: 50px;
     width: 48%;
   }
 
-  .company {
-    padding-top: 60px;
-  }
 
-  .company .company-caption__title {
-    margin-bottom: 50px;
-  }
 
   .company .company-features {
     width: 100%;
@@ -221,8 +356,8 @@
 
   .company .company-features__list-item:not(.company-features__list-title) {
     width: 46%;
-    margin-bottom: 58px;
   }
+
   .company .company-features__list {
     justify-content: space-between;
   }
@@ -232,12 +367,14 @@
   }
 
   .company .company-office .office-swiper .company-office__swiper-panel {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .company .company-office__content {
     width: 100%;
-    padding: 0 52px;
+    padding-left: 52px;
+    padding-right: 52px;
   }
 
   .company .company-work__menu {
@@ -246,11 +383,8 @@
 
   .company .company-work__menu .company-work__menu-btn {
     border-radius: 30px;
-    padding: 5px 15px;
-  }
-
-  .company .company-work {
-    margin-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .company .company-global {
@@ -268,38 +402,28 @@
     }
   }
 
-  .company .company-global {
-    padding-top: 0;
-  }
-
-  .company .company-careers {
-    padding: 0 0 50px;
-  }
-
   .company .company-careers__title {
     max-width: 100%;
-    margin-bottom: 35px;
   }
 
   .company .company-careers__btn {
-    padding: 18px 35px;
+    padding-left: 35px;
+    padding-right: 35px;
     border-radius: 50px;
   }
-
-
 }
 
 @media (max-width: 520px) {
   .company .company-indicators__list {
     flex-direction: column;
   }
+
   .company .company-indicators__list-item {
     width: 90%;
   }
 
   .company .company-features__list-item:not(.company-features__list-title) {
     width: 100%;
-    margin-bottom: 58px;
   }
 
   .company .company-work__menu {
@@ -308,6 +432,7 @@
 
   .company .company-global {
     height: 430px;
+    background-position: 25% 54%;
   }
 }
 
@@ -321,6 +446,7 @@
       line-height: 30px;
     }
   }
+
   .company .company-global {
     height: 355px;
   }
