@@ -92,13 +92,12 @@
   }
 
 
-.products-main .game-item.game-item_right .game-item__hover-video::after {
-  width: 102%;
-  height: 102%;
-  left: -4px;
-  top: -1px;
-}
-
+  .products-main .game-item.game-item_right .game-item__hover-video::after {
+    width: 102%;
+    height: 102%;
+    left: -4px;
+    top: -1px;
+  }
 
 
   .products-main .game-item__img::after {
@@ -145,7 +144,7 @@
 
   .products-main__title {
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
 
@@ -229,8 +228,30 @@
   }
 
 
+  .articles {
+    padding: 58px 0 64px;
+  }
+
+  .articles .articles-swiper__date {
+    margin-top: 6px;
+  }
+
+  .articles h2 {
+    margin-bottom: -16px;
+  }
+
+  .articles .articles-swiper__category {
+    margin-top: 16px;
+    margin-bottom: 9px;
+  }
+
+
+  .articles .articles-swiper .swiper-wrapper {
+    margin-bottom: 7px;
+  }
+
   .check-careers {
-    padding: 80px 0;
+    padding: 62px 0 69px;
   }
 
   .check-careers .container {
@@ -241,7 +262,7 @@
     text-align: center;
     max-width: 80%;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
 }
@@ -295,6 +316,10 @@
   .products-main {
     padding-bottom: 10px;
     padding-top: 61px;
+  }
+
+  .products-main__title {
+    margin-bottom: 30px;
   }
 
 
@@ -368,14 +393,39 @@
     display: none;
   }
 
+  .articles {
+    padding: 45px 0 51px;
+  }
+  .articles h2 {
+    margin-bottom: -20px;
+  }
+
 
   .articles .articles-swiper .swiper-slide:hover img {
     transform: scale(1.05);
   }
 
+  .articles .articles-swiper__category {
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+
+  .articles .articles-swiper .swiper-wrapper {
+    margin-bottom: 3px;
+  }
+
+  .articles .articles-swiper__date {
+    margin-top: 2px;
+  }
+
+
   .check-careers__title {
     max-width: 90%;
-    margin-bottom: 50px;
+    margin-bottom: 38px;
+  }
+
+  .check-careers {
+    padding: 49px 0 56px;
   }
 
 }
@@ -383,10 +433,6 @@
 @media (max-width: 768px) {
   .container {
     padding: 0 30px;
-  }
-
-  .products-main {
-    padding-top: 60px;
   }
 
   .products-main .container {
@@ -397,22 +443,22 @@
     width: 34%;
   }
 
-  .products-main .game-item__title {
-    margin-bottom: 25px;
-  }
 
   .products-main .game-item__text {
     margin-bottom: 25px;
   }
 
-  .check-careers {
-    padding: 50px 0;
-  }
 
   .check-careers__title {
     max-width: 100%;
-    margin-bottom: 35px;
+    line-height: 48px;
   }
+
+  .check-careers__btn {
+    padding: 20px 10px;
+    width: 250px;
+  }
+
 }
 
 @media (max-width: 500px) {

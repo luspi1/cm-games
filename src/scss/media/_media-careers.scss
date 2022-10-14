@@ -1,48 +1,97 @@
 @media (max-width: 1280px) {
 
+  .careers-page {
+    padding-top: 86px;
+    padding-bottom: 26px;
+  }
+
   .careers-page .careers-caption__top {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 42px;
   }
 
   .careers-page .careers-caption__title {
     margin-right: 0;
-    margin-bottom: 80px;
+    margin-bottom: 42px;
   }
 
 
   .careers-page .careers-caption__list {
-    height: 810px;
+    height: 647px;
+  }
+
+  .careers-page .careers-caption__list-item {
+    margin-bottom: 22px;
+    padding: 14px 30px;
+  }
+
+  .careers-page .careers-work {
+    padding: 32px 0 25px 0;
+  }
+
+  .careers-page .careers-work .careers-work-swiper .swiper-wrapper {
+    margin-bottom: 9px;
+  }
+
+  .careers-page .careers-work .careers-work-swiper__category {
+    margin-top: 14px;
+    margin-bottom: 9px;
+  }
+
+  .careers-page .careers-work .careers-work-swiper__date {
+    margin-top: 12px;
   }
 
 }
 
 @media (max-width: 1024px) {
 
+  .careers-page {
+    padding-top: 62px;
+    padding-bottom: 10px;
+  }
+
   .careers-page .careers-caption__inner {
     flex-direction: column;
+  }
+  .careers-page .careers-caption__title {
+    margin-bottom: 26px;
+  }
+
+  .careers-page .careers-caption__top {
+    margin-bottom: 38px;
   }
 
   .careers-page .careers-caption__menu {
     display: flex;
     width: 100%;
     order: -1;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
 
   .careers-page .careers-caption__list {
-    height: 420px;
+    height: 448px;
   }
 
   .careers-page .careers-caption__list-item {
-    padding: 15px 20px 15px 20px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 18px;
   }
 
   .careers-page .careers-work {
     padding: 20px 0 0 0;
+  }
+
+  .careers-page .careers-work .careers-work-swiper__date {
+    margin-top: 8px;
+  }
+
+  .careers-page .careers-work {
+    padding: 35px 0 25px 0;
   }
 
 
@@ -51,38 +100,48 @@
     align-items: flex-start;
   }
 
+  .careers-page .careers-work__menu {
+    margin-bottom: 10px;
+  }
+
   .careers-page .careers-caption__application a {
     padding: 18px 15px 22px;
   }
 
   .careers-page .careers-work__title {
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 23px;
+  }
+
+  .careers-page .careers-work .careers-work-swiper .swiper-wrapper {
+    margin-bottom: 5px;
+  }
+
+  .careers-page .careers-work .careers-work-swiper__category {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .careers-page .careers-work .careers-work-swiper .swiper-slide:hover img {
+    transform: scale(1.04);
   }
 
 }
 
 @media (max-width: 768px) {
 
-  .careers-page {
-    padding-top: 60px;
-  }
-
-  .careers-page .careers-caption__title {
-    margin-bottom: 50px;
-  }
-
-
   .careers-page .careers-caption__list {
     width: 100%;
     margin-right: 0;
-    height: 377px;
+    height: 355px;
     padding-right: 30px;
   }
 
+  .products-page__articles-container {
+    padding: 0 15px;
+  }
 
   .careers-page .careers-caption__list-item {
-    padding: 20px 20px 10px 20px;
     width: 100%;
   }
 
@@ -115,8 +174,6 @@
 
   .careers-page .careers-work .careers-work-swiper .careers-work__swiper-controls {
     order: -1;
-    margin-bottom: 20px;
   }
-
 
 }

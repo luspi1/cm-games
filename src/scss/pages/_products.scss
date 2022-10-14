@@ -2,6 +2,10 @@
   border-bottom: 1px solid #A5B4C4;
 }
 
+.products-page__articles-container {
+  padding: 0;
+}
+
 .products-main {
   padding-bottom: 267px;
   padding-top: 103px;
@@ -10,6 +14,7 @@
   .container {
     margin-bottom: 160px;
   }
+
 
   &__top {
     display: flex;
@@ -210,12 +215,12 @@
       transform: rotate(180deg);
     }
 
-    .game-item__img-wrapper img{
+    .game-item__img-wrapper img {
       transform: rotate(180deg);
     }
 
     .game-item__hover-video video {
-      transform: rotate(180deg) ;
+      transform: rotate(180deg);
     }
 
     .game-item__hover-video {
@@ -247,6 +252,7 @@
   .game-item__title {
     max-width: 570px;
     margin-bottom: 35px;
+
     a {
       color: #000000;
     }
@@ -367,20 +373,20 @@
 
 .articles {
   background-color: #F5F5F5;
-  padding: 60px 0 20px;
+  padding: 76px 0 82px;
 
   h2 {
-    margin-bottom: 25px;
+    margin-bottom: -10px;
     color: #000000;
   }
 
 
   .articles-swiper {
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 20px 0 15px;
 
     .swiper-wrapper {
-      margin-bottom: 70px;
+      margin-bottom: 13px;
     }
 
     &__img {
@@ -400,21 +406,24 @@
     }
 
     .swiper-slide:hover img {
-      transform: scale(1.1);
+      transform: scale(1.07);
     }
 
     &__category {
       color: #00B7F1;
       display: inline-block;
       margin-top: 22px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     &__text {
       max-width: 377px;
-      margin-bottom: 17px;
-      min-height: 100px;
       transition: all .4s;
+    }
+
+    &__date {
+      margin-top: 12px;
+      display: none;
     }
 
     .articles__swiper-panel {
@@ -461,7 +470,7 @@
     color: $secondary;
     cursor: pointer;
     transition: all .3s;
-
+    padding: 0;
     &:hover {
       color: #00C9FF;
     }
@@ -469,7 +478,7 @@
 }
 
 .check-careers {
-  padding: 110px 0;
+  padding: 80px 0 87px;
 
   .container {
     display: flex;
@@ -479,7 +488,8 @@
 
   &__title {
     max-width: 54%;
-    margin-right: 100px;
+    margin-right: 118px;
+    line-height: 58px;
 
     span {
       color: $secondary;
@@ -496,7 +506,8 @@
     cursor: pointer;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 17px 42px;
+    padding: 20px 88px;
+    width: 340px;
     transition: all .3s;
     background-color: #00B9EE;
     border-radius: 100px;
