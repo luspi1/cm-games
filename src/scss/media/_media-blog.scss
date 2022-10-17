@@ -227,15 +227,16 @@
    padding-right: 100px;
    padding-left: 40px;
   }
-
-
-
   .blog-item__swiper {
     width: 100%;
     padding-right: 75px;
     padding-left: 75px;
   }
-
+  .blog .more-articles__title,
+  .blog .more-articles-swiper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 450px) {

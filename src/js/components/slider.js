@@ -125,7 +125,7 @@ const swiperArticles = new Swiper('.articles__swiper', {
   noSwipingClass: 'swiper-no-swiping',
 
   slidesPerView: 1,
-  spaceBetween: 25,
+  spaceBetween: 35,
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -222,7 +222,7 @@ const swiperWork = new Swiper('.company-work__swiper', {
   observer: true,
 
   slidesPerView: 1,
-  spaceBetween: 25,
+  spaceBetween: 35,
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -259,7 +259,7 @@ const swiperMoreArticles = new Swiper('.more-articles-swiper', {
   noSwipingClass: 'swiper-no-swiping',
 
   slidesPerView: 1,
-  spaceBetween: 25,
+  spaceBetween: 35,
   breakpoints: {
     768: {
       slidesPerView: 2,

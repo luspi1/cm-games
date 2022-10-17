@@ -160,6 +160,7 @@
   .company .company-work {
     margin-bottom: 52px;
   }
+
   .company .company-work .work-swiper {
     padding-top: 12px;
   }
@@ -172,9 +173,11 @@
   .company .company-work .work-swiper__category {
     margin: 15px 0 7px;
   }
+
   .company .company-work__btn {
     margin-top: 6px;
   }
+
   .company .company-global {
     height: 650px;
     padding-top: 58px;
@@ -308,9 +311,11 @@
 
     line-height: 10px;
   }
+
   .company .company-work__btn {
     margin-top: 0;
   }
+
   .company .company-global {
     height: 485px;
     padding-top: 48px;
@@ -379,6 +384,12 @@
     padding-right: 15px;
   }
 
+  .company .company-work__top,
+  .company .company-work .work-swiper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .company .company-global {
     height: 550px;
   }
@@ -424,7 +435,7 @@
 
   .company .company-global {
     height: 430px;
-    background-position: 25% 54%;
+    background-position: 25% 44%;
   }
 }
 
