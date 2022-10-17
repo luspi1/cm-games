@@ -96,6 +96,7 @@
     padding: 88px 0 35px;
     margin-bottom: 90px;
     background-color: #F3F3F3;
+
     &__list {
       display: flex;
       justify-content: space-between;
@@ -111,7 +112,7 @@
       .main-title {
         line-height: 92px;
         color: #1C283A;
-    }
+      }
     }
 
     &__item-img {
@@ -135,6 +136,7 @@
       width: 1145px;
       position: relative;
       padding: 0 200px 80px;
+
       &::before {
         z-index: 90;
         pointer-events: none;
@@ -320,6 +322,7 @@
       border-radius: 100px;
       transition: all .3s;
       cursor: pointer;
+
       &:hover {
         background: #00C9FF;
       }
@@ -330,37 +333,11 @@
   .page-section.articles {
     >.container {
       padding: 0;
-      .articles h2 {
+
+      h2 {
         padding-left: 15px;
       }
     }
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
