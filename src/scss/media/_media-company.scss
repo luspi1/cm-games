@@ -240,7 +240,8 @@
   }
 
   .company .company-features .main-title {
-    line-height: 66px;
+    margin-top: -25px;
+    line-height: 120px;
   }
 
   .company .company-features__list-item {
@@ -350,7 +351,9 @@
   .company .company-indicators__list-item {
     width: 48%;
   }
-
+  .company .company-features .main-title {
+    line-height: 100px;
+  }
   .company .company-features__list-item:not(.company-features__list-title) {
     width: 46%;
   }
