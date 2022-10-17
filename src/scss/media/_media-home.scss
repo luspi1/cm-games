@@ -7,10 +7,6 @@
     margin: 0 auto;
     max-width: 1920px;
   }
-  .products {
-    max-width: 1920px;
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 1680px) {
@@ -326,7 +322,6 @@
   }
 
   .caption {
-    padding: 0 30px;
 
     &__slider {
       width: 80%;
@@ -391,12 +386,7 @@
 
   .products {
     border-radius: 0;
-    padding: 40px 0 50px 0;
-
-    &__title {
-      line-height: 45px;
-      margin-bottom: 30px;
-    }
+    padding: 40px 0 22px 0;
 
     .products-swiper .products__swiper-panel {
       flex-direction: column;
@@ -441,6 +431,10 @@
     }
   }
 
+  .careers__title {
+    margin-bottom: 8px;
+  }
+
   .footer {
     &__wrapper {
       flex-direction: column;
@@ -473,15 +467,6 @@
     }
   }
 
-  .news {
-    .news-swiper {
-      padding: 15px;
-    }
-
-    .news-swiper__content {
-      margin-bottom: 80px;
-    }
-  }
 
 
   .services .services-swiper .services__slide-title {

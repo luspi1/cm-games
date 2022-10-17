@@ -15,7 +15,7 @@
 }
 
 .articles-page {
-  padding: 108px 0 50px;
+  padding: 103px 0 78px;
 
 
   &__inner {
@@ -27,14 +27,7 @@
   }
 
   &__top {
-    display: flex;
-    margin-bottom: 80px;
-    align-items: flex-start;
-
-    p {
-      max-width: 860px;
-    }
-
+    margin-bottom: 100px;
   }
 
   &__content {
@@ -64,7 +57,8 @@
 
   &__main-info {
     display: flex;
-    margin-bottom: 15px;
+    margin-top: 8px;
+    margin-bottom: 18px;
 
     a {
       color: #00B7F1;
@@ -77,7 +71,7 @@
   }
 
   &__main-desc {
-    margin-bottom: 58px;
+    margin-bottom: 54px;
     color: #1C283A;
   }
 
@@ -87,7 +81,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 28px;
     width: 655px;
 
     .articles-page__menu-btn {
@@ -110,19 +104,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
   }
 
   &__list-item {
     width: 48%;
-    margin-bottom: 43px;
+    margin-bottom: 50px;
   }
 
   &__item-img {
     position: relative;
     padding-top: 60%;
     width: 100%;
-    margin-bottom: 13px;
+    margin-bottom: 18px;
 
     img {
       position: absolute;
@@ -137,12 +130,12 @@
   &__item-title {
     color: #1C283A;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
   }
 
   &__item-desc {
     color: #1C283A;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
 
   &__item-info {
@@ -164,6 +157,8 @@
     cursor: pointer;
     text-transform: uppercase;
     color: #00B7F1;
+    padding: 0;
+    transform: translateY(-4px);
   }
 }
 
@@ -173,17 +168,17 @@
   min-width: 515px;
 
   &__subtitle {
-    margin-bottom: 28px;
+    margin-bottom: 23px;
   }
 
   &__list {
-    margin-bottom: 35px;
+    margin-bottom: 85px;
   }
 
   &__list-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 
   &__item-img {
@@ -211,7 +206,7 @@
 
     p {
       color: #1C283A;
-      max-width: 330px;
+      max-width: 380px;
     }
   }
 
@@ -221,7 +216,7 @@
     padding-top: 61%;
 
     &:not(:last-child) {
-      margin-bottom: 50px;
+      margin-bottom: 28px;
     }
 
     img {

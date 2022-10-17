@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   background: #FFFFFF;
-  width: 61.5%;
+  width: 71%;
   height: 100%;
   right: 0;
   transition: all .3s;
@@ -14,7 +14,7 @@
   visibility: hidden;
 
   &__wrapper {
-    padding: 0 93px 0 70px;
+    padding: 0 60px 40px 59px;
   }
 
   &._active {
@@ -29,8 +29,8 @@
     border: none;
     background: none;
     cursor: pointer;
-    margin-bottom: 60px;
-    padding-left: 40px;
+    margin-bottom: 74px;
+    padding-left: 51px;
     transition: all .3s;
 
     &:hover {
@@ -45,7 +45,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: -10px;
+      left: 0;
 
       path {
         transition: all .3s;
@@ -69,22 +69,22 @@
 
     p {
       color: #1C283A;
-      margin-bottom: 45px;
+      margin-bottom: 51px;
     }
   }
 
   &__desc-btn {
-    width: 317px;
+    width: 304px;
     text-align: center;
     color: #FFFFFF;
-    padding: 23px 25px;
+    padding: 19px 25px;
     background: #00B9EE;
     border-radius: 50px;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     transition: all .3s;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
 
     &:hover {
       background: #00C9FF;
@@ -95,7 +95,7 @@
     background: #ffffff;
     color: #A5B4C4;
     border: 1px solid #A5B4C4;
-    padding: 22px 33px;
+    padding: 19px 33px;
 
     &:hover {
       color: #FFFFFF;
@@ -105,14 +105,14 @@
   }
 
   &__lists {
-    width: 50%;
+    width: 60%;
   }
 
   &__list {
     margin-bottom: 25px;
 
     li {
-      margin-bottom: 5px;
+      margin-bottom: 1px;
     }
 
   }
@@ -139,7 +139,7 @@
 
   &__materials {
     background: #F3F3F3;
-    padding: 46px 0;
+    padding: 50px 0 12px;
   }
 
   &__swiper-title {
@@ -151,17 +151,17 @@
 
 
     .swiper-wrapper {
-      margin-bottom: 35px;
+      margin-bottom: 17px;
     }
 
     .swiper-slide {
       transition: all .3s;
       border-radius: 10px;
-      padding-bottom: 25px;
+      padding-bottom: 24px;
       background-color: #ffffff;
 
       &__wrapper {
-        padding: 0 20px 0 17px;
+        padding: 0 21px 0 17px;
       }
     }
 
@@ -169,11 +169,10 @@
       color: #00B7F1;
       display: inline-block;
       margin-top: 22px;
-      margin-bottom: 5px;
+      margin-bottom: 14px;
     }
 
     &__content {
-      min-height: 100px;
       position: relative;
     }
 
@@ -234,6 +233,7 @@
       color: $secondary;
       cursor: pointer;
       transition: all .3s;
+      padding: 0;
 
       &:hover {
         color: #00C9FF;
@@ -258,6 +258,7 @@
   width: 100%;
   background-color: #ffffff;
   display: none;
+  padding-right: 50px;
 
   &._active {
     display: block;
@@ -275,8 +276,8 @@
     border: none;
     background: none;
     cursor: pointer;
-    margin-bottom: 40px;
-    padding-left: 40px;
+    margin-bottom: 74px;
+    padding-left: 51px;
     transition: all .3s;
 
     &:hover {
@@ -291,7 +292,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: -10px;
+      left: 0;
 
       path {
         transition: all .3s;
@@ -300,13 +301,12 @@
   }
 
   &__title {
-    text-transform: uppercase;
     color: #1C283A;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   &__input {
-    padding: 20px 20px 20px 0;
+    padding: 22px 20px 22px 0;
     width: 100%;
     @include montserrat-regular;
     color: #000000;
@@ -317,7 +317,7 @@
     background: none;
     transition: all .3s;
     outline: none;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     &:focus {
       border-bottom: 1px solid #00B7F1;
@@ -333,6 +333,10 @@
   &__file-inputs {
     display: flex;
     align-items: flex-end;
+
+    .careers-form__input {
+      margin-bottom: 22px;
+    }
 
     .careers-form__link-wrapper {
       margin-right: 25px;
@@ -404,7 +408,8 @@
     border: none;
     background: none;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    position: relative;
 
     .careers-form__svg-bg {
       transition: all .3s;
@@ -417,6 +422,10 @@
     }
 
     svg {
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
       width: 60px;
       height: 60px;
     }
@@ -425,7 +434,6 @@
 
   &__input-textarea {
     display: none;
-    margin-top: 20px;
     padding-top: 10px;
     padding-left: 10px;
     resize: none;
@@ -446,7 +454,7 @@
   }
 
   &__checkbox-wrapper {
-    margin-bottom: 46px;
+    margin-bottom: 50px;
   }
 
   &__checkbox {
@@ -460,6 +468,8 @@
       user-select: none;
       cursor: pointer;
       color: #666666;
+      font-size: 20px;
+      line-height: 24px;
     }
 
     & + label::before {
@@ -490,7 +500,7 @@
     color: #A5B4C4;
     cursor: pointer;
     transition: all .3s;
-    padding: 23px 117px;
+    padding: 19px 115px;
 
     &:hover {
       color: #ffffff;
@@ -514,32 +524,108 @@
 
 @media (max-width: 1280px) {
   .careers-modal__wrapper {
-    padding: 0 30px 0 30px;
+    padding: 0 30px 24px 30px;
   }
 
   .careers-modal {
+    padding-top: 35px;
     width: 70%;
   }
+
+  .careers-modal__back-btn {
+    margin-bottom: 56px;
+  }
+
+  .careers-modal__title {
+    margin-bottom: 19px;
+  }
+
+  .careers-modal__desc p {
+    margin-bottom: 35px;
+  }
+
+  .careers-modal__desc-btn {
+    margin-bottom: 22px;
+  }
+
+  .careers-modal__materials {
+    padding: 34px 0 12px;
+  }
+
+  .careers-modal__swiper-title {
+    margin-bottom: 14px;
+  }
+
+  .careers-modal .careers-modals-swiper__category {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .careers-modal .careers-modals-swiper .swiper-slide {
+    padding-bottom: 18px;
+  }
+  .careers-modal .careers-modals-swiper .swiper-wrapper {
+    margin-bottom: 11px;
+  }
+
+  .careers-form__back-btn {
+    margin-bottom: 56px;
+  }
+
+  .careers-form__title {
+    margin-bottom: 14px;
+  }
+
+  .careers-form__input {
+    padding: 16px 20px 16px 0;
+    margin-bottom: 22px;
+  }
+
+  .careers-form__input-textarea {
+    padding-left: 10px;
+    margin-bottom: 18px
+  }
+
+  .careers-form__file-inputs .careers-form__input {
+    margin-bottom: 16px;
+  }
+
+  .careers-form .careers-form__add-message-btn {
+    margin-bottom: 13px;
+  }
+
+  .careers-form__checkbox-wrapper {
+    margin-bottom: 36px;
+  }
+
 }
 
 @media (max-width: 1024px) {
 
+  .careers-modal__back-btn {
+    margin-bottom: 42px;
+  }
+
+  .careers-modal__wrapper {
+    padding: 0 30px 20px 30px;
+  }
   .careers-modal {
+    padding-top: 31px;
     width: 75%;
   }
 
   .careers-modal__title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .careers-modal__desc p {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   .careers-modal__desc-btn {
     padding: 15px 5px;
     border-radius: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     width: 280px;
   }
 
@@ -560,6 +646,57 @@
     margin-bottom: 30px;
   }
 
+  .careers-modal__materials {
+    padding: 30px 0 12px;
+  }
+
+  .careers-modal__swiper-title {
+    margin-bottom: 10px;
+  }
+
+
+  .careers-modal .careers-modals-swiper__category {
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+
+  .careers-modal .careers-modals-swiper .swiper-slide {
+    padding-bottom: 14px;
+  }
+
+  .careers-modal .careers-modals-swiper .swiper-wrapper {
+    margin-bottom: 7px;
+  }
+
+
+  .careers-form__back-btn {
+    margin-bottom: 42px;
+  }
+
+  .careers-form__title {
+    margin-bottom: 10px;
+  }
+  .careers-form__input {
+    padding: 12px 20px 12px 0;
+  }
+  .careers-form__input-textarea {
+    padding-left: 10px;
+    margin-top: 9px;
+    margin-bottom: 14px;
+  }
+
+
+  .careers-form__file-inputs .careers-form__input {
+    margin-bottom: 12px;
+  }
+
+  .careers-form .careers-form__add-message-btn {
+    margin-bottom: 0;
+  }
+
+  .careers-form__checkbox-wrapper {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -568,18 +705,13 @@
     width: 100%;
   }
 
-  .careers-modal__title {
-    margin-bottom: 15px;
-  }
 
   .careers-modal__content {
     flex-direction: column;
   }
-
   .careers-modal__desc {
     margin-right: 0;
     width: 100%;
-    margin-bottom: 30px;
   }
 
   .careers-modal__lists {
@@ -604,9 +736,6 @@
     width: 100%;
   }
 
-  .careers-form__back-btn {
-    margin-bottom: 40px;
-  }
 
   .careers-form__submit-btn {
     display: block;

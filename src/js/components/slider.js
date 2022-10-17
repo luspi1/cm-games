@@ -331,7 +331,7 @@ const swiperCareersModal = new Swiper('.careers-modals-swiper', {
     },
     1450: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 18
     },
   }
 });
