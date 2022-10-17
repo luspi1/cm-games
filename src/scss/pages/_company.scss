@@ -53,13 +53,14 @@
   }
 
   .company-features {
-    padding: 94px 0 0 76px;
+    padding: 94px 0 0;
     background-color: #F3F3F3;
     margin-bottom: 90px;
 
     .main-title {
+      margin-top: -37px;
       color: #1C283A;
-      line-height: 88px;
+      line-height: 158px;
     }
 
     &__list {
