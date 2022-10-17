@@ -1,8 +1,7 @@
 @media (max-width: 1650px) {
   .company .company-features {
-    padding: 100px 0 0 0;
-    background-size: auto 103%;
-    width: 96%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .company .company-office .office-swiper .company-office__swiper-panel {
@@ -345,13 +344,6 @@
 @media (max-width: 768px) {
   .company .company-indicators__list-item {
     width: 48%;
-  }
-
-
-
-  .company .company-features {
-    width: 100%;
-    border-radius: 0 0 0 0;
   }
 
   .company .company-features__list-item:not(.company-features__list-title) {
