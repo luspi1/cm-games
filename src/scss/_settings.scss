@@ -186,11 +186,12 @@ select::-ms-expand {
   border: none;
   background: #00B7F1;
   color: #FFFFFF;
-  padding: 10px 30px;
+  padding: 11px 30px 9px;
   height: 55px;
   border-radius: 100px;
   transition: all .3s;
   cursor: pointer;
+  display: inline-block;
 
   &:hover {
     background: #00C9FF;
@@ -206,9 +207,7 @@ select::-ms-expand {
 .lang-switch {
   button {
     cursor: pointer;
-    @include montserrat-regular;
-    font-size: 23px;
-    line-height: 34px;
+    text-transform: uppercase;
     color: #000000;
     background: none;
     display: none;
