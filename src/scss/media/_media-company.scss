@@ -150,7 +150,7 @@
   }
 
   .company .company-office .office-swiper .swiper-wrapper {
-    margin-bottom: 21px;
+    margin-bottom: 18px;
   }
 
   .company .company-office .office-swiper .company-office__swiper-panel {
@@ -181,9 +181,8 @@
   .company .company-global {
     height: 650px;
     padding-top: 58px;
-    background-position: 15% 54%;
-    background-size: auto;
-  }
+
+   }
 
   .company .company-global__title {
     font-size: 70px;
@@ -196,8 +195,12 @@
     }
   }
 
+  .company .company-careers__btn {
+    margin-top: 0;
+  }
+
   .company .company-careers {
-    padding: 66px 0 70px;
+    padding: 60px 0 70px;
   }
 
 
@@ -285,7 +288,9 @@
   .company .company-office__swiper-container {
     margin-bottom: 50px;
   }
-
+  .company .company-office .office-swiper .swiper-wrapper {
+    margin-bottom: 15px;
+  }
   .company .company-office .office-swiper .company-office__swiper-panel {
     padding: 0 15px;
   }
@@ -333,7 +338,7 @@
   }
 
   .company .company-careers {
-    padding: 52px 0 59px 0;
+    padding: 49px 0 59px 0;
   }
 
   .company .company-careers__title {
@@ -395,6 +400,7 @@
 
   .company .company-global {
     height: 550px;
+    background-position: 10% center;
   }
 
   .company .company-global__title {
@@ -438,7 +444,6 @@
 
   .company .company-global {
     height: 430px;
-    background-position: 25% 44%;
   }
 }
 

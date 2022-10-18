@@ -502,11 +502,12 @@
   }
 
   &__btn {
+    margin-top: 6px;
+    padding: 20px 88px;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 20px 88px;
     width: 340px;
     transition: all .3s;
     background-color: #00B9EE;

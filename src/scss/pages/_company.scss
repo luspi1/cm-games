@@ -252,7 +252,7 @@
 
     .office-swiper {
       .swiper-wrapper {
-        margin-bottom: 32px;
+        margin-bottom: 24px;
       }
 
       &__img {
@@ -506,9 +506,10 @@
   }
 
   .company-global {
-    background-image: url("../img/global-bg.jpg");
-    background-position: 0 54%;
+    background-image: url("../img/global-bg2.jpg");
+    background-position: left center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 837px;
     padding-top: 75px;
 
@@ -528,7 +529,7 @@
   }
 
   .company-careers {
-    padding: 90px 0;
+    padding: 82px 0 90px;
 
     .container {
       display: flex;
@@ -537,8 +538,8 @@
 
     &__title {
       max-width: 64%;
-      margin-right: 70px;
-      line-height: 52px;
+      margin-right: 111px;
+      line-height: 58px;
 
       span {
         color: $secondary;
@@ -546,11 +547,12 @@
     }
 
     &__btn {
+      margin-top: 11px;
+      padding: 20px 90px;
       text-align: center;
       cursor: pointer;
       text-transform: uppercase;
       color: #FFFFFF;
-      padding: 20px 90px;
       transition: all .3s;
       background-color: #00B9EE;
       border-radius: 100px;
