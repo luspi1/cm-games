@@ -166,6 +166,7 @@
       border: none;
       color: $secondary;
       cursor: pointer;
+      padding: 0;
       transition: all .3s;
 
       &:hover {
@@ -177,13 +178,12 @@
 
 .blog-item {
   padding-bottom: 90px;
-  //margin-right: 11.8%;
   display: flex;
 
 
   &__socials-wrapper {
     width: 120px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 30px;
   }
 
